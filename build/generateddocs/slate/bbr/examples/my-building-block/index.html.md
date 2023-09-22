@@ -186,6 +186,8 @@ You can find the full JSON-LD context here:
 ```
 * Source MIME type: `text/turtle`
 * Target MIME type: `text/turtle`
+* Types of outputs generated:
+  * GeoDCAT (`geodcat`) 
 * Link: [https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.shacl](https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.shacl)
 
 ## JQ example <small>jq</small>
@@ -195,6 +197,8 @@ You can find the full JSON-LD context here:
 ```
 * Source MIME type: `application/json`
 * Target MIME type: `application/json`
+* Types of outputs generated:
+  * Example (`ex`) 
 * Link: [https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.jq](https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.jq)
 
 # References
