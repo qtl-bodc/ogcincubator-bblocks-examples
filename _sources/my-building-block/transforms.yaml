@@ -1,0 +1,20 @@
+transforms:
+  - title: SHACL example
+    mime-types:
+      source: text/turtle
+      target: text/turtle
+    output-types:
+      - label: GeoDCAT
+        identifier: geodcat
+    ref: transforms/sample.shacl
+    type: shacl
+
+  - title: JQ example
+    mime-types:
+      source: json
+      target: json
+    output-types:
+      - label: Example
+        identifier: ex
+    ref: transforms/sample.jq
+    type: jq
