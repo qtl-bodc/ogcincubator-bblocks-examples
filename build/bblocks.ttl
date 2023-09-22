@@ -11,19 +11,19 @@ bblocks:ogc.bbr.examples.my-building-block a skos:Concept,
     rdfs:label "My Building Block" ;
     dct:abstract "This Building Block serves as a template to create new ones" ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/generateddocs/slate-build/bbr/examples/my-building-block/" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/generateddocs/json-full/bbr/examples/my-building-block/index.json" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/my-building-block/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/generateddocs/markdown/bbr/examples/my-building-block/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/my-building-block/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/my-building-block/" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2023-04-05"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://www.opengis.net/def/bblocks> ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.json>,
-        <https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.yaml> ;
+    bblocks:hasJsonLdContext <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/context.jsonld> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/schema.json>,
+        <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/schema.yaml> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/invalid> .
 
@@ -33,11 +33,11 @@ bblocks:ogc.bbr.examples.my-building-block a skos:Concept,
     skos:prefLabel "OGC Building Blocks Register" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-09-22T09:51:35.432749"^^xsd:dateTime ;
-    prov:startedAtTime "2023-09-22T09:51:35.370738"^^xsd:dateTime ;
+    prov:endedAtTime "2023-09-22T09:57:00.270042"^^xsd:dateTime ;
+    prov:startedAtTime "2023-09-22T09:57:00.208779"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/register.json> ],
+            rdfs:seeAlso <https://ogcincubator.github.io/bblocks-examples/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;

@@ -74,8 +74,8 @@ The content of this example.
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/tests/bbr/examples/my-building-block/example_2_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fbblocks-examples%2Fmaster%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -88,7 +88,7 @@ The content of this example.
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/tests/bbr/examples/my-building-block/example_2_2.ttl">Open in new window</a>
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_2.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -98,14 +98,14 @@ The content of this example.
 {
   "a": 1,
   "b": 2,
-  "@context": "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/context.jsonld"
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/tests/bbr/examples/my-building-block/example_2_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fbblocks-examples%2Fmaster%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -131,12 +131,12 @@ required:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fbblocks-examples%2Fmaster%2Fbuild%2Fannotated%2Fbbr%2Fexamples%2Fmy-building-block%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Fannotated%2Fbbr%2Fexamples%2Fmy-building-block%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.yaml" target="_blank">https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.yaml</a>
-* JSON version: <a href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.json" target="_blank">https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.json</a>
+* YAML version: <a href="https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/schema.yaml" target="_blank">https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/schema.yaml</a>
+* JSON version: <a href="https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/schema.json" target="_blank">https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/schema.json</a>
 
 
 # JSON-LD Context
@@ -154,10 +154,10 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fbblocks-examples%2Fmaster%2Fbuild%2Fannotated%2Fbbr%2Fexamples%2Fmy-building-block%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Fannotated%2Fbbr%2Fexamples%2Fmy-building-block%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/context.jsonld" target="_blank">https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/context.jsonld</a>
+<a href="https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/context.jsonld" target="_blank">https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/context.jsonld</a>
 
 # Transforms
 
@@ -186,7 +186,7 @@ You can find the full JSON-LD context here:
 ```
 * Source MIME type: `text/turtle`
 * Target MIME type: `text/turtle`
-* Link: [https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/_sources/my-building-block/transforms/sample.shacl](https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/_sources/my-building-block/transforms/sample.shacl)
+* Link: [https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.shacl](https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.shacl)
 
 ## JQ example <small>jq</small>
 
@@ -195,7 +195,7 @@ You can find the full JSON-LD context here:
 ```
 * Source MIME type: `application/json`
 * Target MIME type: `application/json`
-* Link: [https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/_sources/my-building-block/transforms/sample.jq](https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/_sources/my-building-block/transforms/sample.jq)
+* Link: [https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.jq](https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.jq)
 
 # References
 

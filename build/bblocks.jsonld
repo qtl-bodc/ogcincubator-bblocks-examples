@@ -95,11 +95,11 @@
       "itemIdentifier": "ogc.bbr.examples.my-building-block",
       "shaclRules": [],
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/schema.json"
       },
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/_sources/my-building-block/",
+      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/",
       "validationPassed": false,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/my-building-block/",
       "transforms": [
@@ -117,7 +117,7 @@
               "identifier": "geodcat"
             }
           ],
-          "ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/_sources/my-building-block/transforms/sample.shacl",
+          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.shacl",
           "type": "shacl"
         },
         {
@@ -134,22 +134,22 @@
               "identifier": "ex"
             }
           ],
-          "ref": "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/_sources/my-building-block/transforms/sample.jq",
+          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.jq",
           "type": "jq"
         }
       ],
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/generateddocs/json-full/bbr/examples/my-building-block/index.json"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/my-building-block/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/generateddocs/markdown/bbr/examples/my-building-block/index.md"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/my-building-block/index.md"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/generateddocs/slate-build/bbr/examples/my-building-block/"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/my-building-block/"
         }
       },
       "@type": [
