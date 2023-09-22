@@ -1,0 +1,5 @@
+{
+  "a": 1,
+  "b": 2,
+  "@context": "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/context.jsonld"
+}

@@ -1,0 +1,22 @@
+=== Files ===
+Using example_2_1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_2_1.jsonld created
+Output Turtle example_2_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 1 is not of type 'string'
+
+Failed validating 'type' in schema['properties']['a']:
+    {'format': 'uri',
+     'type': 'string',
+     'x-jsonld-id': 'https://example.org/my-bb-model/a',
+     'x-jsonld-type': '@id'}
+
+On instance['a']:
+    1
+=== End JSON Schema ===
+

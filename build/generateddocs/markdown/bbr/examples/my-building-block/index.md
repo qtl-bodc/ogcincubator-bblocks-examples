@@ -1,11 +1,11 @@
 
 # My Building Block (Schema)
 
-`ogc.bbr.template.my-building-block` *v0.1*
+`ogc.bbr.examples.my-building-block` *v0.1*
 
 This Building Block serves as a template to create new ones
 
-[*Status*](http://www.opengis.net/def/status): Under development
+[*Status*](http://www.opengis.net/def/status): Invalid
 
 ## Description
 
@@ -32,19 +32,28 @@ In **Markdown** format.
 
 ### Examples can have content and/or code snippets.
 The content of this example. 
-#### shell
-```shell
-echo 'Hello, world!'
+#### json
+```json
+{
+  "a": 1,
+  "b": 2
+}
+
 ```
 
-#### python
-```python
-print('Hello, world!')
+#### ttl
+```ttl
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://example.com/my/resource> rdfs:label "My Label" .
 ```
 
-#### javascript
-```javascript
-console.log('Hello, world!')
+#### jsonld
+```jsonld
+{
+  "a": 1,
+  "b": 2,
+  "@context": "https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/context.jsonld"
+}
 ```
 
 ## Schema
@@ -70,8 +79,8 @@ required:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/template/my-building-block/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/template/my-building-block/schema.yaml)
+* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.json)
+* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.yaml)
 
 
 # JSON-LD Context
@@ -90,7 +99,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/template/my-building-block/context.jsonld)
+[context.jsonld](https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/context.jsonld)
 
 ## Sources
 

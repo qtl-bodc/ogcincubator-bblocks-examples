@@ -294,7 +294,7 @@
     </script>
   </head>
 
-  <body class="bbr bbr_template bbr_template_my-building-block bbr_template_my-building-block_index" data-languages="[&quot;shell&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="bbr bbr_examples bbr_examples_my-building-block bbr_examples_my-building-block_index" data-languages="[&quot;json&quot;,&quot;turtle&quot;,&quot;jsonld&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -304,9 +304,9 @@
     <div class="toc-wrapper">
       <img src="../../../images/logo-4d9dfd05.svg" class="logo" alt="" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="python">Python</a>
-              <a href="#" data-language-name="javascript">Javascript</a>
+              <a href="#" data-language-name="json">JSON</a>
+              <a href="#" data-language-name="turtle">RDF/Turtle</a>
+              <a href="#" data-language-name="jsonld">JSON-LD</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -314,7 +314,7 @@
         <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#my-building-block-ogc-bbr-template-my-building-block" class="toc-h1 toc-link" data-title="My Building Block ogc.bbr.template.my-building-block">My Building Block <code>ogc.bbr.template.my-building-block</code></a>
+            <a href="#my-building-block-ogc-bbr-examples-my-building-block" class="toc-h1 toc-link" data-title="My Building Block ogc.bbr.examples.my-building-block">My Building Block <code>ogc.bbr.examples.my-building-block</code></a>
           </li>
           <li>
             <a href="#description" class="toc-h1 toc-link" data-title="Description">Description</a>
@@ -345,6 +345,17 @@
             <a href="#json-ld-context" class="toc-h1 toc-link" data-title="JSON-LD Context">JSON-LD Context</a>
           </li>
           <li>
+            <a href="#transforms" class="toc-h1 toc-link" data-title="Transforms">Transforms</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#shacl-example-shacl" class="toc-h2 toc-link" data-title="SHACL example shacl">SHACL example <small>shacl</small></a>
+                  </li>
+                  <li>
+                    <a href="#jq-example-jq" class="toc-h2 toc-link" data-title="JQ example jq">JQ example <small>jq</small></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#references" class="toc-h1 toc-link" data-title="References">References</a>
           </li>
           <li>
@@ -360,16 +371,16 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='my-building-block-ogc-bbr-template-my-building-block'>My Building Block <code>ogc.bbr.template.my-building-block</code></h1>
+        <h1 id='my-building-block-ogc-bbr-examples-my-building-block'>My Building Block <code>ogc.bbr.examples.my-building-block</code></h1>
 <p>This Building Block serves as a template to create new ones</p>
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
-    <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
+    <a href="http://www.opengis.net/def/status/invalid" target="_blank" data-rainbow-uri>Invalid</a>
 </p>
 
-<aside class="success">
-This building block is <strong>valid</strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/my-building-block/" target="_blank">failed</a></strong>
 </aside>
 <h1 id='description'>Description</h1><h2 id='qui-hastarum-tectus-cithaeron-iuvabat'>Qui hastarum tectus Cithaeron iuvabat</h2>
 <p>Lorem markdownum vestigia sanguine rursus undis, suspenderat meo mox conlegerat
@@ -390,10 +401,36 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
 <p>In <strong>Markdown</strong> format.</p>
 <h2 id='examples-can-have-content-and-or-code-snippets'>Examples can have content and/or code snippets.</h2>
 <p>The content of this example. </p>
-<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nb">echo</span> <span class="s1">'Hello, world!'</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="k">print</span><span class="p">(</span><span class="s">'Hello, world!'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello, world!</span><span class="dl">'</span><span class="p">)</span>
-</code></pre></div><h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"a"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"b"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div>
+<blockquote class="lang-specific json">
+  <p class="example-links">
+    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/tests/bbr/examples/my-building-block/example_2_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fbblocks-examples%2Fmaster%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
+<div class="highlight"><pre class="highlight turtle tab-turtle"><code><span class="kd">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span><span class="nl">&lt;http://example.com/my/resource&gt;</span><span class="w"> </span><span class="nn">rdfs:</span><span class="n">label</span><span class="w"> </span><span class="s">"My Label"</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></code></pre></div>
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/tests/bbr/examples/my-building-block/example_2_2.ttl">Open in new window</a>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-jsonld"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"a"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"b"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/context.jsonld"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/tests/bbr/examples/my-building-block/example_2_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fbblocks-examples%2Fmaster%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+<h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
 <span class="na">description</span><span class="pi">:</span> <span class="s">Schema for my building block</span>
 <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
 <span class="na">properties</span><span class="pi">:</span>
@@ -411,14 +448,14 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
 
 </code></pre></div>
 <blockquote>
-<p><a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fbblocks-examples%2Fmaster%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmy-building-block%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a></p>
+<p><a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fbblocks-examples%2Fmaster%2Fbuild%2Fannotated%2Fbbr%2Fexamples%2Fmy-building-block%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a></p>
 </blockquote>
 
 <p>Links to the schema:</p>
 
 <ul>
-<li>YAML version: <a href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/template/my-building-block/schema.yaml" target="_blank">https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/template/my-building-block/schema.yaml</a></li>
-<li>JSON version: <a href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/template/my-building-block/schema.json" target="_blank">https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/template/my-building-block/schema.json</a></li>
+<li>YAML version: <a href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.yaml" target="_blank">https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.yaml</a></li>
+<li>JSON version: <a href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.json" target="_blank">https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/schema.json</a></li>
 </ul>
 <h1 id='json-ld-context'>JSON-LD Context</h1><div class="highlight"><pre class="highlight json tab-json--ldContext"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -432,11 +469,43 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <blockquote>
-<p><a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fbblocks-examples%2Fmaster%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmy-building-block%2Fcontext.jsonld">View on JSON-LD Playground</a></p>
+<p><a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fbblocks-examples%2Fmaster%2Fbuild%2Fannotated%2Fbbr%2Fexamples%2Fmy-building-block%2Fcontext.jsonld">View on JSON-LD Playground</a></p>
 </blockquote>
 
 <p>You can find the full JSON-LD context here:
-<a href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/template/my-building-block/context.jsonld" target="_blank">https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/template/my-building-block/context.jsonld</a></p>
+<a href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/context.jsonld" target="_blank">https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/build/annotated/bbr/examples/my-building-block/context.jsonld</a></p>
+<h1 id='transforms'>Transforms</h1><h2 id='shacl-example-shacl'>SHACL example <small>shacl</small></h2><div class="highlight"><pre class="highlight plaintext"><code>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;urn:example:LabelToDCTERMS&gt;
+    a sh:NodeShape ;
+    sh:targetSubjectsOf rdfs:label ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            prefix dcterms: &lt;http://purl.org/dc/terms/&gt;
+            prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+            CONSTRUCT {
+                $this dcterms:title ?label
+            } WHERE {
+                $this rdfs:label ?label
+            }
+        """
+    ] ;
+.
+</code></pre></div>
+<ul>
+<li>Source MIME type: <code>text/turtle</code></li>
+<li>Target MIME type: <code>text/turtle</code></li>
+<li>Link: <a href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/_sources/my-building-block/transforms/sample.shacl">https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/_sources/my-building-block/transforms/sample.shacl</a></li>
+</ul>
+<h2 id='jq-example-jq'>JQ example <small>jq</small></h2><div class="highlight"><pre class="highlight plaintext"><code>.b2 = .b * .b
+</code></pre></div>
+<ul>
+<li>Source MIME type: <code>application/json</code></li>
+<li>Target MIME type: <code>application/json</code></li>
+<li>Link: <a href="https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/_sources/my-building-block/transforms/sample.jq">https://raw.githubusercontent.com/ogcincubator/bblocks-examples/master/_sources/my-building-block/transforms/sample.jq</a></li>
+</ul>
 <h1 id='references'>References</h1>
 <ul>
 <li><a href="https://example.com/sources/1">Sample source document</a></li>
@@ -453,9 +522,9 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="python">Python</a>
-                <a href="#" data-language-name="javascript">Javascript</a>
+                <a href="#" data-language-name="json">JSON</a>
+                <a href="#" data-language-name="turtle">RDF/Turtle</a>
+                <a href="#" data-language-name="jsonld">JSON-LD</a>
           </div>
       </div>
     </div>
