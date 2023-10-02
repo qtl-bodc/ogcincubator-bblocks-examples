@@ -345,17 +345,6 @@
             <a href="#json-ld-context" class="toc-h1 toc-link" data-title="JSON-LD Context">JSON-LD Context</a>
           </li>
           <li>
-            <a href="#transforms" class="toc-h1 toc-link" data-title="Transforms">Transforms</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#shacl-example-shacl" class="toc-h2 toc-link" data-title="SHACL example shacl">SHACL example <small>shacl</small></a>
-                  </li>
-                  <li>
-                    <a href="#jq-example-jq" class="toc-h2 toc-link" data-title="JQ example jq">JQ example <small>jq</small></a>
-                  </li>
-              </ul>
-          </li>
-          <li>
             <a href="#references" class="toc-h1 toc-link" data-title="References">References</a>
           </li>
           <li>
@@ -474,48 +463,6 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
 
 <p>You can find the full JSON-LD context here:
 <a href="https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/context.jsonld" target="_blank">https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/context.jsonld</a></p>
-<h1 id='transforms'>Transforms</h1><h2 id='shacl-example-shacl'>SHACL example <small>shacl</small></h2><div class="highlight"><pre class="highlight plaintext"><code>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-
-&lt;urn:example:LabelToDCTERMS&gt;
-    a sh:NodeShape ;
-    sh:targetSubjectsOf rdfs:label ;
-    sh:rule [
-        a sh:SPARQLRule ;
-        sh:construct """
-            prefix dcterms: &lt;http://purl.org/dc/terms/&gt;
-            prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-            CONSTRUCT {
-                $this dcterms:title ?label
-            } WHERE {
-                $this rdfs:label ?label
-            }
-        """
-    ] ;
-.
-</code></pre></div>
-<ul>
-<li>Source MIME type: <code>text/turtle</code></li>
-<li>Target MIME type: <code>text/turtle</code></li>
-<li>Types of outputs generated:
-
-<ul>
-<li>GeoDCAT (<code>geodcat</code>) </li>
-</ul></li>
-<li>Link: <a href="https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.shacl">https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.shacl</a></li>
-</ul>
-<h2 id='jq-example-jq'>JQ example <small>jq</small></h2><div class="highlight"><pre class="highlight plaintext"><code>.b2 = .b * .b
-</code></pre></div>
-<ul>
-<li>Source MIME type: <code>application/json</code></li>
-<li>Target MIME type: <code>application/json</code></li>
-<li>Types of outputs generated:
-
-<ul>
-<li>Example (<code>ex</code>) </li>
-</ul></li>
-<li>Link: <a href="https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.jq">https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.jq</a></li>
-</ul>
 <h1 id='references'>References</h1>
 <ul>
 <li><a href="https://example.com/sources/1">Sample source document</a></li>

@@ -159,48 +159,6 @@ Links to the schema:
 You can find the full JSON-LD context here:
 <a href="https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/context.jsonld" target="_blank">https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/context.jsonld</a>
 
-# Transforms
-
-## SHACL example <small>shacl</small>
-
-```
-@prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-<urn:example:LabelToDCTERMS>
-    a sh:NodeShape ;
-    sh:targetSubjectsOf rdfs:label ;
-    sh:rule [
-        a sh:SPARQLRule ;
-        sh:construct """
-            prefix dcterms: <http://purl.org/dc/terms/>
-            prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-            CONSTRUCT {
-                $this dcterms:title ?label
-            } WHERE {
-                $this rdfs:label ?label
-            }
-        """
-    ] ;
-.
-```
-* Source MIME type: `text/turtle`
-* Target MIME type: `text/turtle`
-* Types of outputs generated:
-  * GeoDCAT (`geodcat`) 
-* Link: [https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.shacl](https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.shacl)
-
-## JQ example <small>jq</small>
-
-```
-.b2 = .b * .b
-```
-* Source MIME type: `application/json`
-* Target MIME type: `application/json`
-* Types of outputs generated:
-  * Example (`ex`) 
-* Link: [https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.jq](https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/transforms/sample.jq)
-
 # References
 
 * [Sample source document](https://example.com/sources/1)
