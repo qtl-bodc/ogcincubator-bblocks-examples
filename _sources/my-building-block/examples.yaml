@@ -19,3 +19,12 @@
       code: |-
         @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
         <http://example.com/my/resource> rdfs:label "My Label" .
+  transforms:
+    - type: shacl
+      input-language: ttl
+      output-language: ttl
+      ref: transforms/sample.shacl
+    - type: jq
+      input-language: json
+      output-language: json
+      code: '.b2 = .b * .b'
