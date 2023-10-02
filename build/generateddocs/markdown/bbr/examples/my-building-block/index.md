@@ -32,6 +32,14 @@ In **Markdown** format.
 
 ### Examples can have content and/or code snippets.
 The content of this example. 
+#### ttl
+```ttl
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://example.com/my/resource> rdfs:label "My Label" .
+```
+
+
+### Transforms can be performed on uplifted snippets
 #### json
 ```json
 {
@@ -41,12 +49,6 @@ The content of this example.
 
 ```
 
-#### ttl
-```ttl
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-<http://example.com/my/resource> rdfs:label "My Label" .
-```
-
 #### jsonld
 ```jsonld
 {
@@ -54,6 +56,17 @@ The content of this example.
   "b": 2,
   "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/my-building-block/context.jsonld"
 }
+```
+
+#### ttl
+```ttl
+@prefix ns1: <https://example.org/my-bb-model/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] ns1:a 1 ;
+    ns1:b 2 .
+
+
 ```
 
 ## Schema

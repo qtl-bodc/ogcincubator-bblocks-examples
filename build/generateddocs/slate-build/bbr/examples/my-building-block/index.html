@@ -294,7 +294,7 @@
     </script>
   </head>
 
-  <body class="bbr bbr_examples bbr_examples_my-building-block bbr_examples_my-building-block_index" data-languages="[&quot;json&quot;,&quot;turtle&quot;,&quot;jsonld&quot;]">
+  <body class="bbr bbr_examples bbr_examples_my-building-block bbr_examples_my-building-block_index" data-languages="[&quot;turtle&quot;,&quot;json&quot;,&quot;jsonld&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -304,8 +304,8 @@
     <div class="toc-wrapper">
       <img src="../../../images/logo-4d9dfd05.svg" class="logo" alt="" />
         <div class="lang-selector">
-              <a href="#" data-language-name="json">JSON</a>
               <a href="#" data-language-name="turtle">RDF/Turtle</a>
+              <a href="#" data-language-name="json">JSON</a>
               <a href="#" data-language-name="jsonld">JSON-LD</a>
         </div>
         <div class="search">
@@ -335,6 +335,9 @@
                   </li>
                   <li>
                     <a href="#examples-can-have-content-and-or-code-snippets" class="toc-h2 toc-link" data-title="Examples can have content and/or code snippets.">Examples can have content and/or code snippets.</a>
+                  </li>
+                  <li>
+                    <a href="#transforms-can-be-performed-on-uplifted-snippets" class="toc-h2 toc-link" data-title="Transforms can be performed on uplifted snippets">Transforms can be performed on uplifted snippets</a>
                   </li>
               </ul>
           </li>
@@ -390,7 +393,14 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
 <p>In <strong>Markdown</strong> format.</p>
 <h2 id='examples-can-have-content-and-or-code-snippets'>Examples can have content and/or code snippets.</h2>
 <p>The content of this example. </p>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+<div class="highlight"><pre class="highlight turtle tab-turtle"><code><span class="kd">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span><span class="nl">&lt;http://example.com/my/resource&gt;</span><span class="w"> </span><span class="nn">rdfs:</span><span class="n">label</span><span class="w"> </span><span class="s">"My Label"</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></code></pre></div>
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_1.ttl">Open in new window</a>
+</blockquote>
+<h2 id='transforms-can-be-performed-on-uplifted-snippets'>Transforms can be performed on uplifted snippets</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"a"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
   </span><span class="nl">"b"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -398,15 +408,8 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
 </span></code></pre></div>
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
-</blockquote>
-<div class="highlight"><pre class="highlight turtle tab-turtle"><code><span class="kd">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
-</span><span class="nl">&lt;http://example.com/my/resource&gt;</span><span class="w"> </span><span class="nn">rdfs:</span><span class="n">label</span><span class="w"> </span><span class="s">"My Label"</span><span class="w"> </span><span class="p">.</span><span class="w">
-</span></code></pre></div>
-<blockquote class="lang-specific turtle">
-  <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_2.ttl">Open in new window</a>
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_3_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-jsonld"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"a"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -416,8 +419,20 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
 </span></code></pre></div>
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_3_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+<div class="highlight"><pre class="highlight turtle tab-turtle"><code><span class="kd">@prefix</span><span class="w"> </span><span class="nn">ns1:</span><span class="w"> </span><span class="nl">&lt;https://example.org/my-bb-model/&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span><span class="kd">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+
+</span><span class="p">[]</span><span class="w"> </span><span class="nn">ns1:</span><span class="k">a</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">ns1:</span><span class="n">b</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">.</span><span class="w">
+
+
+</span></code></pre></div>
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_3_1.ttl">Open in new window</a>
 </blockquote>
 <h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
 <span class="na">description</span><span class="pi">:</span> <span class="s">Schema for my building block</span>
@@ -479,8 +494,8 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="json">JSON</a>
                 <a href="#" data-language-name="turtle">RDF/Turtle</a>
+                <a href="#" data-language-name="json">JSON</a>
                 <a href="#" data-language-name="jsonld">JSON-LD</a>
           </div>
       </div>

@@ -2,8 +2,8 @@
 title: My Building Block (Schema)
 
 language_tabs:
-  - json: JSON
   - turtle: RDF/Turtle
+  - json: JSON
   - jsonld: JSON-LD
 
 toc_footers:
@@ -64,6 +64,22 @@ The content of this example.
 
 
 
+```turtle
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://example.com/my/resource> rdfs:label "My Label" .
+```
+
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_1.ttl">Open in new window</a>
+</blockquote>
+
+
+
+## Transforms can be performed on uplifted snippets
+
+
+
 ```json
 {
   "a": 1,
@@ -74,21 +90,8 @@ The content of this example.
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
-</blockquote>
-
-
-
-
-```turtle
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-<http://example.com/my/resource> rdfs:label "My Label" .
-```
-
-<blockquote class="lang-specific turtle">
-  <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_2.ttl">Open in new window</a>
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_3_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -104,8 +107,26 @@ The content of this example.
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_3_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Fmy-building-block%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+
+
+
+
+```turtle
+@prefix ns1: <https://example.org/my-bb-model/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] ns1:a 1 ;
+    ns1:b 2 .
+
+
+```
+
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_3_1.ttl">Open in new window</a>
 </blockquote>
 
 
