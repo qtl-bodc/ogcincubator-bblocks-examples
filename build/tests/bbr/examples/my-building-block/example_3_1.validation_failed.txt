@@ -1,3 +1,5 @@
+Validation report for ogc.bbr.examples.my-building-block - My Building Block
+Generated 2023-10-30T15:41:22.231435+00:00
 === Files ===
 Using example_3_1.json from examples
 JSON-LD context is present - uplifting
