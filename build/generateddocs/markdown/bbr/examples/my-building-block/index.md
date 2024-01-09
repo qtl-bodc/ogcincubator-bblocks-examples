@@ -5,7 +5,7 @@
 
 This Building Block serves as a template to create new ones
 
-[*Status*](http://www.opengis.net/def/status): Invalid
+[*Status*](http://www.opengis.net/def/status): Under development
 
 ## Description
 

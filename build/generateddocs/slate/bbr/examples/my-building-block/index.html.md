@@ -26,7 +26,7 @@ This Building Block serves as a template to create new ones
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
-    <a href="http://www.opengis.net/def/status/invalid" target="_blank" data-rainbow-uri>Invalid</a>
+    <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
 <aside class="warning">
@@ -60,8 +60,6 @@ In **Markdown** format.
 
 ## Examples can have content and/or code snippets.
 
-The content of this example. 
-
 
 
 ```turtle
@@ -74,6 +72,8 @@ The content of this example.
     <a target="_blank" href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_1.ttl">Open in new window</a>
 </blockquote>
 
+
+The content of this example. 
 
 
 ## Transforms can be performed on uplifted snippets

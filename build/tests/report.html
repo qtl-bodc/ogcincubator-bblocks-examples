@@ -5,18 +5,28 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Building Blocks validation report</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <style>
             .entry-message {
                 white-space: pre-wrap;
-                font-size: 90%;
+                font-size: 80%;
+                line-height: 1.1;
+            }
+            *[data-bs-toggle] .caret {
+                display: inline-block;
+                transform: rotate(90deg);
+                transition: transform 0.25s;
+            }
+            *[data-bs-toggle].collapsed .caret {
+                transform: rotate(0deg);
             }
         </style>
     </head>
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2023-10-30T15:41:22.349112+00:00</small>
+            <small class="datetime">Generated at 2024-01-09T17:42:52.316773+00:00</small>
                 <p class="summary fw-semibold text-danger">
                     Number of passing building blocks: 0 / 1 (0%)
                 </p>
@@ -34,8 +44,8 @@
                                     </div>
 
                                     <span class="badge text-bg-danger me-2">
-                                            Failed
-                                            (50%)
+                                            Tests Failed
+                                            (50% passed)
                                     </span>
                                 </button>
                             </h2>
@@ -46,34 +56,54 @@
                                         </p>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
-                                                <div class="card-title">
-                                                    <a href="https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/example_2_1.ttl" target="_blank">example_2_1.ttl</a>
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-1"
+                                                            aria-expanded="false" aria-controls="uid-1"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_2_1.ttl" target="_blank">example_2_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text">
-                                                            <div class="font-monospace entry-message section-files ">Using example_2_1.ttl from examples</div>
-                                                            <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-1">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_2_1.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
-                                                <div class="card-title">
-                                                    <a href="https://ogcincubator.github.io/bblocks-examples/_sources/my-building-block/example_3_1.json" target="_blank">example_3_1.json</a>
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-2"
+                                                            aria-expanded="false" aria-controls="uid-2"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/my-building-block/example_3_1.json" target="_blank">example_3_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text">
-                                                            <div class="font-monospace entry-message section-files ">Using example_3_1.json from examples</div>
-                                                            <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                            <div class="font-monospace entry-message section-files ">Output JSON-LD example_3_1.jsonld created</div>
-                                                            <div class="font-monospace entry-message section-files ">Output Turtle example_3_1.ttl created</div>
-                                                            <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: 1 is not of type &#x27;string&#x27;
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-2">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_3_1.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_3_1.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_3_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: 1 is not of type &#x27;string&#x27;
 
 Failed validating &#x27;type&#x27; in schema[&#x27;properties&#x27;][&#x27;a&#x27;]:
     {&#x27;format&#x27;: &#x27;uri&#x27;,
@@ -83,6 +113,7 @@ Failed validating &#x27;type&#x27; in schema[&#x27;properties&#x27;][&#x27;a&#x2
 
 On instance[&#x27;a&#x27;]:
     1</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -95,7 +126,6 @@ On instance[&#x27;a&#x27;]:
         <script type="text/javascript">
             window.addEventListener('load', () => {
                 const accordionEntries = [...document.querySelectorAll('#bblock-reports .accordion-collapse')];
-                console.log(accordionEntries);
                 document.querySelector('#expand-collapse').addEventListener('click', ev => {
                     ev.preventDefault();
                     if (ev.target.matches('.expand-all')) {
