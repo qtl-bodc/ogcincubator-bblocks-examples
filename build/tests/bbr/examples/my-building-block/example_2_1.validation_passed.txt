@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.my-building-block - My Building Block
-Generated 2024-01-09T17:42:52.220616+00:00
+Generated 2024-01-10T08:00:37.720965+00:00
 === Files ===
 Using example_2_1.ttl from examples
 Output Turtle example_2_1.ttl created
