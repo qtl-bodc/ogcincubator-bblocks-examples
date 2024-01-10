@@ -51,5 +51,5 @@
     }
   ],
   "baseURL": "https://ogcincubator.github.io/bblocks-examples/",
-  "validationReport": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/report.html"
+  "validationReport": "https://ogcincubator.github.io/bblocks-examples/build/tests/report.html"
 }
