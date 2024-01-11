@@ -1,5 +1,5 @@
 {
   "@context": {
-    "myProp": "http//example.org/myModel/myProp"
+    "myProp": "http://example.org/myModel/myProp"
   }
 }
