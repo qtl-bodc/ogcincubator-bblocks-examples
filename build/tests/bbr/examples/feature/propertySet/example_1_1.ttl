@@ -1,0 +1,4 @@
+@prefix ns1: <http://example.org/myModel/> .
+
+[] ns1:myProp "Very smooth" .
+

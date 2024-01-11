@@ -18,6 +18,23 @@ This shows how to define a propertyset for a feature - which can be re-used in d
 
 ```
 
+#### jsonld
+```jsonld
+{
+  "myProp": "Very smooth",
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld"
+}
+```
+
+#### ttl
+```ttl
+@prefix ns1: <http://example.org/myModel/> .
+
+[] ns1:myProp "Very smooth" .
+
+
+```
+
 ## Schema
 
 ```yaml
@@ -28,6 +45,7 @@ allOf:
   properties:
     myProp:
       type: string
+      x-jsonld-id: http://example.org/myModel/myProp
   required:
   - myProp
 
@@ -37,6 +55,21 @@ Links to the schema:
 
 * YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json)
 * JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml)
+
+
+# JSON-LD Context
+
+```jsonld
+{
+  "@context": {
+    "myProp": "http://example.org/myModel/myProp",
+    "@version": 1.1
+  }
+}
+```
+
+You can find the full JSON-LD context here:
+[context.jsonld](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld)
 
 ## Sources
 

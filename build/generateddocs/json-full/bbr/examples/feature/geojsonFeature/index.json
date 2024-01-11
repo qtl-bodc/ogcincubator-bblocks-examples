@@ -19,8 +19,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.bbr.examples.feature.propertySet",
     "ogc.geo.features.feature",
+    "ogc.bbr.examples.feature.propertySet",
     "ogc.bbr.examples.propertySet"
   ],
   "tags": [
@@ -60,7 +60,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://example.com/features/f1> a geojson:Feature ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( \"[-111.67183507997295, 40.056709946862874]\" \"[-111.71, 40.156709946862875]\" ) ] .\n\n",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://example.org/myModel/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://example.com/features/f1> a geojson:Feature ;\n    ns1:myProp \"Mandatory property example\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( \"[-111.67183507997295, 40.056709946862874]\" \"[-111.71, 40.156709946862875]\" ) ] .\n\n",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geojsonFeature/example_1_1.ttl"
         }
       ]

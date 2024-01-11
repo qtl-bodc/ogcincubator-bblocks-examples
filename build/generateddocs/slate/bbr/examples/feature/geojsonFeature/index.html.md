@@ -107,9 +107,11 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 
 ```turtle
 @prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix ns1: <http://example.org/myModel/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 <http://example.com/features/f1> a geojson:Feature ;
+    ns1:myProp "Mandatory property example" ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( "[-111.67183507997295, 40.056709946862874]" "[-111.71, 40.156709946862875]" ) ] .
 
@@ -202,6 +204,7 @@ Links to the schema:
       },
       "@id": "rdfs:seeAlso"
     },
+    "myProp": "http://example.org/myModel/myProp",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",

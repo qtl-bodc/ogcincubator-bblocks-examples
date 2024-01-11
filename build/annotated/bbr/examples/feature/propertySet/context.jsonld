@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "myProp": "http://example.org/myModel/myProp",
+    "@version": 1.1
+  }
+}

@@ -107,6 +107,7 @@
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml",
         "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json"
       },
+      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/",
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
@@ -143,8 +144,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.geopose.basic.ypr",
-        "ogc.unstable.sosa.properties.observation"
+        "ogc.unstable.sosa.properties.observation",
+        "ogc.geo.geopose.basic.ypr"
       ],
       "tags": [
         "examples",
@@ -206,8 +207,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
         "ogc.geo.features.feature",
+        "ogc.bbr.examples.feature.propertySet",
         "ogc.bbr.examples.propertySet"
       ],
       "tags": [
@@ -266,9 +267,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "ogc.unstable.sosa.properties.observation",
         "ogc.unstable.sosa.features.observation",
         "ogc.unstable.sosa.features.observationCollection",
-        "ogc.unstable.sosa.properties.observation",
         "ogc.bbr.examples.observation.vectorObservation"
       ],
       "tags": [

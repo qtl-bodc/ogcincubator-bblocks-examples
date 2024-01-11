@@ -6,6 +6,7 @@ x-defs:
       properties:
         myProp:
           type: string
+          x-jsonld-id: http://example.org/myModel/myProp
       required:
       - myProp
     x-schema-version: https://json-schema.org/draft/2020-12/schema
