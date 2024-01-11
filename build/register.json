@@ -132,9 +132,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "ogc.bbr.examples.feature.propertySet",
         "ogc.bbr.examples.propertySet",
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -190,9 +190,9 @@
       "scope": "unstable",
       "dependsOn": [
         "ogc.bbr.examples.observation.vectorObservation",
+        "ogc.unstable.sosa.features.observation",
         "ogc.unstable.sosa.features.observationCollection",
-        "ogc.unstable.sosa.properties.observation",
-        "ogc.unstable.sosa.features.observation"
+        "ogc.unstable.sosa.properties.observation"
       ],
       "tags": [
         "sosa",
