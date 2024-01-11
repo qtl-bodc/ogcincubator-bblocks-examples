@@ -1,1 +1,5 @@
 identifier-prefix: ogc.bbr.examples.
+
+imports:
+  - default
+  - https://opengeospatial.github.io/ogcapi-sosa/build/register.json
