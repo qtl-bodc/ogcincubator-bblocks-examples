@@ -73,8 +73,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.unstable.sosa.properties.observation",
-        "ogc.geo.geopose.basic.ypr"
+        "ogc.geo.geopose.basic.ypr",
+        "ogc.unstable.sosa.properties.observation"
       ],
       "tags": [
         "examples",
@@ -132,15 +132,16 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.feature",
         "ogc.bbr.examples.feature.propertySet",
-        "ogc.bbr.examples.propertySet"
+        "ogc.bbr.examples.propertySet",
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
         "examples"
       ],
       "group": "Examples",
+      "highlighted": true,
       "shaclRules": {
         "ogc.unstable.sosa.properties.observation": [
           "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
@@ -188,10 +189,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.unstable.sosa.properties.observation",
         "ogc.unstable.sosa.features.observation",
+        "ogc.bbr.examples.observation.vectorObservation",
         "ogc.unstable.sosa.features.observationCollection",
-        "ogc.bbr.examples.observation.vectorObservation"
+        "ogc.unstable.sosa.properties.observation"
       ],
       "tags": [
         "sosa",
@@ -201,6 +202,7 @@
         "examples"
       ],
       "group": "Examples",
+      "highlighted": true,
       "shaclRules": {
         "ogc.bbr.examples.observation.vectorObservationFeature": [
           "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl"

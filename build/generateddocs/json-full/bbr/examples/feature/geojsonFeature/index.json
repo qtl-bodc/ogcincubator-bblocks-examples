@@ -19,15 +19,16 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.features.feature",
     "ogc.bbr.examples.feature.propertySet",
-    "ogc.bbr.examples.propertySet"
+    "ogc.bbr.examples.propertySet",
+    "ogc.geo.features.feature"
   ],
   "tags": [
     "feature",
     "examples"
   ],
   "group": "Examples",
+  "highlighted": true,
   "shaclRules": {
     "ogc.unstable.sosa.properties.observation": [
       "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
