@@ -22,5 +22,6 @@
     "feature",
     "examples"
   ],
-  "group": "Examples"
+  "group": "Examples",
+  "highlighted": true
 }
