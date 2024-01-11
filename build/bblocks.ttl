@@ -11,12 +11,12 @@ bblocks:ogc.bbr.examples.feature.geojsonFeature a skos:Concept,
     rdfs:label "Example SOSA Vector Observation Feature" ;
     dct:abstract "This building block defines an example SOSA Observation Feature using another schema to define a result set - in this case the GeoPose model" ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json" ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/geojsonFeature/" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/geojsonFeature/" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2023-05-19"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -57,10 +57,10 @@ bblocks:ogc.bbr.examples.observation.vectorObservationFeature a skos:Concept,
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservationFeature/" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservationFeature/" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2023-05-19"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -82,10 +82,10 @@ bblocks:ogc.bbr.examples.observation.vectorObservation a skos:Concept,
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservation/" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservation/" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2023-05-19"^^xsd:date ;
     skos:inScheme <https://www.opengis.net/def/bblocks> ;
@@ -103,8 +103,8 @@ bblocks:ogc.bbr.examples.observation.vectorObservation a skos:Concept,
     skos:prefLabel "OGC Building Blocks Register" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-01-11T00:13:22.474342"^^xsd:dateTime ;
-    prov:startedAtTime "2024-01-11T00:13:22.409384"^^xsd:dateTime ;
+    prov:endedAtTime "2024-01-11T00:19:05.239214"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-11T00:19:05.175290"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],

@@ -19,8 +19,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "ogc.unstable.sosa.properties.observation"
+    "ogc.unstable.sosa.properties.observation",
+    "ogc.geo.features.feature"
   ],
   "tags": [
     "sosa",

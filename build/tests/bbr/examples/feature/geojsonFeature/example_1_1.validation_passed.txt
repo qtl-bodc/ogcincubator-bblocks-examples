@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.feature.geojsonFeature - Example SOSA Vector Observation Feature
-Generated 2024-01-11T00:13:20.745197+00:00
+Generated 2024-01-11T00:19:02.455861+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,21 +17,21 @@ Validation result for _sources/feature/geojsonFeature/rules.shacl:
   Conforms: True
   
 Focus nodes for _sources/feature/geojsonFeature/rules.shacl:
- - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <http://example.com/features/f1>/geojson:geometry
  - Shape <http://example.com/rules#testGeometryHasCoordinates>: <http://example.com/features/f1>/geojson:geometry
  - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <http://example.com/features/f1>
+ - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <http://example.com/features/f1>/geojson:geometry
 
 Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*
 
 === End SHACL ===
 
