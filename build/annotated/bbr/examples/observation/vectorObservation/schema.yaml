@@ -1,0 +1,17 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Example SOSA Vector Observation
+allOf:
+- $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/unstable/sosa/properties/observation/schema.yaml
+- type: object
+  properties:
+    hasResult:
+      properties:
+        pose:
+          $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
+        distance:
+          type: number
+  required:
+  - hasResult
+  not:
+    required:
+    - hasSimpleResult

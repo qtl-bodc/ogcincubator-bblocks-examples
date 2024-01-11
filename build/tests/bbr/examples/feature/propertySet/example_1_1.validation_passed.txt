@@ -1,0 +1,10 @@
+Validation report for ogc.bbr.examples.feature.propertySet - Example SOSA Vector Observation
+Generated 2024-01-11T00:13:20.200320+00:00
+=== Files ===
+Using example_1_1.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

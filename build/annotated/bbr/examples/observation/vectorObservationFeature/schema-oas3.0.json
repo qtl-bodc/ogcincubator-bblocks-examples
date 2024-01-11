@@ -1,0 +1,57 @@
+{
+  "x-defs": {
+    "ogc.bbr.examples.observation.vectorObservationFeature": {
+      "description": "Example SOSA Observation Specialisation - a vector bearing and distance",
+      "$defs": {
+        "VectorObservation": {
+          "allOf": [
+            {
+              "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/unstable/sosa/features/observation/schema.json"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "properties": {
+                  "$ref": "../vectorObservation/schema.json"
+                }
+              }
+            }
+          ]
+        },
+        "VectorObservationCollection": {
+          "allOf": [
+            {
+              "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/unstable/sosa/features/observationCollection/schema.json"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "features": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/VectorObservation"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "anyOf": [
+        {
+          "$ref": "#/$defs/VectorObservation"
+        },
+        {
+          "$ref": "#/$defs/VectorObservationCollection"
+        }
+      ],
+      "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
+      "x-schema-source": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.json"
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.json#/x-defs/ogc.bbr.examples.observation.vectorObservationFeature"
+    }
+  ]
+}

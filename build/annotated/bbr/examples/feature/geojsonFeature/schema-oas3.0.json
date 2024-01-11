@@ -1,0 +1,28 @@
+{
+  "x-defs": {
+    "ogc.bbr.examples.feature.geojsonFeature": {
+      "description": "Example of a sinmple GeoJSON Feature specialisation",
+      "$defs": {
+        "MyFeature": {
+          "allOf": [
+            {
+              "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json"
+            }
+          ]
+        }
+      },
+      "anyOf": [
+        {
+          "$ref": "#/$defs/MyFeature"
+        }
+      ],
+      "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
+      "x-schema-source": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema-oas3.0.json"
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema-oas3.0.json#/x-defs/ogc.bbr.examples.feature.geojsonFeature"
+    }
+  ]
+}
