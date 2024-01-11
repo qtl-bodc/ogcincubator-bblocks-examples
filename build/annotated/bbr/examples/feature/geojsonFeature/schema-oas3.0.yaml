@@ -5,6 +5,9 @@ x-defs:
       MyFeature:
         allOf:
         - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
+        - properties:
+            properties:
+              $ref: ../propertySet/schema.yaml
     anyOf:
     - $ref: '#/$defs/MyFeature'
     x-schema-version: https://json-schema.org/draft/2020-12/schema

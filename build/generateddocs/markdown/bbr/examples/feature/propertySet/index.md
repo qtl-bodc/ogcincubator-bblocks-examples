@@ -1,9 +1,9 @@
 
-# Example SOSA Vector Observation (Schema)
+# Example property set for Features (Schema)
 
 `ogc.bbr.examples.feature.propertySet` *v1.0*
 
-This building block defines an example SOSA Vector Observation
+This shows how to define a propertyset for a feature - which can be re-used in different containers - such as a GeoJSON Feature schema
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

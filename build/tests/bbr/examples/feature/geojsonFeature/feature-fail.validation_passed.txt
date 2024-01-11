@@ -1,14 +1,28 @@
 Validation report for ogc.bbr.examples.feature.geojsonFeature - Custom Feature
-Generated 2024-01-11T00:48:41.084424+00:00
+Generated 2024-01-11T00:48:41.078556+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
 === Files ===
-Using example_1_1.json from examples
+Using feature-fail.json from test resources
 JSON-LD context is present - uplifting
-Output JSON-LD example_1_1.jsonld created
-Output Turtle example_1_1.ttl created
+Output JSON-LD feature-fail.jsonld created
+Output Turtle feature-fail.ttl created
 === End Files ===
 
 === JSON Schema ===
-Validation passed
+
+** Validation error **
+ValidationError: 'myProp' is a required property
+
+Failed validating 'required' in schema[0]['allOf'][1]['properties']['properties']['allOf'][0]:
+    {'properties': {'myProp': {'type': 'string'}},
+     'required': ['myProp'],
+     'type': 'object'}
+
+On instance['properties']:
+    {'notMyProp': 'Mandatory property example'}
 === End JSON Schema ===
 
 === SHACL ===

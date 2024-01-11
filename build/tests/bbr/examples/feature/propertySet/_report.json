@@ -1,8 +1,8 @@
 {
-  "title": "Validation report for ogc.bbr.examples.feature.propertySet - Example SOSA Vector Observation",
-  "bblockName": "Example SOSA Vector Observation",
+  "title": "Validation report for ogc.bbr.examples.feature.propertySet - Example property set for Features",
+  "bblockName": "Example property set for Features",
   "bblockId": "ogc.bbr.examples.feature.propertySet",
-  "generated": "2024-01-11T00:19:01.638360+00:00",
+  "generated": "2024-01-11T00:48:40.460472+00:00",
   "result": true,
   "items": [
     {

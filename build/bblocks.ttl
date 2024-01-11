@@ -8,8 +8,8 @@
 
 bblocks:ogc.bbr.examples.feature.geojsonFeature a skos:Concept,
         bblocks:Schema ;
-    rdfs:label "Example SOSA Vector Observation Feature" ;
-    dct:abstract "This building block defines an example SOSA Observation Feature using another schema to define a result set - in this case the GeoPose model" ;
+    rdfs:label "Custom Feature" ;
+    dct:abstract "This examples shows a simple customisation for OGC API Feature schemas" ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json" ],
@@ -19,34 +19,14 @@ bblocks:ogc.bbr.examples.feature.geojsonFeature a skos:Concept,
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/geojsonFeature/" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2023-05-19"^^xsd:date ;
-    dct:source <https://www.w3.org/TR/vocab-ssn/> ;
+    dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
     skos:inScheme <https://www.opengis.net/def/bblocks> ;
-    bblocks:dependsOn bblocks:ogc.geo.features.feature,
-        bblocks:ogc.unstable.sosa.properties.observation ;
+    bblocks:dependsOn bblocks:ogc.bbr.examples.feature.propertySet,
+        bblocks:ogc.bbr.examples.propertySet,
+        bblocks:ogc.geo.features.feature ;
     bblocks:hasJsonLdContext <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld> ;
     bblocks:hasSchema <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.json>,
         <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.yaml> ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> .
-
-bblocks:ogc.bbr.examples.feature.propertySet a skos:Concept,
-        bblocks:Schema ;
-    rdfs:label "Example SOSA Vector Observation" ;
-    dct:abstract "This building block defines an example SOSA Vector Observation" ;
-    dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/propertySet/" ] ;
-    dct:hasVersion "1.0" ;
-    dct:modified "2023-05-19"^^xsd:date ;
-    dct:source <https://www.w3.org/TR/vocab-ssn/> ;
-    skos:inScheme <https://www.opengis.net/def/bblocks> ;
-    bblocks:dependsOn bblocks:ogc.unstable.sosa.properties.observation ;
-    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json>,
-        <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
@@ -75,15 +55,38 @@ bblocks:ogc.bbr.examples.observation.vectorObservationFeature a skos:Concept,
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
+<https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> rdfs:label "OGC API - Features, Part 1, 7.16.2: Feature Response" .
+
+bblocks:ogc.bbr.examples.feature.propertySet a skos:Concept,
+        bblocks:Schema ;
+    rdfs:label "Example property set for Features" ;
+    dct:abstract "This shows how to define a propertyset for a feature - which can be re-used in different containers - such as a GeoJSON Feature schema" ;
+    dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/propertySet/" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2023-05-19"^^xsd:date ;
+    dct:source <https://www.w3.org/TR/vocab-ssn/> ;
+    skos:inScheme <https://www.opengis.net/def/bblocks> ;
+    bblocks:dependsOn bblocks:ogc.unstable.sosa.properties.observation ;
+    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json>,
+        <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
 bblocks:ogc.bbr.examples.observation.vectorObservation a skos:Concept,
         bblocks:Schema ;
     rdfs:label "Example feature specialisation using existing schema standards" ;
     dct:abstract "This building block defines the propertyset for an example specialisation of a SOSA Observation using a GeoPose result. These two patterns are defined by other Building Blocks." ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md" ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservation/" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json" ] ;
     dct:hasVersion "1.0" ;
@@ -103,8 +106,8 @@ bblocks:ogc.bbr.examples.observation.vectorObservation a skos:Concept,
     skos:prefLabel "OGC Building Blocks Register" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-01-11T00:19:05.239214"^^xsd:dateTime ;
-    prov:startedAtTime "2024-01-11T00:19:05.175290"^^xsd:dateTime ;
+    prov:endedAtTime "2024-01-11T00:48:43.948282"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-11T00:48:43.884112"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],

@@ -1,15 +1,15 @@
 
-# Example SOSA Vector Observation Feature (Schema)
+# Custom Feature (Schema)
 
 `ogc.bbr.examples.feature.geojsonFeature` *v1.0*
 
-This building block defines an example SOSA Observation Feature using another schema to define a result set - in this case the GeoPose model
+This examples shows a simple customisation for OGC API Feature schemas
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
 ## Examples
 
-### VectorObservation - specialisation example.
+### GeoJSON - specialisation example.
 #### json
 ```json
 {
@@ -81,6 +81,9 @@ $defs:
   MyFeature:
     allOf:
     - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
+    - properties:
+        properties:
+          $ref: ../propertySet/schema.yaml
 anyOf:
 - $ref: '#/$defs/MyFeature'
 
@@ -160,7 +163,7 @@ You can find the full JSON-LD context here:
 
 ## Sources
 
-* [Semantic Sensor Network Ontology](https://www.w3.org/TR/vocab-ssn/)
+* [OGC API - Features, Part 1, 7.16.2: Feature Response](https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7)
 
 # For developers
 

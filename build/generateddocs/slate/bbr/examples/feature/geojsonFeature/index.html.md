@@ -1,5 +1,5 @@
 ---
-title: Example SOSA Vector Observation Feature (Schema)
+title: Custom Feature (Schema)
 
 language_tabs:
   - json: JSON
@@ -8,7 +8,7 @@ language_tabs:
 
 toc_footers:
   - Version 1.0
-  - <a href='#'>Example SOSA Vector Observation Feature</a>
+  - <a href='#'>Custom Feature</a>
   - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
 
 search: true
@@ -16,13 +16,13 @@ search: true
 code_clipboard: true
 
 meta:
-  - name: Example SOSA Vector Observation Feature (Schema)
+  - name: Custom Feature (Schema)
 ---
 
 
-# Example SOSA Vector Observation Feature `ogc.bbr.examples.feature.geojsonFeature`
+# Custom Feature `ogc.bbr.examples.feature.geojsonFeature`
 
-This building block defines an example SOSA Observation Feature using another schema to define a result set - in this case the GeoPose model
+This examples shows a simple customisation for OGC API Feature schemas
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
@@ -35,7 +35,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 
 # Examples
 
-## VectorObservation - specialisation example.
+## GeoJSON - specialisation example.
 
 
 
@@ -132,6 +132,9 @@ $defs:
   MyFeature:
     allOf:
     - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
+    - properties:
+        properties:
+          $ref: ../propertySet/schema.yaml
 anyOf:
 - $ref: '#/$defs/MyFeature'
 
@@ -219,14 +222,12 @@ You can find the full JSON-LD context here:
 
 The following sets of SHACL shapes are used for validating this building block:
 
-* Example SOSA Vector Observation Feature <small><code>ogc.bbr.examples.feature.geojsonFeature</code></small>
-  * [https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/rules.shacl](https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/rules.shacl)
 * SOSA Observation <small><code>ogc.unstable.sosa.properties.observation</code></small>
   * [https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl](https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl)
 
 # References
 
-* [Semantic Sensor Network Ontology](https://www.w3.org/TR/vocab-ssn/)
+* [OGC API - Features, Part 1, 7.16.2: Feature Response](https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7)
 
 # For developers
 

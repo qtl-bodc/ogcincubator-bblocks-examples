@@ -6,9 +6,9 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta
-            name="Example SOSA Vector Observation Feature (Schema)"
+            name="Custom Feature (Schema)"
         >
-    <title>Example SOSA Vector Observation Feature (Schema)</title>
+    <title>Custom Feature (Schema)</title>
 
     <style media="screen">
       .highlight table td { padding: 5px; }
@@ -314,13 +314,13 @@
         <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#example-sosa-vector-observation-feature-ogc-bbr-examples-feature-geojsonfeature" class="toc-h1 toc-link" data-title="Example SOSA Vector Observation Feature ogc.bbr.examples.feature.geojsonFeature">Example SOSA Vector Observation Feature <code>ogc.bbr.examples.feature.geojsonFeature</code></a>
+            <a href="#custom-feature-ogc-bbr-examples-feature-geojsonfeature" class="toc-h1 toc-link" data-title="Custom Feature ogc.bbr.examples.feature.geojsonFeature">Custom Feature <code>ogc.bbr.examples.feature.geojsonFeature</code></a>
           </li>
           <li>
             <a href="#examples" class="toc-h1 toc-link" data-title="Examples">Examples</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#vectorobservation-specialisation-example" class="toc-h2 toc-link" data-title="VectorObservation - specialisation example.">VectorObservation - specialisation example.</a>
+                    <a href="#geojson-specialisation-example" class="toc-h2 toc-link" data-title="GeoJSON - specialisation example.">GeoJSON - specialisation example.</a>
                   </li>
               </ul>
           </li>
@@ -347,15 +347,15 @@
       </ul>
         <ul class="toc-footer">
             <li>Version 1.0</li>
-            <li><a href='#'>Example SOSA Vector Observation Feature</a></li>
+            <li><a href='#'>Custom Feature</a></li>
             <li><a href='https://blocks.ogc.org/register.html'>Building Blocks register</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='example-sosa-vector-observation-feature-ogc-bbr-examples-feature-geojsonfeature'>Example SOSA Vector Observation Feature <code>ogc.bbr.examples.feature.geojsonFeature</code></h1>
-<p>This building block defines an example SOSA Observation Feature using another schema to define a result set - in this case the GeoPose model</p>
+        <h1 id='custom-feature-ogc-bbr-examples-feature-geojsonfeature'>Custom Feature <code>ogc.bbr.examples.feature.geojsonFeature</code></h1>
+<p>This examples shows a simple customisation for OGC API Feature schemas</p>
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
@@ -365,7 +365,7 @@
 <aside class="success">
 This building block is <strong><a href="https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/" target="_blank">valid</a></strong>
 </aside>
-<h1 id='examples'>Examples</h1><h2 id='vectorobservation-specialisation-example'>VectorObservation - specialisation example.</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+<h1 id='examples'>Examples</h1><h2 id='geojson-specialisation-example'>GeoJSON - specialisation example.</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f1"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -438,6 +438,9 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
   <span class="na">MyFeature</span><span class="pi">:</span>
     <span class="na">allOf</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml</span>
+    <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
+        <span class="na">properties</span><span class="pi">:</span>
+          <span class="na">$ref</span><span class="pi">:</span> <span class="s">../propertySet/schema.yaml</span>
 <span class="na">anyOf</span><span class="pi">:</span>
 <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/MyFeature'</span>
 
@@ -521,11 +524,6 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 <p>The following sets of SHACL shapes are used for validating this building block:</p>
 
 <ul>
-<li>Example SOSA Vector Observation Feature <small><code>ogc.bbr.examples.feature.geojsonFeature</code></small>
-
-<ul>
-<li><a href="https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/rules.shacl">https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/rules.shacl</a></li>
-</ul></li>
 <li>SOSA Observation <small><code>ogc.unstable.sosa.properties.observation</code></small>
 
 <ul>
@@ -534,7 +532,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 </ul>
 <h1 id='references'>References</h1>
 <ul>
-<li><a href="https://www.w3.org/TR/vocab-ssn/">Semantic Sensor Network Ontology</a></li>
+<li><a href="https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7">OGC API - Features, Part 1, 7.16.2: Feature Response</a></li>
 </ul>
 <h1 id='for-developers'>For developers</h1>
 <p>The source code for this Building Block can be found in the following repository:</p>

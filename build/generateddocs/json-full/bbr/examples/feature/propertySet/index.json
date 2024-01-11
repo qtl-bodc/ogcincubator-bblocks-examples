@@ -2,12 +2,12 @@
 
 {
   "itemIdentifier": "ogc.bbr.examples.feature.propertySet",
-  "name": "Example SOSA Vector Observation",
-  "abstract": "This building block defines an example SOSA Vector Observation",
+  "name": "Example property set for Features",
+  "abstract": "This shows how to define a propertyset for a feature - which can be re-used in different containers - such as a GeoJSON Feature schema",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",
   "itemClass": "schema",
-  "register": "ogc-building-block-register",
+  "register": "ogc-building-block-examples",
   "version": "1.0",
   "dateOfLastChange": "2023-05-19",
   "sources": [
@@ -22,14 +22,11 @@
     "ogc.unstable.sosa.properties.observation"
   ],
   "tags": [
-    "sosa",
-    "ssn",
-    "observations",
-    "o&m",
-    "o&m&s",
+    "properties",
+    "features",
     "examples"
   ],
-  "group": "SOSA",
+  "group": "Examples",
   "shaclRules": {
     "ogc.unstable.sosa.properties.observation": [
       "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"

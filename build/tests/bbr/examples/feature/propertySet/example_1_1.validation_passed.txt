@@ -1,5 +1,5 @@
-Validation report for ogc.bbr.examples.feature.propertySet - Example SOSA Vector Observation
-Generated 2024-01-11T00:19:01.638303+00:00
+Validation report for ogc.bbr.examples.feature.propertySet - Example property set for Features
+Generated 2024-01-11T00:48:40.460416+00:00
 === Files ===
 Using example_1_1.json from examples
 === End Files ===
