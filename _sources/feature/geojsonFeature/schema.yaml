@@ -4,5 +4,8 @@ $defs:
   MyFeature:
     allOf:
       - $ref: bblocks://ogc.geo.features.feature
+      - properties:
+          properties:
+            $ref: ../propertySet/schema.yaml
 anyOf:
   - $ref: "#/$defs/MyFeature"

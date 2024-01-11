@@ -1,8 +1,8 @@
-- title: VectorObservation - specialisation example.
+- title: GeoJSON - specialisation example.
   comment:
-    Example of Specialised Observation being a vector, using GeoPose as part of a complex result
-
+    This examples shows how to define a customised schema based on an existing building block - in this case the OGC API Features basic GeoJSON Feature response
+  
   base-uri: http://example.com/features/
   snippets:
     - language: json
-      ref: examples/observation.json
+      ref: examples/feature.json
