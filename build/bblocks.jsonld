@@ -124,6 +124,10 @@
         "slate": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/propertySet/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet"
         }
       },
       "@type": [
@@ -145,8 +149,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.geopose.basic.ypr",
-        "ogc.unstable.sosa.properties.observation"
+        "ogc.unstable.sosa.properties.observation",
+        "ogc.geo.geopose.basic.ypr"
       ],
       "tags": [
         "examples",
@@ -182,6 +186,10 @@
         "slate": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservation/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation"
         }
       },
       "@type": [
@@ -208,9 +216,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.propertySet",
+        "ogc.geo.features.feature",
         "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.features.feature"
+        "ogc.bbr.examples.propertySet"
       ],
       "tags": [
         "feature",
@@ -243,6 +251,10 @@
         "slate": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/geojsonFeature/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature"
         }
       },
       "@type": [
@@ -271,8 +283,8 @@
       "dependsOn": [
         "ogc.unstable.sosa.properties.observation",
         "ogc.bbr.examples.observation.vectorObservation",
-        "ogc.unstable.sosa.features.observationCollection",
-        "ogc.unstable.sosa.features.observation"
+        "ogc.unstable.sosa.features.observation",
+        "ogc.unstable.sosa.features.observationCollection"
       ],
       "tags": [
         "sosa",
@@ -311,6 +323,10 @@
         "slate": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservationFeature/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservationFeature"
         }
       },
       "@type": [

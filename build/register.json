@@ -57,6 +57,10 @@
         "slate": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/propertySet/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet"
         }
       }
     },
@@ -74,8 +78,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.geopose.basic.ypr",
-        "ogc.unstable.sosa.properties.observation"
+        "ogc.unstable.sosa.properties.observation",
+        "ogc.geo.geopose.basic.ypr"
       ],
       "tags": [
         "examples",
@@ -111,6 +115,10 @@
         "slate": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservation/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation"
         }
       }
     },
@@ -133,9 +141,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.propertySet",
+        "ogc.geo.features.feature",
         "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.features.feature"
+        "ogc.bbr.examples.propertySet"
       ],
       "tags": [
         "feature",
@@ -168,6 +176,10 @@
         "slate": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/geojsonFeature/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature"
         }
       }
     },
@@ -192,8 +204,8 @@
       "dependsOn": [
         "ogc.unstable.sosa.properties.observation",
         "ogc.bbr.examples.observation.vectorObservation",
-        "ogc.unstable.sosa.features.observationCollection",
-        "ogc.unstable.sosa.features.observation"
+        "ogc.unstable.sosa.features.observation",
+        "ogc.unstable.sosa.features.observationCollection"
       ],
       "tags": [
         "sosa",
@@ -232,11 +244,16 @@
         "slate": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservationFeature/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservationFeature"
         }
       }
     }
   ],
   "baseURL": "https://ogcincubator.github.io/bblocks-examples/",
+  "viewerURL": "https://ogcincubator.github.io/bblocks-examples/",
   "validationReport": "https://ogcincubator.github.io/bblocks-examples/build/tests/report.html",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n\nParagraphs, too.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur gravida porttitor. \nFusce sollicitudin commodo diam, at interdum tortor blandit eu. Ut sollicitudin, turpis sed sagittis \neuismod, tortor ante luctus nulla, quis feugiat magna ante a turpis. Suspendisse dolor odio, condimentum \nvitae ante id, ultricies consequat nulla. Donec a nisl ac elit condimentum consectetur eget et urna. \nInteger ac lobortis nibh.",

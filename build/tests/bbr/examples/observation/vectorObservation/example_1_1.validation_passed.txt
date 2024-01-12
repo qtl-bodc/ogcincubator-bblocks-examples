@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.observation.vectorObservation - Example feature specialisation using existing schema standards
-Generated 2024-01-12T12:53:03.044157+00:00
+Generated 2024-01-12T13:05:05.870155+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,12 +17,12 @@ Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/prop
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: _:N17a4071c97124f22ab7ed32fd1dac17e
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N17a4071c97124f22ab7ed32fd1dac17e
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:Ncd431fa79ff9421e9f0a2ce756be9234
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: _:Ncd431fa79ff9421e9f0a2ce756be9234
  - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N17a4071c97124f22ab7ed32fd1dac17e
+ - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:Ncd431fa79ff9421e9f0a2ce756be9234
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
 
 === End SHACL ===
 
