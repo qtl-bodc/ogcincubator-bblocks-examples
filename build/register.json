@@ -133,9 +133,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "ogc.bbr.examples.feature.propertySet",
         "ogc.bbr.examples.propertySet",
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -191,9 +191,9 @@
       "scope": "unstable",
       "dependsOn": [
         "ogc.bbr.examples.observation.vectorObservation",
-        "ogc.unstable.sosa.features.observation",
         "ogc.unstable.sosa.properties.observation",
-        "ogc.unstable.sosa.features.observationCollection"
+        "ogc.unstable.sosa.features.observationCollection",
+        "ogc.unstable.sosa.features.observation"
       ],
       "tags": [
         "sosa",
@@ -237,5 +237,7 @@
     }
   ],
   "baseURL": "https://ogcincubator.github.io/bblocks-examples/",
-  "validationReport": "https://ogcincubator.github.io/bblocks-examples/build/tests/report.html"
+  "validationReport": "https://ogcincubator.github.io/bblocks-examples/build/tests/report.html",
+  "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
+  "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n\nParagraphs, too.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur gravida porttitor. \nFusce sollicitudin commodo diam, at interdum tortor blandit eu. Ut sollicitudin, turpis sed sagittis \neuismod, tortor ante luctus nulla, quis feugiat magna ante a turpis. Suspendisse dolor odio, condimentum \nvitae ante id, ultricies consequat nulla. Donec a nisl ac elit condimentum consectetur eget et urna. \nInteger ac lobortis nibh."
 }
