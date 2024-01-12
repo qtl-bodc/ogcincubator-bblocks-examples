@@ -1,5 +1,23 @@
 identifier-prefix: ogc.bbr.examples.
 
+name: Building Blocks Examples
+
 imports:
   - default
   - https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+
+abstract: |
+  This is an example text for the abstract. It should be short and to the point.
+  A "Tell me more" link will appear if there is an additional description with a longer explanation.
+
+description: |
+  The description can be longer. Both **the abstract** *and the description* support Markdown,
+  including [links](https://google.es).
+  
+  Paragraphs, too.
+  
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur gravida porttitor. 
+  Fusce sollicitudin commodo diam, at interdum tortor blandit eu. Ut sollicitudin, turpis sed sagittis 
+  euismod, tortor ante luctus nulla, quis feugiat magna ante a turpis. Suspendisse dolor odio, condimentum 
+  vitae ante id, ultricies consequat nulla. Donec a nisl ac elit condimentum consectetur eget et urna. 
+  Integer ac lobortis nibh.
