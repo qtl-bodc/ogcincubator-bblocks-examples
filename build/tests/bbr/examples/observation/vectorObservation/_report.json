@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.observation.vectorObservation - Example feature specialisation using existing schema standards",
   "bblockName": "Example feature specialisation using existing schema standards",
   "bblockId": "ogc.bbr.examples.observation.vectorObservation",
-  "generated": "2024-01-12T09:15:10.766627+00:00",
+  "generated": "2024-01-12T09:18:13.197577+00:00",
   "result": true,
   "items": [
     {
@@ -89,30 +89,30 @@
                 "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
                   "nodes": []
                 },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
-                  "nodes": []
+                "<https://www.ogc.org/rules/sosa/#testObservedProperty>": {
+                  "nodes": [
+                    "_:N0db6dc28c81b400e984ec4bf3c880aef"
+                  ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
                 },
-                "<https://www.ogc.org/rules/sosa/#testObservedProperty>": {
-                  "nodes": [
-                    "_:N0d6fc0f7bcf648a8b6d547c6da8846c3"
-                  ]
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                  "nodes": []
                 },
                 "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
-                    "_:N0d6fc0f7bcf648a8b6d547c6da8846c3"
+                    "_:N0db6dc28c81b400e984ec4bf3c880aef"
                   ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
                   "nodes": [
-                    "_:N0d6fc0f7bcf648a8b6d547c6da8846c3"
+                    "_:N0db6dc28c81b400e984ec4bf3c880aef"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: _:N0d6fc0f7bcf648a8b6d547c6da8846c3\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N0d6fc0f7bcf648a8b6d547c6da8846c3\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N0d6fc0f7bcf648a8b6d547c6da8846c3\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: _:N0db6dc28c81b400e984ec4bf3c880aef\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N0db6dc28c81b400e984ec4bf3c880aef\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N0db6dc28c81b400e984ec4bf3c880aef\n"
             }
           ]
         },
