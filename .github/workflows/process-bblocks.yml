@@ -14,5 +14,3 @@ permissions:
 jobs:
   validate-and-process:
     uses: opengeospatial/bblocks-postprocess/.github/workflows/validate-and-process.yml@master
-    with:
-      deploy-viewer: true
