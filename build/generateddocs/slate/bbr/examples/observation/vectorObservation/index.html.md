@@ -1,5 +1,5 @@
 ---
-title: Example feature specialisation using existing schema standards (Schema)
+title: Observation Result (Vector based on GeoPose) (Schema)
 
 language_tabs:
   - json: JSON
@@ -8,7 +8,7 @@ language_tabs:
 
 toc_footers:
   - Version 1.0
-  - <a href='#'>Example feature specialisation using existing schema standards</a>
+  - <a href='#'>Observation Result (Vector based on GeoPose)</a>
   - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
 
 search: true
@@ -16,13 +16,13 @@ search: true
 code_clipboard: true
 
 meta:
-  - name: Example feature specialisation using existing schema standards (Schema)
+  - name: Observation Result (Vector based on GeoPose) (Schema)
 ---
 
 
-# Example feature specialisation using existing schema standards `ogc.bbr.examples.observation.vectorObservation`
+# Observation Result (Vector based on GeoPose) `ogc.bbr.examples.observation.vectorObservation`
 
-This building block defines the propertyset for an example specialisation of a SOSA Observation using a GeoPose result. These two patterns are defined by other Building Blocks.
+This building block defines the *property set* for an example specialisation of a SOSA Observation using the GeoPose standard as a result. These two patterns are defined by other Building Blocks.
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

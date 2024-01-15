@@ -1,9 +1,9 @@
 
-# Example feature specialisation using existing schema standards (Schema)
+# Observation Result (Vector based on GeoPose) (Schema)
 
 `ogc.bbr.examples.observation.vectorObservation` *v1.0*
 
-This building block defines the propertyset for an example specialisation of a SOSA Observation using a GeoPose result. These two patterns are defined by other Building Blocks.
+This building block defines the *property set* for an example specialisation of a SOSA Observation using the GeoPose standard as a result. These two patterns are defined by other Building Blocks.
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

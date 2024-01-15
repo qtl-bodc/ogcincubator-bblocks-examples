@@ -11,14 +11,14 @@ bblocks:ogc.bbr.examples.feature.geojsonFeature a skos:Concept,
     rdfs:label "Custom Feature" ;
     dct:abstract "This examples shows a simple customisation for OGC API Feature schemas" ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/geojsonFeature/" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/geojsonFeature/" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2023-05-19"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
@@ -34,15 +34,15 @@ bblocks:ogc.bbr.examples.feature.geojsonFeature a skos:Concept,
 
 bblocks:ogc.bbr.examples.observation.vectorObservationFeature a skos:Concept,
         bblocks:Schema ;
-    rdfs:label "Example SOSA Vector Observation Feature" ;
+    rdfs:label "Custom Result for Observation Feature" ;
     dct:abstract "This building block defines an example specialisation of an existing Feature specialisation (SOSA Observation), using another schema to define a result set - in this case the GeoPose model" ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservationFeature/" ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservationFeature" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservationFeature/" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md" ] ;
     dct:hasVersion "1.0" ;
@@ -66,14 +66,14 @@ bblocks:ogc.bbr.examples.feature.propertySet a skos:Concept,
     rdfs:label "Example property set for Features" ;
     dct:abstract "This shows how to define a propertyset for a feature - which can be re-used in different containers - such as a GeoJSON Feature schema" ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/propertySet/" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2023-05-19"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -87,17 +87,17 @@ bblocks:ogc.bbr.examples.feature.propertySet a skos:Concept,
 
 bblocks:ogc.bbr.examples.observation.vectorObservation a skos:Concept,
         bblocks:Schema ;
-    rdfs:label "Example feature specialisation using existing schema standards" ;
-    dct:abstract "This building block defines the propertyset for an example specialisation of a SOSA Observation using a GeoPose result. These two patterns are defined by other Building Blocks." ;
+    rdfs:label "Observation Result (Vector based on GeoPose)" ;
+    dct:abstract "This building block defines the *property set* for an example specialisation of a SOSA Observation using the GeoPose standard as a result. These two patterns are defined by other Building Blocks." ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservation/" ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservation/" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2023-05-19"^^xsd:date ;
     skos:inScheme <https://www.opengis.net/def/bblocks> ;
@@ -115,14 +115,14 @@ bblocks:ogc.bbr.examples.observation.vectorObservation a skos:Concept,
     skos:prefLabel "OGC Building Blocks Register" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-01-15T10:37:00.872748"^^xsd:dateTime ;
-    prov:startedAtTime "2024-01-15T10:37:00.808643"^^xsd:dateTime ;
+    prov:endedAtTime "2024-01-15T10:44:23.384929"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-15T10:44:23.320585"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            rdfs:seeAlso <https://ogcincubator.github.io/bblocks-examples/build/register.json> ] ;
+            rdfs:seeAlso <https://ogcincubator.github.io/bblocks-examples/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

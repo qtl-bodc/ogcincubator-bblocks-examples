@@ -1,5 +1,5 @@
 
-# Example SOSA Vector Observation Feature (Schema)
+# Custom Result for Observation Feature (Schema)
 
 `ogc.bbr.examples.observation.vectorObservationFeature` *v1.0*
 

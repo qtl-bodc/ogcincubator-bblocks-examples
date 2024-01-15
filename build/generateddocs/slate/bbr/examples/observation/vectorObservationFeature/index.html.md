@@ -1,5 +1,5 @@
 ---
-title: Example SOSA Vector Observation Feature (Schema)
+title: Custom Result for Observation Feature (Schema)
 
 language_tabs:
   - json: JSON
@@ -8,7 +8,7 @@ language_tabs:
 
 toc_footers:
   - Version 1.0
-  - <a href='#'>Example SOSA Vector Observation Feature</a>
+  - <a href='#'>Custom Result for Observation Feature</a>
   - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
 
 search: true
@@ -16,11 +16,11 @@ search: true
 code_clipboard: true
 
 meta:
-  - name: Example SOSA Vector Observation Feature (Schema)
+  - name: Custom Result for Observation Feature (Schema)
 ---
 
 
-# Example SOSA Vector Observation Feature `ogc.bbr.examples.observation.vectorObservationFeature`
+# Custom Result for Observation Feature `ogc.bbr.examples.observation.vectorObservationFeature`
 
 This building block defines an example specialisation of an existing Feature specialisation (SOSA Observation), using another schema to define a result set - in this case the GeoPose model
 
@@ -863,7 +863,7 @@ You can find the full JSON-LD context here:
 
 The following sets of SHACL shapes are used for validating this building block:
 
-* Example SOSA Vector Observation Feature <small><code>ogc.bbr.examples.observation.vectorObservationFeature</code></small>
+* Custom Result for Observation Feature <small><code>ogc.bbr.examples.observation.vectorObservationFeature</code></small>
   * [https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl](https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl)
 * SOSA Observation <small><code>ogc.unstable.sosa.properties.observation</code></small>
   * [https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl](https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl)

@@ -66,8 +66,8 @@
     },
     {
       "itemIdentifier": "ogc.bbr.examples.observation.vectorObservation",
-      "name": "Example feature specialisation using existing schema standards",
-      "abstract": "This building block defines the propertyset for an example specialisation of a SOSA Observation using a GeoPose result. These two patterns are defined by other Building Blocks.",
+      "name": "Observation Result (Vector based on GeoPose)",
+      "abstract": "This building block defines the *property set* for an example specialisation of a SOSA Observation using the GeoPose standard as a result. These two patterns are defined by other Building Blocks.",
       "status": "under-development",
       "dateTimeAddition": "2023-05-19T00:00:00Z",
       "itemClass": "schema",
@@ -141,9 +141,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.feature",
         "ogc.bbr.examples.feature.propertySet",
-        "ogc.bbr.examples.propertySet"
+        "ogc.bbr.examples.propertySet",
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -185,7 +185,7 @@
     },
     {
       "itemIdentifier": "ogc.bbr.examples.observation.vectorObservationFeature",
-      "name": "Example SOSA Vector Observation Feature",
+      "name": "Custom Result for Observation Feature",
       "abstract": "This building block defines an example specialisation of an existing Feature specialisation (SOSA Observation), using another schema to define a result set - in this case the GeoPose model",
       "status": "under-development",
       "dateTimeAddition": "2023-05-19T00:00:00Z",
@@ -202,10 +202,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "ogc.bbr.examples.observation.vectorObservation",
         "ogc.unstable.sosa.features.observation",
-        "ogc.unstable.sosa.features.observationCollection",
         "ogc.unstable.sosa.properties.observation",
-        "ogc.bbr.examples.observation.vectorObservation"
+        "ogc.unstable.sosa.features.observationCollection"
       ],
       "tags": [
         "sosa",
