@@ -78,8 +78,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.unstable.sosa.properties.observation",
-        "ogc.geo.geopose.basic.ypr"
+        "ogc.geo.geopose.basic.ypr",
+        "ogc.unstable.sosa.properties.observation"
       ],
       "tags": [
         "examples",
@@ -202,10 +202,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.unstable.sosa.properties.observation",
-        "ogc.bbr.examples.observation.vectorObservation",
         "ogc.unstable.sosa.features.observation",
-        "ogc.unstable.sosa.features.observationCollection"
+        "ogc.unstable.sosa.features.observationCollection",
+        "ogc.unstable.sosa.properties.observation",
+        "ogc.bbr.examples.observation.vectorObservation"
       ],
       "tags": [
         "sosa",
@@ -255,7 +255,7 @@
   "baseURL": "https://ogcincubator.github.io/bblocks-examples/",
   "viewerURL": "https://ogcincubator.github.io/bblocks-examples/",
   "validationReport": "https://ogcincubator.github.io/bblocks-examples/build/tests/report.html",
-  "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
-  "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n\nParagraphs, too.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur gravida porttitor. \nFusce sollicitudin commodo diam, at interdum tortor blandit eu. Ut sollicitudin, turpis sed sagittis \neuismod, tortor ante luctus nulla, quis feugiat magna ante a turpis. Suspendisse dolor odio, condimentum \nvitae ante id, ultricies consequat nulla. Donec a nisl ac elit condimentum consectetur eget et urna. \nInteger ac lobortis nibh.",
+  "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for Building Blocks. \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
+  "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.",
   "name": "Building Blocks Examples"
 }
