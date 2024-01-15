@@ -7,17 +7,13 @@ imports:
   - https://opengeospatial.github.io/ogcapi-sosa/build/register.json
 
 abstract: |
-  This is an example text for the abstract. It should be short and to the point.
-  A "Tell me more" link will appear if there is an additional description with a longer explanation.
+  This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for Building Blocks. 
+  
+  *These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*
 
 description: |
-  The description can be longer. Both **the abstract** *and the description* support Markdown,
-  including [links](https://google.es).
+  The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. 
   
-  Paragraphs, too.
+   Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.
   
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur gravida porttitor. 
-  Fusce sollicitudin commodo diam, at interdum tortor blandit eu. Ut sollicitudin, turpis sed sagittis 
-  euismod, tortor ante luctus nulla, quis feugiat magna ante a turpis. Suspendisse dolor odio, condimentum 
-  vitae ante id, ultricies consequat nulla. Donec a nisl ac elit condimentum consectetur eget et urna. 
-  Integer ac lobortis nibh.
+  More complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.
