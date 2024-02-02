@@ -19,10 +19,10 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.sosa.properties.observation",
     "ogc.sosa.features.observation",
     "ogc.bbr.examples.observation.vectorObservation",
-    "ogc.sosa.features.observationCollection"
+    "ogc.sosa.features.observationCollection",
+    "ogc.sosa.properties.observation"
   ],
   "tags": [
     "sosa",
@@ -46,6 +46,7 @@
     "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json"
   },
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/schema.yaml",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
