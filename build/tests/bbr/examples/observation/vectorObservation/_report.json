@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.observation.vectorObservation - Observation Result (Vector based on GeoPose)",
   "bblockName": "Observation Result (Vector based on GeoPose)",
   "bblockId": "ogc.bbr.examples.observation.vectorObservation",
-  "generated": "2024-01-15T10:44:19.990649+00:00",
+  "generated": "2024-02-02T09:42:01.942550+00:00",
   "result": true,
   "items": [
     {
@@ -44,7 +44,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 13,
+              "size": 7,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }
@@ -86,35 +86,35 @@
             {
               "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
-                  "nodes": [
-                    "_:N1ecca70ee3a8465da66b33b5e6e87aee"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testObservedProperty>": {
-                  "nodes": [
-                    "_:N1ecca70ee3a8465da66b33b5e6e87aee"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
                 },
                 "<https://www.ogc.org/rules/sosa/#testResult>": {
                   "nodes": [
-                    "_:N1ecca70ee3a8465da66b33b5e6e87aee"
+                    "_:N072ce8da6b054096976156a2a710cceb"
                   ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": []
                 },
                 "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": [
-                    "_:N1ecca70ee3a8465da66b33b5e6e87aee"
+                    "_:N072ce8da6b054096976156a2a710cceb"
                   ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testObservedProperty>": {
+                  "nodes": [
+                    "_:N072ce8da6b054096976156a2a710cceb"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                  "nodes": [
+                    "_:N072ce8da6b054096976156a2a710cceb"
+                  ]
+                },
+                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N1ecca70ee3a8465da66b33b5e6e87aee\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: _:N1ecca70ee3a8465da66b33b5e6e87aee\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N1ecca70ee3a8465da66b33b5e6e87aee\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N1ecca70ee3a8465da66b33b5e6e87aee\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N072ce8da6b054096976156a2a710cceb\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N072ce8da6b054096976156a2a710cceb\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: _:N072ce8da6b054096976156a2a710cceb\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N072ce8da6b054096976156a2a710cceb\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n"
             }
           ]
         },

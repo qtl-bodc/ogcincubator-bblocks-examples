@@ -114,7 +114,6 @@ This building block defines an example specialisation of an existing Feature spe
 
 #### ttl
 ```ttl
-@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix geopose: <http://example.com/geopose/> .
 @prefix ns1: <http://example.org/resultschema/> .
@@ -125,12 +124,8 @@ This building block defines an example specialisation of an existing Feature spe
 <http://example.com/features/vector-obs-1> a geojson:Feature ;
     sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;
     sosa:hasResult [ ns1:distance 6.889234e+06 ;
-            ns1:pose [ geopose:angles [ geopose:pitch -1e-02 ;
-                            geopose:roll 0 ;
-                            geopose:yaw 1.535e+01 ] ;
-                    geopose:position [ geopose:h 5e-01 ;
-                            geo1:lat -1.116718e+02 ;
-                            geo1:long 4.005671e+01 ] ] ] ;
+            ns1:pose [ geopose:angles [ ] ;
+                    geopose:position [ ] ] ] ;
     sosa:observedProperty <http://example.com/features/> ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
@@ -266,7 +261,6 @@ This building block defines an example specialisation of an existing Feature spe
 
 #### ttl
 ```ttl
-@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix geopose: <http://example.com/geopose/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -283,12 +277,8 @@ This building block defines an example specialisation of an existing Feature spe
 <http://example.com/features/vector-obs-1> a geojson:Feature ;
     sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;
     sosa:hasResult [ resultschema:distance 6.889234e+06 ;
-            resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;
-                            geopose:roll 0 ;
-                            geopose:yaw 1.535e+01 ] ;
-                    geopose:position [ geopose:h 5e-01 ;
-                            geo1:lat -1.116718e+02 ;
-                            geo1:long 4.005671e+01 ] ] ] ;
+            resultschema:pose [ geopose:angles [ ] ;
+                    geopose:position [ ] ] ] ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( "[-111.67183507997295, 40.056709946862874]" "[-111.67183507997295, 40.056709946862874]" ) ] .
@@ -304,14 +294,14 @@ description: Example SOSA Observation Specialisation - a vector bearing and dist
 $defs:
   VectorObservation:
     allOf:
-    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/unstable/sosa/features/observation/schema.json
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.json
     - type: object
       properties:
         properties:
           $ref: ../vectorObservation/schema.yaml
   VectorObservationCollection:
     allOf:
-    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/unstable/sosa/features/observationCollection/schema.json
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.json
     - type: object
       properties:
         features:
@@ -412,14 +402,24 @@ Links to the schema:
       "@id": "sosa:madeBySensor",
       "@type": "@id"
     },
-    "hasResult": "sosa:hasResult",
-    "hasSimpleResult": "sosa:hasSimpleResult",
+    "hasResult": {
+      "@id": "sosa:hasResult",
+      "@type": "@id"
+    },
+    "hasSimpleResult": {
+      "@id": "sosa:hasSimpleResult",
+      "@type": "@id"
+    },
     "ActuatableProperty": {
       "@id": "sosa:ActuatableProperty",
       "@type": "@id"
     },
     "Actuation": {
       "@id": "sosa:Actuation",
+      "@type": "@id"
+    },
+    "ActuationCollection": {
+      "@id": "sosa:ActuationCollection",
       "@type": "@id"
     },
     "Actuator": {
@@ -430,12 +430,12 @@ Links to the schema:
       "@id": "sosa:Deployment",
       "@type": "@id"
     },
-    "FeatureOfInterest": {
-      "@id": "sosa:FeatureOfInterest",
+    "Execution": {
+      "@id": "sosa:Execution",
       "@type": "@id"
     },
-    "Input": {
-      "@id": "sosa:Input",
+    "FeatureOfInterest": {
+      "@id": "sosa:FeatureOfInterest",
       "@type": "@id"
     },
     "ObservableProperty": {
@@ -446,8 +446,8 @@ Links to the schema:
       "@id": "sosa:Observation",
       "@type": "@id"
     },
-    "Output": {
-      "@id": "sosa:Output",
+    "ObservationCollection": {
+      "@id": "sosa:ObservationCollection",
       "@type": "@id"
     },
     "Platform": {
@@ -462,12 +462,12 @@ Links to the schema:
       "@id": "sosa:Procedure",
       "@type": "@id"
     },
-    "Result": {
-      "@id": "sosa:Result",
-      "@type": "@id"
-    },
     "Sample": {
       "@id": "sosa:Sample",
+      "@type": "@id"
+    },
+    "SampleCollection": {
+      "@id": "sosa:SampleCollection",
       "@type": "@id"
     },
     "Sampler": {
@@ -523,6 +523,10 @@ Links to the schema:
       "@type": "@id",
       "@context": {}
     },
+    "hasOriginalSample": {
+      "@id": "sosa:hasOriginalSample",
+      "@type": "@id"
+    },
     "hasOutput": {
       "@id": "sosa:hasOutput",
       "@type": "@id"
@@ -531,8 +535,16 @@ Links to the schema:
       "@id": "sosa:hasProperty",
       "@type": "@id"
     },
+    "hasResultQuality": {
+      "@id": "sosa:hasResultQuality",
+      "@type": "@id"
+    },
     "hasSample": {
       "@id": "sosa:hasSample",
+      "@type": "@id"
+    },
+    "hasSampledFeature": {
+      "@id": "sosa:hasSampledFeature",
       "@type": "@id"
     },
     "hasSubSystem": {
@@ -589,6 +601,14 @@ Links to the schema:
       "@id": "sosa:isResultOf",
       "@type": "@id"
     },
+    "isResultOfMadeBySampler": {
+      "@id": "sosa:isResultOfMadeBySampler",
+      "@type": "@id"
+    },
+    "isResultOfUsedProcedure": {
+      "@id": "sosa:isResultOfUsedProcedure",
+      "@type": "@id"
+    },
     "isSampleOf": {
       "@id": "sosa:isSampleOf",
       "@type": "@id"
@@ -621,40 +641,16 @@ Links to the schema:
       "@id": "sosa:wasOriginatedBy",
       "@type": "@id"
     },
-    "inCondition": {
-      "@id": "ssn-system:inCondition",
-      "@type": "@id"
-    },
-    "Condition": {
-      "@id": "ssn-system:Condition",
-      "@type": "@id"
-    },
-    "hasSystemCapability": {
-      "@id": "ssn-system:hasSystemCapability",
-      "@type": "@id"
-    },
-    "SystemCapability": {
-      "@id": "ssn-system:SystemCapability",
-      "@type": "@id"
-    },
-    "hasSystemProperty": {
-      "@id": "ssn-system:hasSystemProperty",
-      "@type": "@id"
-    },
-    "SystemProperty": {
-      "@id": "ssn-system:SystemProperty",
-      "@type": "@id"
-    },
-    "MeasurementRange": {
-      "@id": "ssn-system:MeasurementRange",
+    "Accuracy": {
+      "@id": "ssn-system:Accuracy",
       "@type": "@id"
     },
     "ActuationRange": {
       "@id": "ssn-system:ActuationRange",
       "@type": "@id"
     },
-    "Accuracy": {
-      "@id": "ssn-system:Accuracy",
+    "BatteryLifetime": {
+      "@id": "ssn-system:BatteryLifetime",
       "@type": "@id"
     },
     "DetectionLimit": {
@@ -671,6 +667,26 @@ Links to the schema:
     },
     "Latency": {
       "@id": "ssn-system:Latency",
+      "@type": "@id"
+    },
+    "MaintenanceSchedule": {
+      "@id": "ssn-system:MaintenanceSchedule",
+      "@type": "@id"
+    },
+    "MeasurementRange": {
+      "@id": "ssn-system:MeasurementRange",
+      "@type": "@id"
+    },
+    "OperatingPowerRange": {
+      "@id": "ssn-system:OperatingPowerRange",
+      "@type": "@id"
+    },
+    "OperatingProperty": {
+      "@id": "ssn-system:OperatingProperty",
+      "@type": "@id"
+    },
+    "OperatingRange": {
+      "@id": "ssn-system:OperatingRange",
       "@type": "@id"
     },
     "Precision": {
@@ -693,42 +709,6 @@ Links to the schema:
       "@id": "ssn-system:Sensitivity",
       "@type": "@id"
     },
-    "hasOperatingRange": {
-      "@id": "ssn-system:hasOperatingRange",
-      "@type": "@id"
-    },
-    "OperatingRange": {
-      "@id": "ssn-system:OperatingRange",
-      "@type": "@id"
-    },
-    "hasOperatingProperty": {
-      "@id": "ssn-system:hasOperatingProperty",
-      "@type": "@id"
-    },
-    "OperatingProperty": {
-      "@id": "ssn-system:OperatingProperty",
-      "@type": "@id"
-    },
-    "MaintenanceSchedule": {
-      "@id": "ssn-system:MaintenanceSchedule",
-      "@type": "@id"
-    },
-    "OperatingPowerRange": {
-      "@id": "ssn-system:OperatingPowerRange",
-      "@type": "@id"
-    },
-    "hasSurvivalRange": {
-      "@id": "ssn-system:hasSurvivalRange",
-      "@type": "@id"
-    },
-    "SurvivalRange": {
-      "@id": "ssn-system:SurvivalRange",
-      "@type": "@id"
-    },
-    "hasSurvivalProperty": {
-      "@id": "ssn-system:hasSurvivalProperty",
-      "@type": "@id"
-    },
     "SurvivalProperty": {
       "@id": "ssn-system:SurvivalProperty",
       "@type": "@id"
@@ -737,30 +717,52 @@ Links to the schema:
       "@id": "ssn-system:SystemLifetime",
       "@type": "@id"
     },
-    "BatteryLifetime": {
-      "@id": "ssn-system:BatteryLifetime",
+    "SurvivalRange": {
+      "@id": "ssn-system:SurvivalRange",
+      "@type": "@id"
+    },
+    "SystemCapability": {
+      "@id": "ssn-system:SystemCapability",
+      "@type": "@id"
+    },
+    "SystemProperty": {
+      "@id": "ssn-system:SystemProperty",
+      "@type": "@id"
+    },
+    "hasOperatingProperty": {
+      "@id": "ssn-system:hasOperatingProperty",
+      "@type": "@id"
+    },
+    "hasOperatingRange": {
+      "@id": "ssn-system:hasOperatingRange",
+      "@type": "@id"
+    },
+    "hasSurvivalProperty": {
+      "@id": "ssn-system:hasSurvivalProperty",
+      "@type": "@id"
+    },
+    "hasSystemCapability": {
+      "@id": "ssn-system:hasSystemCapability",
+      "@type": "@id"
+    },
+    "hasSystemProperty": {
+      "@id": "ssn-system:hasSystemProperty",
+      "@type": "@id"
+    },
+    "hasSurvivalRange": {
+      "@id": "ssn-system:hasSurvivalRange",
+      "@type": "@id"
+    },
+    "inCondition": {
+      "@id": "ssn-system:inCondition",
       "@type": "@id"
     },
     "qualityOfObservation": {
       "@id": "ssn-system:qualityOfObservation",
       "@type": "@id"
     },
-    "position": {
-      "@context": {
-        "lat": "geo:lat",
-        "lon": "geo:long",
-        "h": "geopose:h"
-      },
-      "@id": "geopose:position"
-    },
-    "angles": {
-      "@context": {
-        "yaw": "geopose:yaw",
-        "pitch": "geopose:pitch",
-        "roll": "geopose:roll"
-      },
-      "@id": "geopose:angles"
-    },
+    "position": "geopose:position",
+    "angles": "geopose:angles",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",

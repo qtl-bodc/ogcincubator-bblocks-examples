@@ -5,7 +5,7 @@
     "VectorObservation": {
       "allOf": [
         {
-          "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/unstable/sosa/features/observation/schema.json"
+          "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.json"
         },
         {
           "type": "object",
@@ -20,7 +20,7 @@
     "VectorObservationCollection": {
       "allOf": [
         {
-          "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/unstable/sosa/features/observationCollection/schema.json"
+          "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.json"
         },
         {
           "type": "object",

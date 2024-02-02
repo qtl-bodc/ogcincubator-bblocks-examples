@@ -1,75 +1,128 @@
 {
-  "@context": {
-    "bblocks": "https://www.opengis.net/def/bblocks/",
-    "@base": "https://www.opengis.net/def/bblocks/",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "dct": "http://purl.org/dc/terms/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "itemIdentifier": "@id",
-    "name": "rdfs:label",
-    "abstract": "dct:abstract",
-    "status": {
-      "@id": "bblocks:status",
-      "@type": "@id",
-      "@context": {
-        "@base": "http://www.opengis.net/def/status/"
+  "@context": [
+    {
+      "@base": "https://ogcincubator.github.io/bblocks-examples"
+    },
+    {
+      "bblocks": "https://www.opengis.net/def/bblocks/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "dct": "http://purl.org/dc/terms/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "prof": "http://www.w3.org/ns/dx/prof/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "itemIdentifier": "@id",
+      "baseURL": "@id",
+      "name": "rdfs:label",
+      "abstract": "dct:abstract",
+      "description": "dct:description",
+      "status": {
+        "@id": "bblocks:status",
+        "@type": "@id",
+        "@context": {
+          "@base": "http://www.opengis.net/def/status/"
+        }
+      },
+      "dateTimeAddition": {
+        "@id": "dct:created",
+        "@type": "xsd:dateTime"
+      },
+      "version": "dct:hasVersion",
+      "dateOfLastChange": {
+        "@id": "dct:modified",
+        "@type": "xsd:date"
+      },
+      "scope": {
+        "@id": "bblocks:scope",
+        "@type": "@id",
+        "@context": {
+          "@base": "http://www.opengis.net/def/bblocks/scope/"
+        }
+      },
+      "sources": {
+        "@id": "dct:source",
+        "@context": {
+          "title": "rdfs:label",
+          "link": "@id"
+        }
+      },
+      "schema": {
+        "@id": "bblocks:hasSchema",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "dct:format"
+      },
+      "ldContext": {
+        "@id": "bblocks:hasJsonLdContext",
+        "@type": "@id"
+      },
+      "sourceLdContext": {
+        "@id": "bblocks:hasSourceJsonLdContext",
+        "@type": "@id"
+      },
+      "documentation": {
+        "@id": "dct:description",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "dct:identifier",
+        "@context": {
+          "mediatype": "dct:format",
+          "url": "rdfs:isDefinedBy"
+        }
+      },
+      "hasConcepts": {
+        "@reverse": "skos:inScheme"
+      },
+      "dependsOn": {
+        "@id": "bblocks:dependsOn",
+        "@type": "@id"
+      },
+      "profileOf": {
+        "@id": "prof:isProfileOf",
+        "@type": "@id"
+      },
+      "tags": "dcat:keyword",
+      "shaclRules": {
+        "@id": "bblocks:hasShaclRule",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "rdfs:seeAlso"
+      },
+      "validationReport": {
+        "@id": "bblocks:hasValidationReport",
+        "@type": "@id"
+      },
+      "imports": {
+        "@id": "bblocks:imports",
+        "@type": "@id"
       }
-    },
-    "dateTimeAddition": {
-      "@id": "dct:created",
-      "@type": "xsd:dateTime"
-    },
-    "version": "dct:hasVersion",
-    "dateOfLastChange": {
-      "@id": "dct:modified",
-      "@type": "xsd:date"
-    },
-    "scope": {
-      "@id": "bblocks:scope",
-      "@type": "@id",
-      "@context": {
-        "@base": "http://www.opengis.net/def/bblocks/scope/"
-      }
-    },
-    "sources": {
-      "@id": "dct:source",
-      "@context": {
-        "title": "rdfs:label",
-        "link": "@id"
-      }
-    },
-    "schema": {
-      "@id": "bblocks:hasSchema",
-      "@type": "@id",
-      "@container": "@index",
-      "@index": "dct:format"
-    },
-    "ldContext": {
-      "@id": "bblocks:hasJsonLdContext",
-      "@type": "@id"
-    },
-    "documentation": {
-      "@id": "dct:description",
-      "@type": "@id",
-      "@container": "@index",
-      "@index": "dct:identifier",
-      "@context": {
-        "mediatype": "dct:format",
-        "url": "rdfs:isDefinedBy"
-      }
-    },
-    "hasConcepts": {
-      "@reverse": "skos:inScheme"
-    },
-    "dependsOn": {
-      "@id": "bblocks:dependsOn",
-      "@type": "@id"
+    }
+  ],
+  "name": "Building Blocks Examples",
+  "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for Building Blocks. \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
+  "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.",
+  "modified": "2024-02-02T09:41:58.303353",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"cff75570b1aad9fb75cafe05d77efd0eb2884c2d",
+      "shortCommitId": "\"cff755",
+      "date": "2024-02-02T09:30:34+00:00\""
     }
   },
-  "@id": "https://www.opengis.net/def/bblocks",
-  "@type": "skos:ConceptScheme",
-  "skos:prefLabel": "OGC Building Blocks Register",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "gitHubRepository": "https://github.com/ogcincubator/bblocks-examples/blob/master/",
+  "baseURL": "https://ogcincubator.github.io/bblocks-examples/",
+  "viewerURL": "https://ogcincubator.github.io/bblocks-examples/",
+  "validationReport": "https://ogcincubator.github.io/bblocks-examples/build/tests/report.html",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://opengeospatial.github.io/ogcapi-sosa/build/register.json"
+  ],
+  "@type": [
+    "skos:ConceptScheme",
+    "dcat:Catalog"
+  ],
+  "skos:prefLabel": "Building Blocks Examples",
   "hasConcepts": [
     {
       "itemIdentifier": "ogc.bbr.examples.feature.propertySet",
@@ -80,7 +133,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2024-02-02",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -90,7 +143,7 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.unstable.sosa.properties.observation"
+        "ogc.sosa.properties.observation"
       ],
       "tags": [
         "properties",
@@ -99,7 +152,7 @@
       ],
       "group": "Examples",
       "shaclRules": {
-        "ogc.unstable.sosa.properties.observation": [
+        "ogc.sosa.properties.observation": [
           "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
         ]
       },
@@ -113,13 +166,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json"
         },
         "slate": {
           "mediatype": "text/html",
@@ -132,7 +185,8 @@
       },
       "@type": [
         "bblocks:Schema",
-        "skos:Concept"
+        "skos:Concept",
+        "dcat:Dataset"
       ]
     },
     {
@@ -144,13 +198,13 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2024-02-02",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.geopose.basic.ypr",
-        "ogc.unstable.sosa.properties.observation"
+        "ogc.sosa.properties.observation",
+        "ogc.geo.geopose.basic.ypr"
       ],
       "tags": [
         "examples",
@@ -162,7 +216,7 @@
       ],
       "group": "Examples",
       "shaclRules": {
-        "ogc.unstable.sosa.properties.observation": [
+        "ogc.sosa.properties.observation": [
           "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
         ]
       },
@@ -175,13 +229,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservation/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json"
         },
         "slate": {
           "mediatype": "text/html",
@@ -194,7 +248,8 @@
       },
       "@type": [
         "bblocks:Schema",
-        "skos:Concept"
+        "skos:Concept",
+        "dcat:Dataset"
       ]
     },
     {
@@ -206,7 +261,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2024-02-02",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -216,9 +271,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
         "ogc.bbr.examples.propertySet",
-        "ogc.geo.features.feature"
+        "ogc.geo.features.feature",
+        "ogc.bbr.examples.feature.propertySet"
       ],
       "tags": [
         "feature",
@@ -227,7 +282,7 @@
       "group": "Examples",
       "highlighted": true,
       "shaclRules": {
-        "ogc.unstable.sosa.properties.observation": [
+        "ogc.sosa.properties.observation": [
           "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
         ]
       },
@@ -240,13 +295,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json"
         },
         "slate": {
           "mediatype": "text/html",
@@ -259,7 +314,8 @@
       },
       "@type": [
         "bblocks:Schema",
-        "skos:Concept"
+        "skos:Concept",
+        "dcat:Dataset"
       ]
     },
     {
@@ -271,7 +327,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2024-02-02",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -281,10 +337,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "ogc.sosa.properties.observation",
+        "ogc.sosa.features.observation",
         "ogc.bbr.examples.observation.vectorObservation",
-        "ogc.unstable.sosa.features.observation",
-        "ogc.unstable.sosa.properties.observation",
-        "ogc.unstable.sosa.features.observationCollection"
+        "ogc.sosa.features.observationCollection"
       ],
       "tags": [
         "sosa",
@@ -299,7 +355,7 @@
         "ogc.bbr.examples.observation.vectorObservationFeature": [
           "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl"
         ],
-        "ogc.unstable.sosa.properties.observation": [
+        "ogc.sosa.properties.observation": [
           "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
         ]
       },
@@ -312,13 +368,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json"
         },
         "slate": {
           "mediatype": "text/html",
@@ -331,7 +387,8 @@
       },
       "@type": [
         "bblocks:Schema",
-        "skos:Concept"
+        "skos:Concept",
+        "dcat:Dataset"
       ]
     }
   ]

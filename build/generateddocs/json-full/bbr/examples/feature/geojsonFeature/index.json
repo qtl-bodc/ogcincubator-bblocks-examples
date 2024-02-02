@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2023-05-19",
+  "dateOfLastChange": "2024-02-02",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -19,9 +19,9 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.bbr.examples.feature.propertySet",
     "ogc.bbr.examples.propertySet",
-    "ogc.geo.features.feature"
+    "ogc.geo.features.feature",
+    "ogc.bbr.examples.feature.propertySet"
   ],
   "tags": [
     "feature",
@@ -30,7 +30,7 @@
   "group": "Examples",
   "highlighted": true,
   "shaclRules": {
-    "ogc.unstable.sosa.properties.observation": [
+    "ogc.sosa.properties.observation": [
       "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
     ]
   },
