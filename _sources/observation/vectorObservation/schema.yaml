@@ -1,7 +1,7 @@
 "$schema": https://json-schema.org/draft/2020-12/schema
 description: 'Example SOSA Vector Observation'
 allOf:
-  - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/unstable/sosa/properties/observation/schema.yaml
+  - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml
   - type: object
     properties:
       hasResult:
