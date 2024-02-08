@@ -101,12 +101,12 @@
   "name": "Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for Building Blocks. \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.",
-  "modified": "2024-02-08T21:38:36.393002",
+  "modified": "2024-02-08T21:40:14.360041",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"6f8c6847ab3db8e5aaef5bb2af867e8f41e596d3",
-      "shortCommitId": "\"6f8c68",
-      "date": "2024-02-08T09:00:16+00:00\""
+      "commitId": "\"5856301c35772eae5f14bbbcce325f6ae66d32a8",
+      "shortCommitId": "\"585630",
+      "date": "2024-02-08T21:38:16+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -133,7 +133,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-02-02",
+      "dateOfLastChange": "2024-02-08",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -199,13 +199,13 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-02-02",
+      "dateOfLastChange": "2024-02-08",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.geopose.basic.ypr",
-        "ogc.sosa.properties.observation"
+        "ogc.sosa.properties.observation",
+        "ogc.geo.geopose.basic.ypr"
       ],
       "tags": [
         "examples",
@@ -263,7 +263,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-02-02",
+      "dateOfLastChange": "2024-02-08",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -273,9 +273,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.propertySet",
+        "ogc.bbr.examples.feature.propertySet",
         "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.propertySet"
       ],
       "tags": [
         "feature",
@@ -330,7 +330,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-02-02",
+      "dateOfLastChange": "2024-02-08",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -340,10 +340,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "ogc.sosa.properties.observation",
         "ogc.bbr.examples.observation.vectorObservation",
         "ogc.sosa.features.observationCollection",
-        "ogc.sosa.features.observation",
-        "ogc.sosa.properties.observation"
+        "ogc.sosa.features.observation"
       ],
       "tags": [
         "sosa",
