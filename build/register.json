@@ -2,12 +2,12 @@
   "name": "Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for Building Blocks. \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.",
-  "modified": "2024-02-02T10:55:56.200112",
+  "modified": "2024-02-08T21:38:36.393002",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"d3ca95c6a06a13ca49593aac13774e5db6835687",
-      "shortCommitId": "\"d3ca95",
-      "date": "2024-02-02T10:25:57+00:00\""
+      "commitId": "\"6f8c6847ab3db8e5aaef5bb2af867e8f41e596d3",
+      "shortCommitId": "\"6f8c68",
+      "date": "2024-02-08T09:00:16+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -221,9 +221,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.sosa.features.observation",
         "ogc.bbr.examples.observation.vectorObservation",
         "ogc.sosa.features.observationCollection",
+        "ogc.sosa.features.observation",
         "ogc.sosa.properties.observation"
       ],
       "tags": [

@@ -867,7 +867,7 @@ The following sets of SHACL shapes are used for validating this building block:
 
 * Custom Result for Observation Feature <small><code>ogc.bbr.examples.observation.vectorObservationFeature</code></small>
   * [https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl](https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl)
-* SOSA Observation <small><code>ogc.sosa.properties.observation</code></small>
+* Observation Properties <small><code>ogc.sosa.properties.observation</code></small>
   * [https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl](https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl)
 
 # References
