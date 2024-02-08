@@ -2,7 +2,7 @@
   "name": "Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for Building Blocks. \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.",
-  "modified": "2024-02-08T21:40:14.360041",
+  "modified": "2024-02-08T21:41:34.630559",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"5856301c35772eae5f14bbbcce325f6ae66d32a8",
@@ -159,9 +159,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "ogc.bbr.examples.propertySet",
         "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.propertySet"
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
