@@ -317,6 +317,14 @@
             <a href="#custom-feature-ogc-bbr-examples-feature-geojsonfeature" class="toc-h1 toc-link" data-title="Custom Feature ogc.bbr.examples.feature.geojsonFeature">Custom Feature <code>ogc.bbr.examples.feature.geojsonFeature</code></a>
           </li>
           <li>
+            <a href="#description" class="toc-h1 toc-link" data-title="Description">Description</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#custom-feature-type" class="toc-h2 toc-link" data-title="Custom Feature Type">Custom Feature Type</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#examples" class="toc-h1 toc-link" data-title="Examples">Examples</a>
               <ul class="toc-list-h2">
                   <li>
@@ -355,7 +363,7 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='custom-feature-ogc-bbr-examples-feature-geojsonfeature'>Custom Feature <code>ogc.bbr.examples.feature.geojsonFeature</code></h1>
-<p>This examples shows a simple customisation for OGC API Feature schemas</p>
+<p>This example shows a simple customisation method for OGC API Feature schemas</p>
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
@@ -365,8 +373,18 @@
 <aside class="success">
 This building block is <strong><a href="https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/" target="_blank">valid</a></strong>
 </aside>
+<h1 id='description'>Description</h1><h2 id='custom-feature-type'>Custom Feature Type</h2>
+<p>This building block illustrates a typical &quot;Feature Type&quot; - where an object is modelled as a &quot;Feature with geometry&quot;, but has its own &quot;native schema&quot; - or &quot;domain model&quot;.</p>
+
+<p>This is an <strong>interoperable</strong> approach to defining a Feature, allowing re-use of a well-defined domain model.</p>
+
+<p>i.e. the attributes (properties) are managed independently of the packaging container (Feature) </p>
+
+<p>the <strong>propertySet</strong> building block referenced by this container may be used independently of the FeatureModel structure, and is where semantic annotations are provided.</p>
+
+<p>This building block <strong>inherits</strong> reusable semantic annotations for the Feature structure from a common library, simplifying implementation. </p>
 <h1 id='examples'>Examples</h1><h2 id='geojson-specialisation-example'>GeoJSON - specialisation example.</h2><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f1"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LineString"</span><span class="p">,</span><span class="w">
@@ -393,7 +411,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
     <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fbblocks-examples%2Fbuild%2Ftests%2Fbbr%2Fexamples%2Ffeature%2FgeojsonFeature%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-jsonld"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f1"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LineString"</span><span class="p">,</span><span class="w">
@@ -422,11 +440,12 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 <div class="highlight"><pre class="highlight turtle tab-turtle"><code><span class="kd">@prefix</span><span class="w"> </span><span class="nn">geojson:</span><span class="w"> </span><span class="nl">&lt;https://purl.org/geojson/vocab#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span><span class="kd">@prefix</span><span class="w"> </span><span class="nn">ns1:</span><span class="w"> </span><span class="nl">&lt;http://example.org/myModel/&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
 </span><span class="kd">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span><span class="kd">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
 
 </span><span class="nl">&lt;http://example.com/features/f1&gt;</span><span class="w"> </span><span class="k">a</span><span class="w"> </span><span class="nn">geojson:</span><span class="n">Feature</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="nn">ns1:</span><span class="n">myProp</span><span class="w"> </span><span class="s">"Mandatory property example"</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="nn">geojson:</span><span class="n">geometry</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="k">a</span><span class="w"> </span><span class="nn">geojson:</span><span class="n">LineString</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">geojson:</span><span class="n">coordinates</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="s">"[-111.67183507997295, 40.056709946862874]"</span><span class="w"> </span><span class="s">"[-111.71, 40.156709946862875]"</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">.</span><span class="w">
+            </span><span class="nn">geojson:</span><span class="n">coordinates</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="mf">-1.1</span><span class="mi">16718</span><span class="n">e+02</span><span class="w"> </span><span class="mf">4.0</span><span class="mi">05671</span><span class="n">e+01</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="mf">-1.1</span><span class="mi">171</span><span class="n">e+02</span><span class="w"> </span><span class="mf">4.0</span><span class="mi">15671</span><span class="n">e+01</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">.</span><span class="w">
 
 
 </span></code></pre></div>
@@ -442,7 +461,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
     <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml</span>
     <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
         <span class="na">properties</span><span class="pi">:</span>
-          <span class="na">$ref</span><span class="pi">:</span> <span class="s">../propertySet/schema.yaml</span>
+          <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml</span>
 <span class="na">anyOf</span><span class="pi">:</span>
 <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/MyFeature'</span>
 

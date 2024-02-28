@@ -8,7 +8,7 @@ x-defs:
         - type: object
           properties:
             properties:
-              $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.yaml#/x-defs/ogc.bbr.examples.observation.vectorObservation
+              $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.yaml#/x-defs/ogcincubator.github.io_bblocks-examples_build_annotated_bbr_examples_observation_vectorObservation_schema.yaml
       VectorObservationCollection:
         allOf:
         - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.yaml#/x-defs/ogc.sosa.features.observationCollection
@@ -327,11 +327,11 @@ x-defs:
       ssn-system: http://www.w3.org/ns/ssn/systems/
       ssn: http://www.w3.org/ns/ssn/
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.json
-  ogc.bbr.examples.observation.vectorObservation:
+    x-schema-source: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml
+  ogcincubator.github.io_bblocks-examples_build_annotated_bbr_examples_observation_vectorObservation_schema.yaml:
     description: Example SOSA Vector Observation
     allOf:
-    - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.yaml#/x-defs/ogc.sosa.properties.observation_
+    - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.yaml#/x-defs/ogc.sosa.properties.observation
     - type: object
       properties:
         hasResult:
@@ -346,7 +346,7 @@ x-defs:
         required:
         - hasSimpleResult
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/vectorObservation/schema.yaml
+    x-schema-source: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
   ogc.sosa.features.observationCollection:
     description: SOSA Observation Feature
     allOf:
@@ -655,7 +655,7 @@ x-defs:
       ssn-system: http://www.w3.org/ns/ssn/systems/
       ssn: http://www.w3.org/ns/ssn/
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.json
+    x-schema-source: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml
   ogc.geo.json-fg.feature-lenient:
     allOf:
     - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
@@ -717,353 +717,8 @@ x-defs:
     x-jsonld-prefixes:
       geojson: https://purl.org/geojson/vocab#
       rdfs: http://www.w3.org/2000/01/rdf-schema#
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.json
+    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml
   ogc.sosa.properties.observation:
-    description: SOSA Observation
-    type: object
-    properties:
-      resultTime:
-        type: string
-        format: date-time
-        x-jsonld-id: http://www.w3.org/ns/sosa/resultTime
-      phenomenonTime:
-        type:
-        - object
-        - string
-        x-jsonld-id: http://www.w3.org/ns/sosa/phenomenonTime
-        x-jsonld-type: '@id'
-        anyOf:
-          anyOf:
-          - type: object
-          - type: string
-      hasFeatureOfInterest:
-        type:
-        - object
-        - string
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasFeatureOfInterest
-        x-jsonld-type: '@id'
-        anyOf:
-          anyOf:
-          - type: object
-          - type: string
-      observedProperty:
-        type:
-        - object
-        - string
-        x-jsonld-id: http://www.w3.org/ns/sosa/observedProperty
-        x-jsonld-type: '@id'
-        anyOf:
-          anyOf:
-          - type: object
-          - type: string
-      usedProcedure:
-        type:
-        - object
-        - string
-        x-jsonld-id: http://www.w3.org/ns/sosa/usedProcedure
-        x-jsonld-type: '@id'
-        anyOf:
-          anyOf:
-          - type: object
-          - type: string
-      madeBySensor:
-        type:
-        - object
-        - string
-        x-jsonld-id: http://www.w3.org/ns/sosa/madeBySensor
-        x-jsonld-type: '@id'
-        anyOf:
-          anyOf:
-          - type: object
-          - type: string
-      hasResult:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasResult
-        x-jsonld-type: '@id'
-      hasSimpleResult:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasSimpleResult
-        x-jsonld-type: '@id'
-    anyOf:
-    - required:
-      - hasResult
-    - required:
-      - hasSimpleResult
-    x-jsonld-extra-terms:
-      id: '@id'
-      properties: '@nest'
-      featureType: '@type'
-      ActuatableProperty:
-        x-jsonld-id: http://www.w3.org/ns/sosa/ActuatableProperty
-        x-jsonld-type: '@id'
-      Actuation:
-        x-jsonld-id: http://www.w3.org/ns/sosa/Actuation
-        x-jsonld-type: '@id'
-      ActuationCollection:
-        x-jsonld-id: http://www.w3.org/ns/sosa/ActuationCollection
-        x-jsonld-type: '@id'
-      Actuator:
-        x-jsonld-id: http://www.w3.org/ns/sosa/Actuator
-        x-jsonld-type: '@id'
-      Deployment:
-        x-jsonld-id: http://www.w3.org/ns/sosa/Deployment
-        x-jsonld-type: '@id'
-      Execution:
-        x-jsonld-id: http://www.w3.org/ns/sosa/Execution
-        x-jsonld-type: '@id'
-      FeatureOfInterest:
-        x-jsonld-id: http://www.w3.org/ns/sosa/FeatureOfInterest
-        x-jsonld-type: '@id'
-      ObservableProperty:
-        x-jsonld-id: http://www.w3.org/ns/sosa/ObservableProperty
-        x-jsonld-type: '@id'
-      Observation:
-        x-jsonld-id: http://www.w3.org/ns/sosa/Observation
-        x-jsonld-type: '@id'
-      ObservationCollection:
-        x-jsonld-id: http://www.w3.org/ns/sosa/ObservationCollection
-        x-jsonld-type: '@id'
-      Platform:
-        x-jsonld-id: http://www.w3.org/ns/sosa/Platform
-        x-jsonld-type: '@id'
-      Property:
-        x-jsonld-id: http://www.w3.org/ns/sosa/Property
-        x-jsonld-type: '@id'
-      'Procedure ':
-        x-jsonld-id: http://www.w3.org/ns/sosa/Procedure
-        x-jsonld-type: '@id'
-      Sample:
-        x-jsonld-id: http://www.w3.org/ns/sosa/Sample
-        x-jsonld-type: '@id'
-      SampleCollection:
-        x-jsonld-id: http://www.w3.org/ns/sosa/SampleCollection
-        x-jsonld-type: '@id'
-      Sampler:
-        x-jsonld-id: http://www.w3.org/ns/sosa/Sampler
-        x-jsonld-type: '@id'
-      Sampling:
-        x-jsonld-id: http://www.w3.org/ns/sosa/Sampling
-        x-jsonld-type: '@id'
-      Sensor:
-        x-jsonld-id: http://www.w3.org/ns/sosa/Sensor
-        x-jsonld-type: '@id'
-      Stimulus:
-        x-jsonld-id: http://www.w3.org/ns/sosa/Stimulus
-        x-jsonld-type: '@id'
-      System:
-        x-jsonld-id: http://www.w3.org/ns/sosa/System
-        x-jsonld-type: '@id'
-      actsOnProperty:
-        x-jsonld-id: http://www.w3.org/ns/sosa/actsOnProperty
-        x-jsonld-type: '@id'
-      deployedOnPlatform:
-        x-jsonld-id: http://www.w3.org/ns/sosa/deployedOnPlatform
-        x-jsonld-type: '@id'
-      deployedSystem:
-        x-jsonld-id: http://www.w3.org/ns/sosa/deployedSystem
-        x-jsonld-type: '@id'
-      detects:
-        x-jsonld-id: http://www.w3.org/ns/sosa/detects
-        x-jsonld-type: '@id'
-      features:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasMember
-        x-jsonld-type: '@id'
-      forProperty:
-        x-jsonld-id: http://www.w3.org/ns/sosa/forProperty
-        x-jsonld-type: '@id'
-      hasDeployment:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasDeployment
-        x-jsonld-type: '@id'
-      hasInput:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasInput
-        x-jsonld-type: '@id'
-      hasMember:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasMember
-        x-jsonld-type: '@id'
-      hasOriginalSample:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasOriginalSample
-        x-jsonld-type: '@id'
-      hasOutput:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasOutput
-        x-jsonld-type: '@id'
-      hasProperty:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasProperty
-        x-jsonld-type: '@id'
-      hasResultQuality:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasResultQuality
-        x-jsonld-type: '@id'
-      hasSample:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasSample
-        x-jsonld-type: '@id'
-      hasSampledFeature:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasSampledFeature
-        x-jsonld-type: '@id'
-      hasSubSystem:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasSubSystem
-        x-jsonld-type: '@id'
-        x-jsonld-container: '@set'
-      hasUltimateFeatureOfInterest:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hasUltimateFeatureOfInterest
-        x-jsonld-type: '@id'
-      hosts:
-        x-jsonld-id: http://www.w3.org/ns/sosa/hosts
-        x-jsonld-type: '@id'
-        x-jsonld-container: '@set'
-      implementedBy:
-        x-jsonld-id: http://www.w3.org/ns/sosa/implementedBy
-        x-jsonld-type: '@id'
-      implements:
-        x-jsonld-id: http://www.w3.org/ns/sosa/implements
-        x-jsonld-type: '@id'
-      inDeployment:
-        x-jsonld-id: http://www.w3.org/ns/sosa/inDeployment
-        x-jsonld-type: '@id'
-      isActedOnBy:
-        x-jsonld-id: http://www.w3.org/ns/sosa/isActedOnBy
-        x-jsonld-type: '@id'
-      isFeatureOfInterestOf:
-        x-jsonld-id: http://www.w3.org/ns/sosa/isFeatureOfInterestOf
-        x-jsonld-type: '@id'
-      isHostedBy:
-        x-jsonld-id: http://www.w3.org/ns/sosa/isHostedBy
-        x-jsonld-type: '@id'
-      isObservedBy:
-        x-jsonld-id: http://www.w3.org/ns/sosa/isObservedBy
-        x-jsonld-type: '@id'
-      isPropertyOf:
-        x-jsonld-id: http://www.w3.org/ns/sosa/isPropertyOf
-        x-jsonld-type: '@id'
-      isProxyFor:
-        x-jsonld-id: http://www.w3.org/ns/sosa/isProxyFor
-        x-jsonld-type: '@id'
-      isResultOf:
-        x-jsonld-id: http://www.w3.org/ns/sosa/isResultOf
-        x-jsonld-type: '@id'
-      isResultOfMadeBySampler:
-        x-jsonld-id: http://www.w3.org/ns/sosa/isResultOfMadeBySampler
-        x-jsonld-type: '@id'
-      isResultOfUsedProcedure:
-        x-jsonld-id: http://www.w3.org/ns/sosa/isResultOfUsedProcedure
-        x-jsonld-type: '@id'
-      isSampleOf:
-        x-jsonld-id: http://www.w3.org/ns/sosa/isSampleOf
-        x-jsonld-type: '@id'
-      madeActuation:
-        x-jsonld-id: http://www.w3.org/ns/sosa/madeActuation
-        x-jsonld-type: '@id'
-      madeByActuator:
-        x-jsonld-id: http://www.w3.org/ns/sosa/madeByActuator
-        x-jsonld-type: '@id'
-      madeBySampler:
-        x-jsonld-id: http://www.w3.org/ns/sosa/madeBySampler
-        x-jsonld-type: '@id'
-      madeObservation:
-        x-jsonld-id: http://www.w3.org/ns/sosa/madeObservation
-        x-jsonld-type: '@id'
-      madeSampling:
-        x-jsonld-id: http://www.w3.org/ns/sosa/madeSampling
-        x-jsonld-type: '@id'
-      observes:
-        x-jsonld-id: http://www.w3.org/ns/sosa/observes
-        x-jsonld-type: '@id'
-      wasOriginatedBy:
-        x-jsonld-id: http://www.w3.org/ns/sosa/wasOriginatedBy
-        x-jsonld-type: '@id'
-      Accuracy:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/Accuracy
-        x-jsonld-type: '@id'
-      ActuationRange:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/ActuationRange
-        x-jsonld-type: '@id'
-      BatteryLifetime:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/BatteryLifetime
-        x-jsonld-type: '@id'
-      DetectionLimit:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/DetectionLimit
-        x-jsonld-type: '@id'
-      Drift:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/Drift
-        x-jsonld-type: '@id'
-      Frequency:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/Frequency
-        x-jsonld-type: '@id'
-      Latency:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/Latency
-        x-jsonld-type: '@id'
-      MaintenanceSchedule:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/MaintenanceSchedule
-        x-jsonld-type: '@id'
-      MeasurementRange:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/MeasurementRange
-        x-jsonld-type: '@id'
-      OperatingPowerRange:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/OperatingPowerRange
-        x-jsonld-type: '@id'
-      OperatingProperty:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/OperatingProperty
-        x-jsonld-type: '@id'
-      OperatingRange:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/OperatingRange
-        x-jsonld-type: '@id'
-      Precision:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/Precision
-        x-jsonld-type: '@id'
-      Resolution:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/Resolution
-        x-jsonld-type: '@id'
-      ResponseTime:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/ResponseTime
-        x-jsonld-type: '@id'
-      Selectivity:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/Selectivity
-        x-jsonld-type: '@id'
-      Sensitivity:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/Sensitivity
-        x-jsonld-type: '@id'
-      SurvivalProperty:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/SurvivalProperty
-        x-jsonld-type: '@id'
-      SystemLifetime:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/SystemLifetime
-        x-jsonld-type: '@id'
-      SurvivalRange:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/SurvivalRange
-        x-jsonld-type: '@id'
-      SystemCapability:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/SystemCapability
-        x-jsonld-type: '@id'
-      SystemProperty:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/SystemProperty
-        x-jsonld-type: '@id'
-      hasOperatingProperty:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/hasOperatingProperty
-        x-jsonld-type: '@id'
-      hasOperatingRange:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/hasOperatingRange
-        x-jsonld-type: '@id'
-      hasSurvivalProperty:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/hasSurvivalProperty
-        x-jsonld-type: '@id'
-      hasSystemCapability:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/hasSystemCapability
-        x-jsonld-type: '@id'
-      hasSystemProperty:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/hasSystemProperty
-        x-jsonld-type: '@id'
-      hasSurvivalRange:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/hasSurvivalRange
-        x-jsonld-type: '@id'
-      inCondition:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/inCondition
-        x-jsonld-type: '@id'
-      qualityOfObservation:
-        x-jsonld-id: http://www.w3.org/ns/ssn/systems/qualityOfObservation
-        x-jsonld-type: '@id'
-    x-jsonld-prefixes:
-      sosa: http://www.w3.org/ns/sosa/
-      ssn-system: http://www.w3.org/ns/ssn/systems/
-      ssn: http://www.w3.org/ns/ssn/
-    x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.json
-  ogc.sosa.properties.observation_:
     description: SOSA Observation
     type: object
     properties:
@@ -1447,7 +1102,7 @@ x-defs:
     x-jsonld-prefixes:
       geopose: http://example.com/geopose/
       geo: http://www.w3.org/2003/01/geo/wgs84_pos#
-    x-schema-source: https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.YPR.Schema.json
+    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
   ogc.geo.json-fg.featureCollection-lenient:
     allOf:
     - title: a JSON-FG Feature Collection
@@ -1485,7 +1140,7 @@ x-defs:
     - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.yaml#/x-defs/ogc.geo.features.featureCollection
     x-jsonld-prefixes:
       geojson: https://purl.org/geojson/vocab#
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.json
+    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml
   ogc.sosa.properties.observationCollection:
     description: SOSA ObservationCollection
     $defs:
@@ -1841,7 +1496,7 @@ x-defs:
       ssn-system: http://www.w3.org/ns/ssn/systems/
       ssn: http://www.w3.org/ns/ssn/
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.json
+    x-schema-source: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.yaml
   ogc.geo.features.feature:
     allOf:
     - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson
@@ -1864,7 +1519,7 @@ x-defs:
       properties: '@nest'
     x-jsonld-prefixes:
       rdfs: http://www.w3.org/2000/01/rdf-schema#
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json
+    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
   beta.schemas.opengis.net_json-fg_featuretype.json:
     title: the featureType member
     description: This JSON Schema is part of JSON-FG version 0.1.1
@@ -1936,7 +1591,7 @@ x-defs:
       rdfs: http://www.w3.org/2000/01/rdf-schema#
       dct: http://purl.org/dc/terms/
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json
+    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
   beta.schemas.opengis.net_json-fg_time.json:
     title: the time member
     description: This JSON Schema is part of JSON-FG version 0.1.1
@@ -2046,45 +1701,6 @@ x-defs:
     nullable: true
     x-schema-version: https://json-schema.org/draft/2019-09/schema
     x-schema-source: https://beta.schemas.opengis.net/json-fg/geometry.json
-  schemas.opengis.net_geopose_1.0_schemata_GeoPose.Basic.YPR.Schema.json:
-    description: 'Basic-YPR: Basic GeoPose using yaw, pitch, and roll to specify orientation'
-    definitions:
-      angles:
-        type: object
-        properties:
-          yaw:
-            type: number
-          pitch:
-            type: number
-          roll:
-            type: number
-        required:
-        - yaw
-        - pitch
-        - roll
-      Position:
-        type: object
-        properties:
-          lat:
-            type: number
-          lon:
-            type: number
-          h:
-            type: number
-        required:
-        - lat
-        - lon
-        - h
-    type: object
-    properties:
-      position:
-        $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.yaml#/x-defs/schemas.opengis.net_geopose_1.0_schemata_GeoPose.Basic.YPR.Schema.json/definitions/Position
-      angles:
-        $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.yaml#/x-defs/schemas.opengis.net_geopose_1.0_schemata_GeoPose.Basic.YPR.Schema.json/definitions/angles
-    required:
-    - position
-    - angles
-    x-schema-source: https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.YPR.Schema.json
   ogc.geo.features.featureCollection:
     allOf:
     - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema-oas3.0.yaml#/x-defs/geojson.org_schema_FeatureCollection.json
@@ -2112,10 +1728,10 @@ x-defs:
       properties: '@nest'
     x-jsonld-prefixes:
       rdfs: http://www.w3.org/2000/01/rdf-schema#
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.json
+    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
   ogc.ogc-utils.iri-or-curie:
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json
+    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
   ogc.geo.common.data_types.geojson:
     title: GeoJSON Feature
     type: object
@@ -2542,7 +2158,7 @@ x-defs:
       maxItems: 6
     items:
       type: number
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.json
+    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.yaml
   beta.schemas.opengis.net_json-fg_geometry-objects.json:
     title: the geometry objects
     description: This JSON Schema is part of JSON-FG version 0.1.1

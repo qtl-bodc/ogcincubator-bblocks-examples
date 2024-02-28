@@ -173,7 +173,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
     sosa:observedProperty <http://example.com/features/> ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
-            geojson:coordinates ( "[-111.67183507997295, 40.056709946862874]" "[-111.71, 40.156709946862875]" ) ] .
+            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .
 
 
 ```
@@ -349,7 +349,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
                     geopose:position [ ] ] ] ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
-            geojson:coordinates ( "[-111.67183507997295, 40.056709946862874]" "[-111.67183507997295, 40.056709946862874]" ) ] .
+            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.116718e+02 4.005671e+01 ) ) ] .
 
 
 ```
@@ -369,14 +369,14 @@ description: Example SOSA Observation Specialisation - a vector bearing and dist
 $defs:
   VectorObservation:
     allOf:
-    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.json
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml
     - type: object
       properties:
         properties:
-          $ref: ../vectorObservation/schema.yaml
+          $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
   VectorObservationCollection:
     allOf:
-    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.json
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml
     - type: object
       properties:
         features:

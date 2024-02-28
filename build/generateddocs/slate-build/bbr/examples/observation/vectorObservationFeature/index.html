@@ -489,7 +489,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
     </span><span class="nn">sosa:</span><span class="n">observedProperty</span><span class="w"> </span><span class="nl">&lt;http://example.com/features/&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="nn">sosa:</span><span class="n">resultTime</span><span class="w"> </span><span class="s">"2023-05-22T16:41:00+2"</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="nn">geojson:</span><span class="n">geometry</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="k">a</span><span class="w"> </span><span class="nn">geojson:</span><span class="n">LineString</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">geojson:</span><span class="n">coordinates</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="s">"[-111.67183507997295, 40.056709946862874]"</span><span class="w"> </span><span class="s">"[-111.71, 40.156709946862875]"</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">.</span><span class="w">
+            </span><span class="nn">geojson:</span><span class="n">coordinates</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="mf">-1.1</span><span class="mi">16718</span><span class="n">e+02</span><span class="w"> </span><span class="mf">4.0</span><span class="mi">05671</span><span class="n">e+01</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="mf">-1.1</span><span class="mi">171</span><span class="n">e+02</span><span class="w"> </span><span class="mf">4.0</span><span class="mi">15671</span><span class="n">e+01</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">.</span><span class="w">
 
 
 </span></code></pre></div>
@@ -644,7 +644,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
                     </span><span class="nn">geopose:</span><span class="n">position</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="nn">sosa:</span><span class="n">resultTime</span><span class="w"> </span><span class="s">"2023-05-22T16:41:00+2"</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="nn">geojson:</span><span class="n">geometry</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="k">a</span><span class="w"> </span><span class="nn">geojson:</span><span class="n">LineString</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">geojson:</span><span class="n">coordinates</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="s">"[-111.67183507997295, 40.056709946862874]"</span><span class="w"> </span><span class="s">"[-111.67183507997295, 40.056709946862874]"</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">.</span><span class="w">
+            </span><span class="nn">geojson:</span><span class="n">coordinates</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="mf">-1.1</span><span class="mi">16718</span><span class="n">e+02</span><span class="w"> </span><span class="mf">4.0</span><span class="mi">05671</span><span class="n">e+01</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="mf">-1.1</span><span class="mi">16718</span><span class="n">e+02</span><span class="w"> </span><span class="mf">4.0</span><span class="mi">05671</span><span class="n">e+01</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">.</span><span class="w">
 
 
 </span></code></pre></div>
@@ -657,14 +657,14 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 <span class="na">$defs</span><span class="pi">:</span>
   <span class="na">VectorObservation</span><span class="pi">:</span>
     <span class="na">allOf</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.json</span>
+    <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml</span>
     <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
       <span class="na">properties</span><span class="pi">:</span>
         <span class="na">properties</span><span class="pi">:</span>
-          <span class="na">$ref</span><span class="pi">:</span> <span class="s">../vectorObservation/schema.yaml</span>
+          <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml</span>
   <span class="na">VectorObservationCollection</span><span class="pi">:</span>
     <span class="na">allOf</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.json</span>
+    <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml</span>
     <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
       <span class="na">properties</span><span class="pi">:</span>
         <span class="na">features</span><span class="pi">:</span>

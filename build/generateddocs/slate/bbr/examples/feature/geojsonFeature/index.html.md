@@ -22,7 +22,7 @@ meta:
 
 # Custom Feature `ogc.bbr.examples.feature.geojsonFeature`
 
-This examples shows a simple customisation for OGC API Feature schemas
+This example shows a simple customisation method for OGC API Feature schemas
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
@@ -33,6 +33,23 @@ This examples shows a simple customisation for OGC API Feature schemas
 This building block is <strong><a href="https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/" target="_blank">valid</a></strong>
 </aside>
 
+# Description
+
+## Custom Feature Type 
+
+This building block illustrates a typical "Feature Type" - where an object is modelled as a "Feature with geometry", but has its own "native schema" - or "domain model".
+
+This is an **interoperable** approach to defining a Feature, allowing re-use of a well-defined domain model.
+
+i.e. the attributes (properties) are managed independently of the packaging container (Feature) 
+
+the **propertySet** building block referenced by this container may be used independently of the FeatureModel structure, and is where semantic annotations are provided.
+
+This building block **inherits** reusable semantic annotations for the Feature structure from a common library, simplifying implementation. 
+
+
+
+
 # Examples
 
 ## GeoJSON - specialisation example.
@@ -41,7 +58,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 
 ```json
 {
-  "@id": "f1",
+  "id": "f1",
   "type": "Feature",
   "geometry": {
     "type": "LineString",
@@ -74,7 +91,7 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 
 ```jsonld
 {
-  "@id": "f1",
+  "id": "f1",
   "type": "Feature",
   "geometry": {
     "type": "LineString",
@@ -109,11 +126,12 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix ns1: <http://example.org/myModel/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.com/features/f1> a geojson:Feature ;
     ns1:myProp "Mandatory property example" ;
     geojson:geometry [ a geojson:LineString ;
-            geojson:coordinates ( "[-111.67183507997295, 40.056709946862874]" "[-111.71, 40.156709946862875]" ) ] .
+            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .
 
 
 ```
@@ -136,7 +154,7 @@ $defs:
     - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
     - properties:
         properties:
-          $ref: ../propertySet/schema.yaml
+          $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml
 anyOf:
 - $ref: '#/$defs/MyFeature'
 

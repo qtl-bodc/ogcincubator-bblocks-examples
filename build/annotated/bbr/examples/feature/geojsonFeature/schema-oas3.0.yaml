@@ -7,7 +7,7 @@ x-defs:
         - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
         - properties:
             properties:
-              $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema-oas3.0.yaml#/x-defs/ogc.bbr.examples.feature.propertySet
+              $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema-oas3.0.yaml#/x-defs/ogcincubator.github.io_bblocks-examples_build_annotated_bbr_examples_feature_propertySet_schema.yaml
     anyOf:
     - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema-oas3.0.yaml#/x-defs/ogc.bbr.examples.feature.geojsonFeature/$defs/MyFeature
     x-schema-version: https://json-schema.org/draft/2020-12/schema
@@ -35,7 +35,7 @@ x-defs:
     x-jsonld-prefixes:
       rdfs: http://www.w3.org/2000/01/rdf-schema#
     x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
-  ogc.bbr.examples.feature.propertySet:
+  ogcincubator.github.io_bblocks-examples_build_annotated_bbr_examples_feature_propertySet_schema.yaml:
     description: Example SOSA Vector Observation
     allOf:
     - type: object
@@ -46,7 +46,7 @@ x-defs:
       required:
       - myProp
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/propertySet/schema.yaml
+    x-schema-source: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml
   ogc.geo.common.data_types.geojson:
     title: GeoJSON Feature
     type: object

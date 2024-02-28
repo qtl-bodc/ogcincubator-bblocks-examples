@@ -11,7 +11,7 @@
             {
               "properties": {
                 "properties": {
-                  "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema-oas3.0.json#/x-defs/ogc.bbr.examples.feature.propertySet"
+                  "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema-oas3.0.json#/x-defs/ogcincubator.github.io_bblocks-examples_build_annotated_bbr_examples_feature_propertySet_schema.json"
                 }
               }
             }
@@ -63,7 +63,7 @@
       },
       "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json"
     },
-    "ogc.bbr.examples.feature.propertySet": {
+    "ogcincubator.github.io_bblocks-examples_build_annotated_bbr_examples_feature_propertySet_schema.json": {
       "description": "Example SOSA Vector Observation",
       "allOf": [
         {
@@ -80,7 +80,7 @@
         }
       ],
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
-      "x-schema-source": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/propertySet/schema.json"
+      "x-schema-source": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json"
     },
     "ogc.geo.common.data_types.geojson": {
       "title": "GeoJSON Feature",
