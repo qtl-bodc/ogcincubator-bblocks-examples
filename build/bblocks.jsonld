@@ -106,7 +106,7 @@
   "name": "Building Blocks - Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for Building Blocks. \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.",
-  "modified": "2024-02-28T10:54:30.855976",
+  "modified": "2024-02-28T11:01:46.613295",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"3ab474f97c60e5422b1204350317b546bf781d3d",
@@ -209,8 +209,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.geopose.basic.ypr",
-        "ogc.sosa.properties.observation"
+        "ogc.sosa.properties.observation",
+        "ogc.geo.geopose.basic.ypr"
       ],
       "tags": [
         "examples",
@@ -286,8 +286,7 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.propertySet"
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -348,9 +347,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.feature",
         "ogc.bbr.examples.propertySet",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -417,8 +416,8 @@
       "dependsOn": [
         "ogc.sosa.features.observationCollection",
         "ogc.bbr.examples.observation.vectorObservation",
-        "ogc.sosa.features.observation",
-        "ogc.sosa.properties.observation"
+        "ogc.sosa.properties.observation",
+        "ogc.sosa.features.observation"
       ],
       "tags": [
         "sosa",

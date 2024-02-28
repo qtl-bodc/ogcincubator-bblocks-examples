@@ -27,8 +27,7 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "ogc.bbr.examples.propertySet"
+    "ogc.geo.features.feature"
   ],
   "tags": [
     "feature",
