@@ -3,14 +3,14 @@ description: 'Example SOSA Observation Specialisation - a vector bearing and dis
 $defs:
   VectorObservation:
     allOf:
-      - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.json
+      - $ref: bblocks://ogc.sosa.features.observation
       - type: object
         properties:
           properties:
             $ref: ../vectorObservation/schema.yaml
   VectorObservationCollection:
     allOf:
-      - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.json
+      - $ref: bblocks://ogc.sosa.features.observationCollection
       - type: object
         properties:
           features:

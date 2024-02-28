@@ -21,7 +21,7 @@ e.g. to make the relatively simple constraints that a "SurveyObservationCollecti
 "SurveyVectorObsCollection": {
       "allOf": [
         {
-          "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/unstable/sosa/features/observationCollection/schema.json"
+          "$ref": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.json"
         },
         {
           "properties": {
