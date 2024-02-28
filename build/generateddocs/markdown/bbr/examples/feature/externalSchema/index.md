@@ -3,7 +3,7 @@
 
 `ogc.bbr.examples.feature.externalSchema` *v1.0*
 
-This examples shows a simple customisation for OGC API Feature using an externally defined domain schema.
+This example shows a simple customisation for OGC API Feature using an externally defined domain schema.
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

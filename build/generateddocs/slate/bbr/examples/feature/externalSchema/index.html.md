@@ -22,7 +22,7 @@ meta:
 
 # External Schema (Smart Data Models) `ogc.bbr.examples.feature.externalSchema`
 
-This examples shows a simple customisation for OGC API Feature using an externally defined domain schema.
+This example shows a simple customisation for OGC API Feature using an externally defined domain schema.
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

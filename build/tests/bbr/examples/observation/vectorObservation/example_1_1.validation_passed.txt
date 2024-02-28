@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.observation.vectorObservation - Observation Result (Vector based on GeoPose)
-Generated 2024-02-28T11:01:51.625667+00:00
+Generated 2024-02-28T11:05:20.641489+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,12 +17,12 @@ Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/prop
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:Ndc787feca0424fd4b1aaafcf4234ab53
- - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: _:Ndc787feca0424fd4b1aaafcf4234ab53
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:Ndc787feca0424fd4b1aaafcf4234ab53
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N63711c54e309469e82257d74b1b62dac
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: _:N63711c54e309469e82257d74b1b62dac
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N63711c54e309469e82257d74b1b62dac
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N63711c54e309469e82257d74b1b62dac
  - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:Ndc787feca0424fd4b1aaafcf4234ab53
 
 === End SHACL ===
 
