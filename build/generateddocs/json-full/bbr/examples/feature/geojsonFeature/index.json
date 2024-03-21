@@ -20,8 +20,8 @@
   "scope": "unstable",
   "dependsOn": [
     "ogc.geo.features.feature",
-    "ogc.bbr.examples.feature.propertySet",
-    "ogc.bbr.examples.propertySet"
+    "ogc.bbr.examples.propertySet",
+    "ogc.bbr.examples.feature.propertySet"
   ],
   "tags": [
     "feature",
