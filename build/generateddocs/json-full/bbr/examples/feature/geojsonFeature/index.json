@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-03-21",
+  "dateOfLastChange": "2024-04-22",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -19,9 +19,9 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
+    "ogc.geo.features.feature",
     "ogc.bbr.examples.propertySet",
-    "ogc.bbr.examples.feature.propertySet",
-    "ogc.geo.features.feature"
+    "ogc.bbr.examples.feature.propertySet"
   ],
   "tags": [
     "feature",
@@ -38,8 +38,8 @@
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.json"
   },
-  "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld",
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/",

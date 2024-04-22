@@ -2,14 +2,15 @@
   "title": "Validation report for ogc.bbr.examples.feature.externalSchema - External Schema (Smart Data Models)",
   "bblockName": "External Schema (Smart Data Models)",
   "bblockId": "ogc.bbr.examples.feature.externalSchema",
-  "generated": "2024-03-22T07:03:16.404980+00:00",
+  "generated": "2024-04-22T10:33:10.974908+00:00",
   "result": true,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/externalSchema/example_1_1.json",
+        "filename": "build/tests/bbr/examples/feature/externalSchema/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/externalSchema/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"
