@@ -23,6 +23,7 @@
   ],
   "maturity": "development",
   "scope": "unstable",
+  "ldContext": "https://raw.githubusercontent.com/smart-data-models/dataModel.ACRIS/master/context.jsonld",
   "dependsOn": [
 
   ],
