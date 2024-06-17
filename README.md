@@ -1,7 +1,8 @@
 # OGC Building Block examples
 
-This repo provides a set of implementation examples to illustrate usage and functionality of the OGC Building Blocks resources and development environment.
+This is a repository defining a set of examples of different forms of [Building Blocks](https://ogcincubator.github.io/bblocks-docs). 
 
-These examples **should not be re-used by reference** as they are purely for educational purposes, but they do demonstrate re-use of other building blocks.
-
-The set of examples here can be browsed via a [Register View](https://ogcincubator.github.io/bblocks-examples/).
+This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks](https://ogcincubator.github.io/bblocks-docs). 
+  
+  *These buildings blocks may be copied and edited, into another building block repository (such as a [new repository]() based on the [template](https://github.com/opengeospatial/bblock-template)
+  0 - but should **not** be referenced and extended for reuse.*
