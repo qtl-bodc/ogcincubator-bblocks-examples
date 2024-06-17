@@ -1,78 +1,5 @@
 {
   "x-defs": {
-    "ogc.bbr.examples.feature.externalSchema": {
-      "description": "Example of a sinmple GeoJSON Feature specialisation",
-      "$defs": {
-        "MyFeature": {
-          "allOf": [
-            {
-              "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/ogc.geo.features.feature"
-            },
-            {
-              "properties": {
-                "properties": {
-                  "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/raw.githubusercontent.com_smart-data-models_dataModel.ACRIS_master_AirportFacility_schema.json"
-                }
-              }
-            }
-          ]
-        }
-      },
-      "anyOf": [
-        {
-          "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/ogc.bbr.examples.feature.externalSchema/$defs/MyFeature"
-        }
-      ],
-      "x-jsonld-extra-terms": {
-        "AirportElevation": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevation",
-        "AirportElevationUnitOfMeasurement": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevationUnitOfMeasurement",
-        "AirportFacility": "https://smartdatamodels.org/dataModel.ACRIS/AirportFacility",
-        "AirportLocation": "https://smartdatamodels.org/dataModel.ACRIS/AirportLocation",
-        "CheckpointAreaLocation": "https://smartdatamodels.org/dataModel.ACRIS/CheckpointAreaLocation",
-        "CheckpointFacility": "https://smartdatamodels.org/dataModel.ACRIS/CheckpointFacility",
-        "CheckpointFacilityOperatorParty": "https://smartdatamodels.org/dataModel.ACRIS/CheckpointFacilityOperatorParty",
-        "CheckpointFacilityType": "https://smartdatamodels.org/dataModel.ACRIS/CheckpointFacilityType",
-        "ClosingTime": "https://smartdatamodels.org/dataModel.ACRIS/ClosingTime",
-        "Code": "https://smartdatamodels.org/dataModel.ACRIS/Code",
-        "ConcourseFacility": "https://smartdatamodels.org/dataModel.ACRIS/ConcourseFacility",
-        "Description": "https://smartdatamodels.org/dataModel.ACRIS/Description",
-        "EndTime": "https://smartdatamodels.org/dataModel.ACRIS/EndTime",
-        "IataCode": "https://smartdatamodels.org/dataModel.ACRIS/IataCode",
-        "IcaoCode": "https://smartdatamodels.org/dataModel.ACRIS/IcaoCode",
-        "Identifier": "https://smartdatamodels.org/dataModel.ACRIS/Identifier",
-        "Latitude": "https://smartdatamodels.org/dataModel.ACRIS/Latitude",
-        "Longitude": "https://smartdatamodels.org/dataModel.ACRIS/Longitude",
-        "MeasurementDevice": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementDevice",
-        "MeasurementDeviceLocation": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementDeviceLocation",
-        "MeasurementTimePeriod": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementTimePeriod",
-        "Name": "https://smartdatamodels.org/dataModel.ACRIS/Name",
-        "Occupancy": "https://smartdatamodels.org/dataModel.ACRIS/Occupancy",
-        "OpeningTime": "https://smartdatamodels.org/dataModel.ACRIS/OpeningTime",
-        "OperationTimePeriod": "https://smartdatamodels.org/dataModel.ACRIS/OperationTimePeriod",
-        "PassengerProcess": "https://smartdatamodels.org/dataModel.ACRIS/PassengerProcess",
-        "PassengerProcessType": "https://smartdatamodels.org/dataModel.ACRIS/PassengerProcessType",
-        "PassengerQueue": "https://smartdatamodels.org/dataModel.ACRIS/PassengerQueue",
-        "ProjectedWaitTime": "https://smartdatamodels.org/dataModel.ACRIS/ProjectedWaitTime",
-        "QueueLocation": "https://smartdatamodels.org/dataModel.ACRIS/QueueLocation",
-        "QueueMeasurement": "https://smartdatamodels.org/dataModel.ACRIS/QueueMeasurement",
-        "QueueStatus": "https://smartdatamodels.org/dataModel.ACRIS/QueueStatus",
-        "QueueType": "https://smartdatamodels.org/dataModel.ACRIS/QueueType",
-        "Srid": "https://smartdatamodels.org/dataModel.ACRIS/Srid",
-        "TerminalAreaLocation": "https://smartdatamodels.org/dataModel.ACRIS/TerminalAreaLocation",
-        "TerminalFacility": "https://smartdatamodels.org/dataModel.ACRIS/TerminalFacility",
-        "Throughput": "https://smartdatamodels.org/dataModel.ACRIS/Throughput",
-        "Value": "https://smartdatamodels.org/dataModel.ACRIS/Value",
-        "WaitTime": "https://smartdatamodels.org/dataModel.ACRIS/WaitTime",
-        "ZoneAreaLocation": "https://smartdatamodels.org/dataModel.ACRIS/ZoneAreaLocation",
-        "id": "@id",
-        "type": "@type"
-      },
-      "x-jsonld-prefixes": {
-        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/"
-      },
-      "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
-      "x-schema-source": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json"
-    },
     "ogc.geo.features.feature": {
       "allOf": [
         {
@@ -92,7 +19,9 @@
               "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
             },
             "type": {
-              "const": "Feature"
+              "enum": [
+                "Feature"
+              ]
             }
           },
           "required": [
@@ -110,7 +39,7 @@
       },
       "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json"
     },
-    "raw.githubusercontent.com_smart-data-models_dataModel.ACRIS_master_AirportFacility_schema.json": {
+    "smart-data-models_dataModel.ACRIS_master_AirportFacility_schema": {
       "$schemaVersion": "0.0.1",
       "title": "Smart Data Models - Mapping of ACRIS data model AirportFacility",
       "description": "Property. Information about an Airport as buildings or infrastructure used to provide services.",
@@ -122,7 +51,7 @@
         {
           "properties": {
             "id": {
-              "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/smart-data-models.github.io_data-models_common-schema.json/definitions/EntityIdentifierType"
+              "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/common-schema/definitions/EntityIdentifierType"
             },
             "type": {
               "type": "string",
@@ -150,8 +79,9 @@
         "id",
         "type"
       ],
-      "x-schema-version": "http://json-schema.org/schema#",
-      "x-schema-source": "https://smart-data-models.github.io/dataModel.ACRIS/AirportFacility/schema.json"
+      "x-schema-source": "https://raw.githubusercontent.com/smart-data-models/dataModel.ACRIS/master/AirportFacility/schema.json",
+      "x-schema-id": "https://smart-data-models.github.io/dataModel.ACRIS/AirportFacility/schema.json",
+      "x-schema-version": "http://json-schema.org/schema#"
     },
     "ogc.geo.common.data_types.geojson": {
       "title": "GeoJSON Feature",
@@ -738,8 +668,9 @@
       "x-jsonld-prefixes": {
         "geojson": "https://purl.org/geojson/vocab#"
       },
-      "x-schema-version": "http://json-schema.org/draft-07/schema#",
-      "x-schema-source": "https://geojson.org/schema/Feature.json"
+      "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json",
+      "x-schema-id": "https://geojson.org/schema/Feature.json",
+      "x-schema-version": "http://json-schema.org/draft-07/schema#"
     },
     "ogc.geo.common.data_types.bounding_box": {
       "type": "array",
@@ -803,10 +734,10 @@
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "dct": "http://purl.org/dc/terms/"
       },
-      "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
-      "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json"
+      "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json",
+      "x-schema-version": "https://json-schema.org/draft/2020-12/schema"
     },
-    "smart-data-models.github.io_data-models_common-schema.json": {
+    "common-schema": {
       "title": "Common definitions for  Harmonized Data Models",
       "definitions": {
         "EntityIdentifierType": {
@@ -857,7 +788,7 @@
           "type": "object",
           "properties": {
             "id": {
-              "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/smart-data-models.github.io_data-models_common-schema.json/definitions/EntityIdentifierType"
+              "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/common-schema/definitions/EntityIdentifierType"
             },
             "dateCreated": {
               "type": "string",
@@ -893,7 +824,7 @@
               "type": "array",
               "description": "Property. A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
               "items": {
-                "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/smart-data-models.github.io_data-models_common-schema.json/definitions/EntityIdentifierType"
+                "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/common-schema/definitions/EntityIdentifierType"
               }
             },
             "seeAlso": {
@@ -1323,7 +1254,7 @@
                   "description": "Property. Contact type of this item"
                 },
                 "email": {
-                  "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/smart-data-models.github.io_data-models_common-schema.json/definitions/email"
+                  "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/common-schema/definitions/email"
                 },
                 "telephone": {
                   "type": "string",
@@ -1376,7 +1307,7 @@
                 },
                 "faxNumber": {
                   "type": "string",
-                  "description": "Property. Model:'http://schema.org/Text'. The fax number"
+                  "description": "Property. Model:'http://schema.org/Text'. The fax number of the item"
                 },
                 "productSupported": {
                   "type": "string",
@@ -1434,7 +1365,7 @@
                   "description": "Property. Model:'https://schema.org/Text'. The telephone number"
                 },
                 "email": {
-                  "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/smart-data-models.github.io_data-models_common-schema.json/definitions/email"
+                  "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/common-schema/definitions/email"
                 }
               }
             }
@@ -1840,13 +1771,79 @@
           "description": "Property. Model:'https://schema.org/URL'. Url with video related to the item"
         }
       },
-      "x-schema-version": "http://json-schema.org/schema#",
-      "x-schema-source": "https://smart-data-models.github.io/data-models/common-schema.json"
+      "x-schema-source": "https://smart-data-models.github.io/data-models/common-schema.json",
+      "x-schema-id": "https://smart-data-models.github.io/data-models/common-schema.json",
+      "x-schema-version": "http://json-schema.org/schema#"
     }
   },
-  "allOf": [
-    {
-      "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/ogc.bbr.examples.feature.externalSchema"
+  "description": "Example of a sinmple GeoJSON Feature specialisation",
+  "$defs": {
+    "MyFeature": {
+      "allOf": [
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/ogc.geo.features.feature"
+        },
+        {
+          "properties": {
+            "properties": {
+              "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/x-defs/smart-data-models_dataModel.ACRIS_master_AirportFacility_schema"
+            }
+          }
+        }
+      ]
     }
-  ]
+  },
+  "anyOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema-oas3.0.json#/$defs/MyFeature"
+    }
+  ],
+  "x-jsonld-extra-terms": {
+    "AirportElevation": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevation",
+    "AirportElevationUnitOfMeasurement": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevationUnitOfMeasurement",
+    "AirportFacility": "https://smartdatamodels.org/dataModel.ACRIS/AirportFacility",
+    "AirportLocation": "https://smartdatamodels.org/dataModel.ACRIS/AirportLocation",
+    "CheckpointAreaLocation": "https://smartdatamodels.org/dataModel.ACRIS/CheckpointAreaLocation",
+    "CheckpointFacility": "https://smartdatamodels.org/dataModel.ACRIS/CheckpointFacility",
+    "CheckpointFacilityOperatorParty": "https://smartdatamodels.org/dataModel.ACRIS/CheckpointFacilityOperatorParty",
+    "CheckpointFacilityType": "https://smartdatamodels.org/dataModel.ACRIS/CheckpointFacilityType",
+    "ClosingTime": "https://smartdatamodels.org/dataModel.ACRIS/ClosingTime",
+    "Code": "https://smartdatamodels.org/dataModel.ACRIS/Code",
+    "ConcourseFacility": "https://smartdatamodels.org/dataModel.ACRIS/ConcourseFacility",
+    "Description": "https://smartdatamodels.org/dataModel.ACRIS/Description",
+    "EndTime": "https://smartdatamodels.org/dataModel.ACRIS/EndTime",
+    "IataCode": "https://smartdatamodels.org/dataModel.ACRIS/IataCode",
+    "IcaoCode": "https://smartdatamodels.org/dataModel.ACRIS/IcaoCode",
+    "Identifier": "https://smartdatamodels.org/dataModel.ACRIS/Identifier",
+    "Latitude": "https://smartdatamodels.org/dataModel.ACRIS/Latitude",
+    "Longitude": "https://smartdatamodels.org/dataModel.ACRIS/Longitude",
+    "MeasurementDevice": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementDevice",
+    "MeasurementDeviceLocation": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementDeviceLocation",
+    "MeasurementTimePeriod": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementTimePeriod",
+    "Name": "https://smartdatamodels.org/dataModel.ACRIS/Name",
+    "Occupancy": "https://smartdatamodels.org/dataModel.ACRIS/Occupancy",
+    "OpeningTime": "https://smartdatamodels.org/dataModel.ACRIS/OpeningTime",
+    "OperationTimePeriod": "https://smartdatamodels.org/dataModel.ACRIS/OperationTimePeriod",
+    "PassengerProcess": "https://smartdatamodels.org/dataModel.ACRIS/PassengerProcess",
+    "PassengerProcessType": "https://smartdatamodels.org/dataModel.ACRIS/PassengerProcessType",
+    "PassengerQueue": "https://smartdatamodels.org/dataModel.ACRIS/PassengerQueue",
+    "ProjectedWaitTime": "https://smartdatamodels.org/dataModel.ACRIS/ProjectedWaitTime",
+    "QueueLocation": "https://smartdatamodels.org/dataModel.ACRIS/QueueLocation",
+    "QueueMeasurement": "https://smartdatamodels.org/dataModel.ACRIS/QueueMeasurement",
+    "QueueStatus": "https://smartdatamodels.org/dataModel.ACRIS/QueueStatus",
+    "QueueType": "https://smartdatamodels.org/dataModel.ACRIS/QueueType",
+    "Srid": "https://smartdatamodels.org/dataModel.ACRIS/Srid",
+    "TerminalAreaLocation": "https://smartdatamodels.org/dataModel.ACRIS/TerminalAreaLocation",
+    "TerminalFacility": "https://smartdatamodels.org/dataModel.ACRIS/TerminalFacility",
+    "Throughput": "https://smartdatamodels.org/dataModel.ACRIS/Throughput",
+    "Value": "https://smartdatamodels.org/dataModel.ACRIS/Value",
+    "WaitTime": "https://smartdatamodels.org/dataModel.ACRIS/WaitTime",
+    "ZoneAreaLocation": "https://smartdatamodels.org/dataModel.ACRIS/ZoneAreaLocation",
+    "id": "@id",
+    "type": "@type"
+  },
+  "x-jsonld-prefixes": {
+    "ngsi-ld": "https://uri.etsi.org/ngsi-ld/"
+  },
+  "x-schema-version": "https://json-schema.org/draft/2020-12/schema"
 }

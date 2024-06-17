@@ -1,15 +1,1 @@
-x-defs:
-  ogc.bbr.examples.feature.propertySet:
-    description: Example SOSA Vector Observation
-    allOf:
-    - type: object
-      properties:
-        myProp:
-          type: string
-          x-jsonld-id: http://example.org/myModel/myProp
-      required:
-      - myProp
-    x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema-oas3.0.yaml
-allOf:
-- $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema-oas3.0.yaml#/x-defs/ogc.bbr.examples.feature.propertySet
+null
