@@ -28,12 +28,26 @@ path	@id
 /coordRefSys/type	
 /coordRefSys/href	
 /coordRefSys/epoch	
+/coordRefSys/single-refsys/type	
+/coordRefSys/single-refsys/href	
+/coordRefSys/single-refsys/epoch	
+/coordRefSys/refsys-byref/type	
+/coordRefSys/refsys-byref/href	
+/coordRefSys/refsys-byref/epoch	
+/coordRefSys/refsys-custom/type	
 /place	http://purl.org/dc/terms/spatial
 /place/type	
 /place/coordRefSys	
 /place/coordRefSys/type	
 /place/coordRefSys/href	
 /place/coordRefSys/epoch	
+/place/coordRefSys/single-refsys/type	
+/place/coordRefSys/single-refsys/href	
+/place/coordRefSys/single-refsys/epoch	
+/place/coordRefSys/refsys-byref/type	
+/place/coordRefSys/refsys-byref/href	
+/place/coordRefSys/refsys-byref/epoch	
+/place/coordRefSys/refsys-custom/type	
 /place/coordinates	
 /place/bbox	
 /place/base	
@@ -42,6 +56,13 @@ path	@id
 /place/base/coordRefSys/type	
 /place/base/coordRefSys/href	
 /place/base/coordRefSys/epoch	
+/place/base/coordRefSys/single-refsys/type	
+/place/base/coordRefSys/single-refsys/href	
+/place/base/coordRefSys/single-refsys/epoch	
+/place/base/coordRefSys/refsys-byref/type	
+/place/base/coordRefSys/refsys-byref/href	
+/place/base/coordRefSys/refsys-byref/epoch	
+/place/base/coordRefSys/refsys-custom/type	
 /place/base/coordinates	
 /place/base/bbox	
 /place/lower	
@@ -52,12 +73,26 @@ path	@id
 /place/prisms/coordRefSys/type	
 /place/prisms/coordRefSys/href	
 /place/prisms/coordRefSys/epoch	
+/place/prisms/coordRefSys/single-refsys/type	
+/place/prisms/coordRefSys/single-refsys/href	
+/place/prisms/coordRefSys/single-refsys/epoch	
+/place/prisms/coordRefSys/refsys-byref/type	
+/place/prisms/coordRefSys/refsys-byref/href	
+/place/prisms/coordRefSys/refsys-byref/epoch	
+/place/prisms/coordRefSys/refsys-custom/type	
 /place/prisms/base	
 /place/prisms/base/type	
 /place/prisms/base/coordRefSys	
 /place/prisms/base/coordRefSys/type	
 /place/prisms/base/coordRefSys/href	
 /place/prisms/base/coordRefSys/epoch	
+/place/prisms/base/coordRefSys/single-refsys/type	
+/place/prisms/base/coordRefSys/single-refsys/href	
+/place/prisms/base/coordRefSys/single-refsys/epoch	
+/place/prisms/base/coordRefSys/refsys-byref/type	
+/place/prisms/base/coordRefSys/refsys-byref/href	
+/place/prisms/base/coordRefSys/refsys-byref/epoch	
+/place/prisms/base/coordRefSys/refsys-custom/type	
 /place/prisms/base/coordinates	
 /place/prisms/base/bbox	
 /place/prisms/lower	
@@ -67,10 +102,24 @@ path	@id
 /geometry/coordRefSys/type	
 /geometry/coordRefSys/href	
 /geometry/coordRefSys/epoch	
+/geometry/coordRefSys/single-refsys/type	
+/geometry/coordRefSys/single-refsys/href	
+/geometry/coordRefSys/single-refsys/epoch	
+/geometry/coordRefSys/refsys-byref/type	
+/geometry/coordRefSys/refsys-byref/href	
+/geometry/coordRefSys/refsys-byref/epoch	
+/geometry/coordRefSys/refsys-custom/type	
 /geometry/geometries/coordRefSys	
 /geometry/geometries/coordRefSys/type	
 /geometry/geometries/coordRefSys/href	
 /geometry/geometries/coordRefSys/epoch	
+/geometry/geometries/coordRefSys/single-refsys/type	
+/geometry/geometries/coordRefSys/single-refsys/href	
+/geometry/geometries/coordRefSys/single-refsys/epoch	
+/geometry/geometries/coordRefSys/refsys-byref/type	
+/geometry/geometries/coordRefSys/refsys-byref/href	
+/geometry/geometries/coordRefSys/refsys-byref/epoch	
+/geometry/geometries/coordRefSys/refsys-custom/type	
 /properties/resultTime	http://www.w3.org/ns/sosa/resultTime
 /properties/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
 /properties/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
@@ -83,13 +132,16 @@ path	@id
 /properties/hasSimpleResult	
 /properties/hasResult/pose	
 /properties/hasResult/pose/position	http://example.com/geopose/position
-/properties/hasResult/pose/position/lat	
-/properties/hasResult/pose/position/lon	
-/properties/hasResult/pose/position/h	
+/properties/hasResult/pose/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
+/properties/hasResult/pose/position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
+/properties/hasResult/pose/position/h	http://example.com/geopose/h
 /properties/hasResult/pose/angles	http://example.com/geopose/angles
-/properties/hasResult/pose/angles/yaw	
-/properties/hasResult/pose/angles/pitch	
-/properties/hasResult/pose/angles/roll	
+/properties/hasResult/pose/angles/yaw	http://example.com/geopose/yaw
+/properties/hasResult/pose/angles/pitch	http://example.com/geopose/pitch
+/properties/hasResult/pose/angles/roll	http://example.com/geopose/roll
+/properties/hasResult/pose/Position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
+/properties/hasResult/pose/Position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
+/properties/hasResult/pose/Position/h	http://example.com/geopose/h
 /properties/hasResult/distance	
 /geometryDimension	
 /features	http://www.w3.org/ns/sosa/hasMember
@@ -122,12 +174,26 @@ path	@id
 /features/coordRefSys/type	
 /features/coordRefSys/href	
 /features/coordRefSys/epoch	
+/features/coordRefSys/single-refsys/type	
+/features/coordRefSys/single-refsys/href	
+/features/coordRefSys/single-refsys/epoch	
+/features/coordRefSys/refsys-byref/type	
+/features/coordRefSys/refsys-byref/href	
+/features/coordRefSys/refsys-byref/epoch	
+/features/coordRefSys/refsys-custom/type	
 /features/place	http://purl.org/dc/terms/spatial
 /features/place/type	
 /features/place/coordRefSys	
 /features/place/coordRefSys/type	
 /features/place/coordRefSys/href	
 /features/place/coordRefSys/epoch	
+/features/place/coordRefSys/single-refsys/type	
+/features/place/coordRefSys/single-refsys/href	
+/features/place/coordRefSys/single-refsys/epoch	
+/features/place/coordRefSys/refsys-byref/type	
+/features/place/coordRefSys/refsys-byref/href	
+/features/place/coordRefSys/refsys-byref/epoch	
+/features/place/coordRefSys/refsys-custom/type	
 /features/place/coordinates	
 /features/place/bbox	
 /features/place/base	
@@ -136,6 +202,13 @@ path	@id
 /features/place/base/coordRefSys/type	
 /features/place/base/coordRefSys/href	
 /features/place/base/coordRefSys/epoch	
+/features/place/base/coordRefSys/single-refsys/type	
+/features/place/base/coordRefSys/single-refsys/href	
+/features/place/base/coordRefSys/single-refsys/epoch	
+/features/place/base/coordRefSys/refsys-byref/type	
+/features/place/base/coordRefSys/refsys-byref/href	
+/features/place/base/coordRefSys/refsys-byref/epoch	
+/features/place/base/coordRefSys/refsys-custom/type	
 /features/place/base/coordinates	
 /features/place/base/bbox	
 /features/place/lower	
@@ -146,12 +219,26 @@ path	@id
 /features/place/prisms/coordRefSys/type	
 /features/place/prisms/coordRefSys/href	
 /features/place/prisms/coordRefSys/epoch	
+/features/place/prisms/coordRefSys/single-refsys/type	
+/features/place/prisms/coordRefSys/single-refsys/href	
+/features/place/prisms/coordRefSys/single-refsys/epoch	
+/features/place/prisms/coordRefSys/refsys-byref/type	
+/features/place/prisms/coordRefSys/refsys-byref/href	
+/features/place/prisms/coordRefSys/refsys-byref/epoch	
+/features/place/prisms/coordRefSys/refsys-custom/type	
 /features/place/prisms/base	
 /features/place/prisms/base/type	
 /features/place/prisms/base/coordRefSys	
 /features/place/prisms/base/coordRefSys/type	
 /features/place/prisms/base/coordRefSys/href	
 /features/place/prisms/base/coordRefSys/epoch	
+/features/place/prisms/base/coordRefSys/single-refsys/type	
+/features/place/prisms/base/coordRefSys/single-refsys/href	
+/features/place/prisms/base/coordRefSys/single-refsys/epoch	
+/features/place/prisms/base/coordRefSys/refsys-byref/type	
+/features/place/prisms/base/coordRefSys/refsys-byref/href	
+/features/place/prisms/base/coordRefSys/refsys-byref/epoch	
+/features/place/prisms/base/coordRefSys/refsys-custom/type	
 /features/place/prisms/base/coordinates	
 /features/place/prisms/base/bbox	
 /features/place/prisms/lower	
@@ -161,10 +248,24 @@ path	@id
 /features/geometry/coordRefSys/type	
 /features/geometry/coordRefSys/href	
 /features/geometry/coordRefSys/epoch	
+/features/geometry/coordRefSys/single-refsys/type	
+/features/geometry/coordRefSys/single-refsys/href	
+/features/geometry/coordRefSys/single-refsys/epoch	
+/features/geometry/coordRefSys/refsys-byref/type	
+/features/geometry/coordRefSys/refsys-byref/href	
+/features/geometry/coordRefSys/refsys-byref/epoch	
+/features/geometry/coordRefSys/refsys-custom/type	
 /features/geometry/geometries/coordRefSys	
 /features/geometry/geometries/coordRefSys/type	
 /features/geometry/geometries/coordRefSys/href	
 /features/geometry/geometries/coordRefSys/epoch	
+/features/geometry/geometries/coordRefSys/single-refsys/type	
+/features/geometry/geometries/coordRefSys/single-refsys/href	
+/features/geometry/geometries/coordRefSys/single-refsys/epoch	
+/features/geometry/geometries/coordRefSys/refsys-byref/type	
+/features/geometry/geometries/coordRefSys/refsys-byref/href	
+/features/geometry/geometries/coordRefSys/refsys-byref/epoch	
+/features/geometry/geometries/coordRefSys/refsys-custom/type	
 /timeStamp	
 /numberMatched	
 /numberReturned	
@@ -190,6 +291,45 @@ path	@id
 /properties/hasMember/result	
 /properties/hasMember/result@links	
 /properties/hasMember/hasSimpleResult	
+/properties/collection/resultTime	http://www.w3.org/ns/sosa/resultTime
+/properties/collection/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/properties/collection/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/properties/collection/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/properties/collection/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/properties/collection/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/properties/collection/hasMember	http://www.w3.org/ns/sosa/hasMember
+/properties/collection/hasMember/resultTime	http://www.w3.org/ns/sosa/resultTime
+/properties/collection/hasMember/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/properties/collection/hasMember/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/properties/collection/hasMember/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/properties/collection/hasMember/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/properties/collection/hasMember/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/properties/collection/hasMember/hasMember	http://www.w3.org/ns/sosa/hasMember
+/properties/collection/hasMember/hasMember/resultTime	http://www.w3.org/ns/sosa/resultTime
+/properties/collection/hasMember/hasMember/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/properties/collection/hasMember/hasMember/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/properties/collection/hasMember/hasMember/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/properties/collection/hasMember/hasMember/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/properties/collection/hasMember/hasMember/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/properties/collection/hasMember/hasMember/hasMember	http://www.w3.org/ns/sosa/hasMember
+/properties/collection/hasMember/hasMember/hasMember/resultTime	http://www.w3.org/ns/sosa/resultTime
+/properties/collection/hasMember/hasMember/hasMember/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/properties/collection/hasMember/hasMember/hasMember/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/properties/collection/hasMember/hasMember/hasMember/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/properties/collection/hasMember/hasMember/hasMember/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/properties/collection/hasMember/hasMember/hasMember/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/properties/collection/hasMember/hasMember/hasMember/hasResult	
+/properties/collection/hasMember/hasMember/hasMember/result	
+/properties/collection/hasMember/hasMember/hasMember/result@links	
+/properties/collection/hasMember/hasMember/hasMember/hasSimpleResult	
+/properties/collection/hasMember/hasMember/hasResult	
+/properties/collection/hasMember/hasMember/result	
+/properties/collection/hasMember/hasMember/result@links	
+/properties/collection/hasMember/hasMember/hasSimpleResult	
+/properties/collection/hasMember/hasResult	
+/properties/collection/hasMember/result	
+/properties/collection/hasMember/result@links	
+/properties/collection/hasMember/hasSimpleResult	
 /features/properties/resultTime	http://www.w3.org/ns/sosa/resultTime
 /features/properties/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
 /features/properties/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
@@ -202,11 +342,397 @@ path	@id
 /features/properties/hasSimpleResult	
 /features/properties/hasResult/pose	
 /features/properties/hasResult/pose/position	http://example.com/geopose/position
-/features/properties/hasResult/pose/position/lat	
-/features/properties/hasResult/pose/position/lon	
-/features/properties/hasResult/pose/position/h	
+/features/properties/hasResult/pose/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
+/features/properties/hasResult/pose/position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
+/features/properties/hasResult/pose/position/h	http://example.com/geopose/h
 /features/properties/hasResult/pose/angles	http://example.com/geopose/angles
-/features/properties/hasResult/pose/angles/yaw	
-/features/properties/hasResult/pose/angles/pitch	
-/features/properties/hasResult/pose/angles/roll	
+/features/properties/hasResult/pose/angles/yaw	http://example.com/geopose/yaw
+/features/properties/hasResult/pose/angles/pitch	http://example.com/geopose/pitch
+/features/properties/hasResult/pose/angles/roll	http://example.com/geopose/roll
+/features/properties/hasResult/pose/Position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
+/features/properties/hasResult/pose/Position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
+/features/properties/hasResult/pose/Position/h	http://example.com/geopose/h
 /features/properties/hasResult/distance	
+/VectorObservation/type	@type
+/VectorObservation/id	@id
+/VectorObservation/properties	@nest
+/VectorObservation/geometry	https://purl.org/geojson/vocab#geometry
+/VectorObservation/geometry/type	@type
+/VectorObservation/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
+/VectorObservation/geometry/bbox	https://purl.org/geojson/vocab#bbox
+/VectorObservation/geometry/geometries	
+/VectorObservation/geometry/geometries/type	@type
+/VectorObservation/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates
+/VectorObservation/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox
+/VectorObservation/bbox	https://purl.org/geojson/vocab#bbox
+/VectorObservation/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/VectorObservation/links/href	http://www.w3.org/ns/oa#hasTarget
+/VectorObservation/links/rel	http://www.iana.org/assignments/relation
+/VectorObservation/links/anchor	
+/VectorObservation/links/type	http://purl.org/dc/terms/type
+/VectorObservation/links/hreflang	http://purl.org/dc/terms/language
+/VectorObservation/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/VectorObservation/links/length	http://purl.org/dc/terms/extent
+/VectorObservation/featureType	@type
+/VectorObservation/time	http://purl.org/dc/terms/time
+/VectorObservation/time/date	http://www.w3.org/2006/time#hasTime
+/VectorObservation/time/timestamp	http://www.w3.org/2006/time#hasTime
+/VectorObservation/time/interval	http://www.w3.org/2006/time#hasTime
+/VectorObservation/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
+/VectorObservation/coordRefSys/type	
+/VectorObservation/coordRefSys/href	
+/VectorObservation/coordRefSys/epoch	
+/VectorObservation/coordRefSys/single-refsys/type	
+/VectorObservation/coordRefSys/single-refsys/href	
+/VectorObservation/coordRefSys/single-refsys/epoch	
+/VectorObservation/coordRefSys/refsys-byref/type	
+/VectorObservation/coordRefSys/refsys-byref/href	
+/VectorObservation/coordRefSys/refsys-byref/epoch	
+/VectorObservation/coordRefSys/refsys-custom/type	
+/VectorObservation/place	http://purl.org/dc/terms/spatial
+/VectorObservation/place/type	
+/VectorObservation/place/coordRefSys	
+/VectorObservation/place/coordRefSys/type	
+/VectorObservation/place/coordRefSys/href	
+/VectorObservation/place/coordRefSys/epoch	
+/VectorObservation/place/coordRefSys/single-refsys/type	
+/VectorObservation/place/coordRefSys/single-refsys/href	
+/VectorObservation/place/coordRefSys/single-refsys/epoch	
+/VectorObservation/place/coordRefSys/refsys-byref/type	
+/VectorObservation/place/coordRefSys/refsys-byref/href	
+/VectorObservation/place/coordRefSys/refsys-byref/epoch	
+/VectorObservation/place/coordRefSys/refsys-custom/type	
+/VectorObservation/place/coordinates	
+/VectorObservation/place/bbox	
+/VectorObservation/place/base	
+/VectorObservation/place/base/type	
+/VectorObservation/place/base/coordRefSys	
+/VectorObservation/place/base/coordRefSys/type	
+/VectorObservation/place/base/coordRefSys/href	
+/VectorObservation/place/base/coordRefSys/epoch	
+/VectorObservation/place/base/coordRefSys/single-refsys/type	
+/VectorObservation/place/base/coordRefSys/single-refsys/href	
+/VectorObservation/place/base/coordRefSys/single-refsys/epoch	
+/VectorObservation/place/base/coordRefSys/refsys-byref/type	
+/VectorObservation/place/base/coordRefSys/refsys-byref/href	
+/VectorObservation/place/base/coordRefSys/refsys-byref/epoch	
+/VectorObservation/place/base/coordRefSys/refsys-custom/type	
+/VectorObservation/place/base/coordinates	
+/VectorObservation/place/base/bbox	
+/VectorObservation/place/lower	
+/VectorObservation/place/upper	
+/VectorObservation/place/prisms	
+/VectorObservation/place/prisms/type	
+/VectorObservation/place/prisms/coordRefSys	
+/VectorObservation/place/prisms/coordRefSys/type	
+/VectorObservation/place/prisms/coordRefSys/href	
+/VectorObservation/place/prisms/coordRefSys/epoch	
+/VectorObservation/place/prisms/coordRefSys/single-refsys/type	
+/VectorObservation/place/prisms/coordRefSys/single-refsys/href	
+/VectorObservation/place/prisms/coordRefSys/single-refsys/epoch	
+/VectorObservation/place/prisms/coordRefSys/refsys-byref/type	
+/VectorObservation/place/prisms/coordRefSys/refsys-byref/href	
+/VectorObservation/place/prisms/coordRefSys/refsys-byref/epoch	
+/VectorObservation/place/prisms/coordRefSys/refsys-custom/type	
+/VectorObservation/place/prisms/base	
+/VectorObservation/place/prisms/base/type	
+/VectorObservation/place/prisms/base/coordRefSys	
+/VectorObservation/place/prisms/base/coordRefSys/type	
+/VectorObservation/place/prisms/base/coordRefSys/href	
+/VectorObservation/place/prisms/base/coordRefSys/epoch	
+/VectorObservation/place/prisms/base/coordRefSys/single-refsys/type	
+/VectorObservation/place/prisms/base/coordRefSys/single-refsys/href	
+/VectorObservation/place/prisms/base/coordRefSys/single-refsys/epoch	
+/VectorObservation/place/prisms/base/coordRefSys/refsys-byref/type	
+/VectorObservation/place/prisms/base/coordRefSys/refsys-byref/href	
+/VectorObservation/place/prisms/base/coordRefSys/refsys-byref/epoch	
+/VectorObservation/place/prisms/base/coordRefSys/refsys-custom/type	
+/VectorObservation/place/prisms/base/coordinates	
+/VectorObservation/place/prisms/base/bbox	
+/VectorObservation/place/prisms/lower	
+/VectorObservation/place/prisms/upper	
+/VectorObservation/place/prisms/bbox	
+/VectorObservation/geometry/coordRefSys	
+/VectorObservation/geometry/coordRefSys/type	
+/VectorObservation/geometry/coordRefSys/href	
+/VectorObservation/geometry/coordRefSys/epoch	
+/VectorObservation/geometry/coordRefSys/single-refsys/type	
+/VectorObservation/geometry/coordRefSys/single-refsys/href	
+/VectorObservation/geometry/coordRefSys/single-refsys/epoch	
+/VectorObservation/geometry/coordRefSys/refsys-byref/type	
+/VectorObservation/geometry/coordRefSys/refsys-byref/href	
+/VectorObservation/geometry/coordRefSys/refsys-byref/epoch	
+/VectorObservation/geometry/coordRefSys/refsys-custom/type	
+/VectorObservation/geometry/geometries/coordRefSys	
+/VectorObservation/geometry/geometries/coordRefSys/type	
+/VectorObservation/geometry/geometries/coordRefSys/href	
+/VectorObservation/geometry/geometries/coordRefSys/epoch	
+/VectorObservation/geometry/geometries/coordRefSys/single-refsys/type	
+/VectorObservation/geometry/geometries/coordRefSys/single-refsys/href	
+/VectorObservation/geometry/geometries/coordRefSys/single-refsys/epoch	
+/VectorObservation/geometry/geometries/coordRefSys/refsys-byref/type	
+/VectorObservation/geometry/geometries/coordRefSys/refsys-byref/href	
+/VectorObservation/geometry/geometries/coordRefSys/refsys-byref/epoch	
+/VectorObservation/geometry/geometries/coordRefSys/refsys-custom/type	
+/VectorObservation/properties/resultTime	http://www.w3.org/ns/sosa/resultTime
+/VectorObservation/properties/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/VectorObservation/properties/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/VectorObservation/properties/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/VectorObservation/properties/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/VectorObservation/properties/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/VectorObservation/properties/hasResult	
+/VectorObservation/properties/result	
+/VectorObservation/properties/result@links	
+/VectorObservation/properties/hasSimpleResult	
+/VectorObservation/properties/hasResult/pose	
+/VectorObservation/properties/hasResult/pose/position	http://example.com/geopose/position
+/VectorObservation/properties/hasResult/pose/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
+/VectorObservation/properties/hasResult/pose/position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
+/VectorObservation/properties/hasResult/pose/position/h	http://example.com/geopose/h
+/VectorObservation/properties/hasResult/pose/angles	http://example.com/geopose/angles
+/VectorObservation/properties/hasResult/pose/angles/yaw	http://example.com/geopose/yaw
+/VectorObservation/properties/hasResult/pose/angles/pitch	http://example.com/geopose/pitch
+/VectorObservation/properties/hasResult/pose/angles/roll	http://example.com/geopose/roll
+/VectorObservation/properties/hasResult/pose/Position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
+/VectorObservation/properties/hasResult/pose/Position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
+/VectorObservation/properties/hasResult/pose/Position/h	http://example.com/geopose/h
+/VectorObservation/properties/hasResult/distance	
+/VectorObservationCollection/type	@type
+/VectorObservationCollection/featureType	https://purl.org/geojson/vocab#collectionFeatureType
+/VectorObservationCollection/geometryDimension	
+/VectorObservationCollection/coordRefSys	
+/VectorObservationCollection/coordRefSys/type	
+/VectorObservationCollection/coordRefSys/href	
+/VectorObservationCollection/coordRefSys/epoch	
+/VectorObservationCollection/coordRefSys/single-refsys/type	
+/VectorObservationCollection/coordRefSys/single-refsys/href	
+/VectorObservationCollection/coordRefSys/single-refsys/epoch	
+/VectorObservationCollection/coordRefSys/refsys-byref/type	
+/VectorObservationCollection/coordRefSys/refsys-byref/href	
+/VectorObservationCollection/coordRefSys/refsys-byref/epoch	
+/VectorObservationCollection/coordRefSys/refsys-custom/type	
+/VectorObservationCollection/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/VectorObservationCollection/links/href	http://www.w3.org/ns/oa#hasTarget
+/VectorObservationCollection/links/rel	http://www.iana.org/assignments/relation
+/VectorObservationCollection/links/anchor	
+/VectorObservationCollection/links/type	http://purl.org/dc/terms/type
+/VectorObservationCollection/links/hreflang	http://purl.org/dc/terms/language
+/VectorObservationCollection/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/VectorObservationCollection/links/length	http://purl.org/dc/terms/extent
+/VectorObservationCollection/features	http://www.w3.org/ns/sosa/hasMember
+/VectorObservationCollection/features/type	@type
+/VectorObservationCollection/features/id	@id
+/VectorObservationCollection/features/properties	@nest
+/VectorObservationCollection/features/geometry	https://purl.org/geojson/vocab#geometry
+/VectorObservationCollection/features/geometry/type	@type
+/VectorObservationCollection/features/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
+/VectorObservationCollection/features/geometry/bbox	https://purl.org/geojson/vocab#bbox
+/VectorObservationCollection/features/geometry/geometries	
+/VectorObservationCollection/features/geometry/geometries/type	@type
+/VectorObservationCollection/features/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates
+/VectorObservationCollection/features/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox
+/VectorObservationCollection/features/bbox	https://purl.org/geojson/vocab#bbox
+/VectorObservationCollection/features/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/VectorObservationCollection/features/links/href	http://www.w3.org/ns/oa#hasTarget
+/VectorObservationCollection/features/links/rel	http://www.iana.org/assignments/relation
+/VectorObservationCollection/features/links/anchor	
+/VectorObservationCollection/features/links/type	http://purl.org/dc/terms/type
+/VectorObservationCollection/features/links/hreflang	http://purl.org/dc/terms/language
+/VectorObservationCollection/features/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/VectorObservationCollection/features/links/length	http://purl.org/dc/terms/extent
+/VectorObservationCollection/features/featureType	@type
+/VectorObservationCollection/features/time	http://purl.org/dc/terms/time
+/VectorObservationCollection/features/time/date	http://www.w3.org/2006/time#hasTime
+/VectorObservationCollection/features/time/timestamp	http://www.w3.org/2006/time#hasTime
+/VectorObservationCollection/features/time/interval	http://www.w3.org/2006/time#hasTime
+/VectorObservationCollection/features/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
+/VectorObservationCollection/features/coordRefSys/type	
+/VectorObservationCollection/features/coordRefSys/href	
+/VectorObservationCollection/features/coordRefSys/epoch	
+/VectorObservationCollection/features/coordRefSys/single-refsys/type	
+/VectorObservationCollection/features/coordRefSys/single-refsys/href	
+/VectorObservationCollection/features/coordRefSys/single-refsys/epoch	
+/VectorObservationCollection/features/coordRefSys/refsys-byref/type	
+/VectorObservationCollection/features/coordRefSys/refsys-byref/href	
+/VectorObservationCollection/features/coordRefSys/refsys-byref/epoch	
+/VectorObservationCollection/features/coordRefSys/refsys-custom/type	
+/VectorObservationCollection/features/place	http://purl.org/dc/terms/spatial
+/VectorObservationCollection/features/place/type	
+/VectorObservationCollection/features/place/coordRefSys	
+/VectorObservationCollection/features/place/coordRefSys/type	
+/VectorObservationCollection/features/place/coordRefSys/href	
+/VectorObservationCollection/features/place/coordRefSys/epoch	
+/VectorObservationCollection/features/place/coordRefSys/single-refsys/type	
+/VectorObservationCollection/features/place/coordRefSys/single-refsys/href	
+/VectorObservationCollection/features/place/coordRefSys/single-refsys/epoch	
+/VectorObservationCollection/features/place/coordRefSys/refsys-byref/type	
+/VectorObservationCollection/features/place/coordRefSys/refsys-byref/href	
+/VectorObservationCollection/features/place/coordRefSys/refsys-byref/epoch	
+/VectorObservationCollection/features/place/coordRefSys/refsys-custom/type	
+/VectorObservationCollection/features/place/coordinates	
+/VectorObservationCollection/features/place/bbox	
+/VectorObservationCollection/features/place/base	
+/VectorObservationCollection/features/place/base/type	
+/VectorObservationCollection/features/place/base/coordRefSys	
+/VectorObservationCollection/features/place/base/coordRefSys/type	
+/VectorObservationCollection/features/place/base/coordRefSys/href	
+/VectorObservationCollection/features/place/base/coordRefSys/epoch	
+/VectorObservationCollection/features/place/base/coordRefSys/single-refsys/type	
+/VectorObservationCollection/features/place/base/coordRefSys/single-refsys/href	
+/VectorObservationCollection/features/place/base/coordRefSys/single-refsys/epoch	
+/VectorObservationCollection/features/place/base/coordRefSys/refsys-byref/type	
+/VectorObservationCollection/features/place/base/coordRefSys/refsys-byref/href	
+/VectorObservationCollection/features/place/base/coordRefSys/refsys-byref/epoch	
+/VectorObservationCollection/features/place/base/coordRefSys/refsys-custom/type	
+/VectorObservationCollection/features/place/base/coordinates	
+/VectorObservationCollection/features/place/base/bbox	
+/VectorObservationCollection/features/place/lower	
+/VectorObservationCollection/features/place/upper	
+/VectorObservationCollection/features/place/prisms	
+/VectorObservationCollection/features/place/prisms/type	
+/VectorObservationCollection/features/place/prisms/coordRefSys	
+/VectorObservationCollection/features/place/prisms/coordRefSys/type	
+/VectorObservationCollection/features/place/prisms/coordRefSys/href	
+/VectorObservationCollection/features/place/prisms/coordRefSys/epoch	
+/VectorObservationCollection/features/place/prisms/coordRefSys/single-refsys/type	
+/VectorObservationCollection/features/place/prisms/coordRefSys/single-refsys/href	
+/VectorObservationCollection/features/place/prisms/coordRefSys/single-refsys/epoch	
+/VectorObservationCollection/features/place/prisms/coordRefSys/refsys-byref/type	
+/VectorObservationCollection/features/place/prisms/coordRefSys/refsys-byref/href	
+/VectorObservationCollection/features/place/prisms/coordRefSys/refsys-byref/epoch	
+/VectorObservationCollection/features/place/prisms/coordRefSys/refsys-custom/type	
+/VectorObservationCollection/features/place/prisms/base	
+/VectorObservationCollection/features/place/prisms/base/type	
+/VectorObservationCollection/features/place/prisms/base/coordRefSys	
+/VectorObservationCollection/features/place/prisms/base/coordRefSys/type	
+/VectorObservationCollection/features/place/prisms/base/coordRefSys/href	
+/VectorObservationCollection/features/place/prisms/base/coordRefSys/epoch	
+/VectorObservationCollection/features/place/prisms/base/coordRefSys/single-refsys/type	
+/VectorObservationCollection/features/place/prisms/base/coordRefSys/single-refsys/href	
+/VectorObservationCollection/features/place/prisms/base/coordRefSys/single-refsys/epoch	
+/VectorObservationCollection/features/place/prisms/base/coordRefSys/refsys-byref/type	
+/VectorObservationCollection/features/place/prisms/base/coordRefSys/refsys-byref/href	
+/VectorObservationCollection/features/place/prisms/base/coordRefSys/refsys-byref/epoch	
+/VectorObservationCollection/features/place/prisms/base/coordRefSys/refsys-custom/type	
+/VectorObservationCollection/features/place/prisms/base/coordinates	
+/VectorObservationCollection/features/place/prisms/base/bbox	
+/VectorObservationCollection/features/place/prisms/lower	
+/VectorObservationCollection/features/place/prisms/upper	
+/VectorObservationCollection/features/place/prisms/bbox	
+/VectorObservationCollection/features/geometry/coordRefSys	
+/VectorObservationCollection/features/geometry/coordRefSys/type	
+/VectorObservationCollection/features/geometry/coordRefSys/href	
+/VectorObservationCollection/features/geometry/coordRefSys/epoch	
+/VectorObservationCollection/features/geometry/coordRefSys/single-refsys/type	
+/VectorObservationCollection/features/geometry/coordRefSys/single-refsys/href	
+/VectorObservationCollection/features/geometry/coordRefSys/single-refsys/epoch	
+/VectorObservationCollection/features/geometry/coordRefSys/refsys-byref/type	
+/VectorObservationCollection/features/geometry/coordRefSys/refsys-byref/href	
+/VectorObservationCollection/features/geometry/coordRefSys/refsys-byref/epoch	
+/VectorObservationCollection/features/geometry/coordRefSys/refsys-custom/type	
+/VectorObservationCollection/features/geometry/geometries/coordRefSys	
+/VectorObservationCollection/features/geometry/geometries/coordRefSys/type	
+/VectorObservationCollection/features/geometry/geometries/coordRefSys/href	
+/VectorObservationCollection/features/geometry/geometries/coordRefSys/epoch	
+/VectorObservationCollection/features/geometry/geometries/coordRefSys/single-refsys/type	
+/VectorObservationCollection/features/geometry/geometries/coordRefSys/single-refsys/href	
+/VectorObservationCollection/features/geometry/geometries/coordRefSys/single-refsys/epoch	
+/VectorObservationCollection/features/geometry/geometries/coordRefSys/refsys-byref/type	
+/VectorObservationCollection/features/geometry/geometries/coordRefSys/refsys-byref/href	
+/VectorObservationCollection/features/geometry/geometries/coordRefSys/refsys-byref/epoch	
+/VectorObservationCollection/features/geometry/geometries/coordRefSys/refsys-custom/type	
+/VectorObservationCollection/bbox	
+/VectorObservationCollection/timeStamp	
+/VectorObservationCollection/numberMatched	
+/VectorObservationCollection/numberReturned	
+/VectorObservationCollection/properties	@nest
+/VectorObservationCollection/properties/resultTime	http://www.w3.org/ns/sosa/resultTime
+/VectorObservationCollection/properties/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/VectorObservationCollection/properties/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/VectorObservationCollection/properties/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/VectorObservationCollection/properties/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/VectorObservationCollection/properties/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/VectorObservationCollection/properties/hasMember	http://www.w3.org/ns/sosa/hasMember
+/VectorObservationCollection/properties/hasMember/resultTime	http://www.w3.org/ns/sosa/resultTime
+/VectorObservationCollection/properties/hasMember/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/VectorObservationCollection/properties/hasMember/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/VectorObservationCollection/properties/hasMember/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/VectorObservationCollection/properties/hasMember/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/VectorObservationCollection/properties/hasMember/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/VectorObservationCollection/properties/hasMember/hasMember	http://www.w3.org/ns/sosa/hasMember
+/VectorObservationCollection/properties/hasMember/hasMember/resultTime	http://www.w3.org/ns/sosa/resultTime
+/VectorObservationCollection/properties/hasMember/hasMember/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/VectorObservationCollection/properties/hasMember/hasMember/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/VectorObservationCollection/properties/hasMember/hasMember/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/VectorObservationCollection/properties/hasMember/hasMember/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/VectorObservationCollection/properties/hasMember/hasMember/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/VectorObservationCollection/properties/hasMember/hasMember/hasResult	
+/VectorObservationCollection/properties/hasMember/hasMember/result	
+/VectorObservationCollection/properties/hasMember/hasMember/result@links	
+/VectorObservationCollection/properties/hasMember/hasMember/hasSimpleResult	
+/VectorObservationCollection/properties/hasMember/hasResult	
+/VectorObservationCollection/properties/hasMember/result	
+/VectorObservationCollection/properties/hasMember/result@links	
+/VectorObservationCollection/properties/hasMember/hasSimpleResult	
+/VectorObservationCollection/properties/collection/resultTime	http://www.w3.org/ns/sosa/resultTime
+/VectorObservationCollection/properties/collection/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/VectorObservationCollection/properties/collection/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/VectorObservationCollection/properties/collection/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/VectorObservationCollection/properties/collection/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/VectorObservationCollection/properties/collection/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/VectorObservationCollection/properties/collection/hasMember	http://www.w3.org/ns/sosa/hasMember
+/VectorObservationCollection/properties/collection/hasMember/resultTime	http://www.w3.org/ns/sosa/resultTime
+/VectorObservationCollection/properties/collection/hasMember/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/VectorObservationCollection/properties/collection/hasMember/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/VectorObservationCollection/properties/collection/hasMember/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/VectorObservationCollection/properties/collection/hasMember/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/VectorObservationCollection/properties/collection/hasMember/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/VectorObservationCollection/properties/collection/hasMember/hasMember	http://www.w3.org/ns/sosa/hasMember
+/VectorObservationCollection/properties/collection/hasMember/hasMember/resultTime	http://www.w3.org/ns/sosa/resultTime
+/VectorObservationCollection/properties/collection/hasMember/hasMember/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/VectorObservationCollection/properties/collection/hasMember/hasMember/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/VectorObservationCollection/properties/collection/hasMember/hasMember/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/VectorObservationCollection/properties/collection/hasMember/hasMember/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasMember	http://www.w3.org/ns/sosa/hasMember
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasMember/resultTime	http://www.w3.org/ns/sosa/resultTime
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasMember/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasMember/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasMember/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasMember/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasMember/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasMember/hasResult	
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasMember/result	
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasMember/result@links	
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasMember/hasSimpleResult	
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasResult	
+/VectorObservationCollection/properties/collection/hasMember/hasMember/result	
+/VectorObservationCollection/properties/collection/hasMember/hasMember/result@links	
+/VectorObservationCollection/properties/collection/hasMember/hasMember/hasSimpleResult	
+/VectorObservationCollection/properties/collection/hasMember/hasResult	
+/VectorObservationCollection/properties/collection/hasMember/result	
+/VectorObservationCollection/properties/collection/hasMember/result@links	
+/VectorObservationCollection/properties/collection/hasMember/hasSimpleResult	
+/VectorObservationCollection/features/properties/resultTime	http://www.w3.org/ns/sosa/resultTime
+/VectorObservationCollection/features/properties/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
+/VectorObservationCollection/features/properties/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
+/VectorObservationCollection/features/properties/observedProperty	http://www.w3.org/ns/sosa/observedProperty
+/VectorObservationCollection/features/properties/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure
+/VectorObservationCollection/features/properties/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor
+/VectorObservationCollection/features/properties/hasResult	
+/VectorObservationCollection/features/properties/result	
+/VectorObservationCollection/features/properties/result@links	
+/VectorObservationCollection/features/properties/hasSimpleResult	
+/VectorObservationCollection/features/properties/hasResult/pose	
+/VectorObservationCollection/features/properties/hasResult/pose/position	http://example.com/geopose/position
+/VectorObservationCollection/features/properties/hasResult/pose/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
+/VectorObservationCollection/features/properties/hasResult/pose/position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
+/VectorObservationCollection/features/properties/hasResult/pose/position/h	http://example.com/geopose/h
+/VectorObservationCollection/features/properties/hasResult/pose/angles	http://example.com/geopose/angles
+/VectorObservationCollection/features/properties/hasResult/pose/angles/yaw	http://example.com/geopose/yaw
+/VectorObservationCollection/features/properties/hasResult/pose/angles/pitch	http://example.com/geopose/pitch
+/VectorObservationCollection/features/properties/hasResult/pose/angles/roll	http://example.com/geopose/roll
+/VectorObservationCollection/features/properties/hasResult/pose/Position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
+/VectorObservationCollection/features/properties/hasResult/pose/Position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
+/VectorObservationCollection/features/properties/hasResult/pose/Position/h	http://example.com/geopose/h
+/VectorObservationCollection/features/properties/hasResult/distance	

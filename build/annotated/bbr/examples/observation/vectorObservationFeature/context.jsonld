@@ -475,8 +475,20 @@
       "@id": "ssn-system:qualityOfObservation",
       "@type": "@id"
     },
-    "position": "geopose:position",
-    "angles": "geopose:angles",
+    "position": {
+      "@context": {},
+      "@id": "geopose:position"
+    },
+    "angles": {
+      "@context": {},
+      "@id": "geopose:angles"
+    },
+    "yaw": "geopose:yaw",
+    "pitch": "geopose:pitch",
+    "roll": "geopose:roll",
+    "lat": "geo:lat",
+    "lon": "geo:long",
+    "h": "geopose:h",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",

@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-06-18",
+  "dateOfLastChange": "2024-06-21",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -19,9 +19,9 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.bbr.examples.propertySet",
+    "ogc.bbr.examples.feature.propertySet",
     "ogc.geo.features.feature",
-    "ogc.bbr.examples.feature.propertySet"
+    "ogc.bbr.examples.propertySet"
   ],
   "tags": [
     "feature",
@@ -65,6 +65,17 @@
           "language": "ttl",
           "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://example.org/myModel/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/f1> a geojson:Feature ;\n    ns1:myProp \"Mandatory property example\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geojsonFeature/example_1_1.ttl"
+        }
+      ],
+      "transforms": [
+        {
+          "input-language": "text/turtle",
+          "output-language": "text/turtle",
+          "type": "shacl",
+          "ref": "transforms/sample.shacl",
+          "code": "@prefix mymodel: <http://example.org/myModel/> .\n@prefix sh: <http://www.w3.org/ns/shacl#>.\n\n<urn:example:LabelToDCTERMS>\n    a sh:NodeShape ;\n    sh:targetSubjectsOf mymodel:myProp;\n    sh:rule [\n        a sh:SPARQLRule ;\n        sh:construct \"\"\"\n            prefix dcterms: <http://purl.org/dc/terms/>\n            prefix mymodel: <http://example.org/myModel/>\n            CONSTRUCT {\n                $this dcterms:identifier ?myPropUpper\n            } WHERE {\n                $this mymodel:myProp ?myProp\n                BIND(UCASE(?myProp) as ?myPropUpper)\n            }\n        \"\"\"\n    ] ;\n.\n",
+          "output-extension": "ttl",
+          "idx": 0
         }
       ]
     }
