@@ -6,3 +6,9 @@
   snippets:
     - language: json
       ref: examples/feature.json
+
+  transforms:
+    - input-language: text/turtle
+      output-language: text/turtle
+      type: shacl
+      ref: transforms/sample.shacl
