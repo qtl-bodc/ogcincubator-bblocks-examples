@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.feature.externalSchema - External Schema (Smart Data Models)
-Generated 2024-06-21T13:00:28.068032+00:00
+Generated 2024-06-21T13:04:14.700020+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

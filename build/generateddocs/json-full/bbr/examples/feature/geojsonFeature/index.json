@@ -19,9 +19,9 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.bbr.examples.feature.propertySet",
+    "ogc.bbr.examples.propertySet",
     "ogc.geo.features.feature",
-    "ogc.bbr.examples.propertySet"
+    "ogc.bbr.examples.feature.propertySet"
   ],
   "tags": [
     "feature",
@@ -69,13 +69,21 @@
       ],
       "transforms": [
         {
+          "input-language": "application/json",
+          "output-language": "application/json",
+          "type": "jq",
+          "code": ".properties.myPropUpper = (.properties.myProp | ascii_upcase)",
+          "output-extension": "json",
+          "idx": 0
+        },
+        {
           "input-language": "text/turtle",
           "output-language": "text/turtle",
           "type": "shacl",
           "ref": "transforms/sample.shacl",
           "code": "@prefix mymodel: <http://example.org/myModel/> .\n@prefix sh: <http://www.w3.org/ns/shacl#>.\n\n<urn:example:LabelToDCTERMS>\n    a sh:NodeShape ;\n    sh:targetSubjectsOf mymodel:myProp;\n    sh:rule [\n        a sh:SPARQLRule ;\n        sh:construct \"\"\"\n            prefix dcterms: <http://purl.org/dc/terms/>\n            prefix mymodel: <http://example.org/myModel/>\n            CONSTRUCT {\n                $this dcterms:identifier ?myPropUpper\n            } WHERE {\n                $this mymodel:myProp ?myProp\n                BIND(UCASE(?myProp) as ?myPropUpper)\n            }\n        \"\"\"\n    ] ;\n.\n",
           "output-extension": "ttl",
-          "idx": 0
+          "idx": 1
         }
       ]
     }
