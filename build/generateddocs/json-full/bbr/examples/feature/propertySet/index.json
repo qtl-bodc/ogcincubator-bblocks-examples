@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-06-21",
+  "dateOfLastChange": "2024-07-09",
   "sources": [
     {
       "title": "Semantic Sensor Network Ontology",

@@ -2,12 +2,12 @@
   "name": "Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for Building Blocks. \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.",
-  "modified": "2024-06-21T13:04:09.227003",
+  "modified": "2024-07-09T23:57:54.028065",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"6badef16348eb4c240d1a1e4389d783ba62b56b9",
-      "shortCommitId": "\"6badef",
-      "date": "2024-06-18T18:19:19+00:00\""
+      "commitId": "\"59af8b65c87552d103c26900d115b39f46238b57",
+      "shortCommitId": "\"59af8b",
+      "date": "2024-07-08T08:08:11+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -29,7 +29,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-06-21",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -74,10 +74,6 @@
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/externalSchema/index.json"
         },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/externalSchema/"
-        },
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.externalSchema"
@@ -93,7 +89,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-06-21",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -135,10 +131,6 @@
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json"
         },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/propertySet/"
-        },
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet"
@@ -154,7 +146,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-06-21",
+      "dateOfLastChange": "2024-07-09",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -194,10 +186,6 @@
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json"
         },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservation/"
-        },
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation"
@@ -213,7 +201,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-06-21",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -223,9 +211,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.propertySet",
         "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.bbr.examples.propertySet"
       ],
       "tags": [
         "feature",
@@ -256,10 +244,6 @@
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json"
         },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/feature/geojsonFeature/"
-        },
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature"
@@ -275,7 +259,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-06-21",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -285,10 +269,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.sosa.features.observationCollection",
-        "ogc.sosa.properties.observation",
         "ogc.sosa.features.observation",
-        "ogc.bbr.examples.observation.vectorObservation"
+        "ogc.bbr.examples.observation.vectorObservation",
+        "ogc.sosa.features.observationCollection",
+        "ogc.sosa.properties.observation"
       ],
       "tags": [
         "sosa",
@@ -324,10 +308,6 @@
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/slate-build/bbr/examples/observation/vectorObservationFeature/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
