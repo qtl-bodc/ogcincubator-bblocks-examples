@@ -1,0 +1,7 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: 'Example of a sinmple GeoJSON Feature specialisation'
+allOf:
+  - $ref: bblocks://ogc.geo.json-fg.feature-lenient
+  - properties:
+      properties:
+        $ref: ../propertySet/schema.yaml
