@@ -2,12 +2,12 @@
   "name": "Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for Building Blocks. \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.",
-  "modified": "2024-07-09T23:57:54.028065",
+  "modified": "2024-07-25T08:33:01.979633",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"59af8b65c87552d103c26900d115b39f46238b57",
-      "shortCommitId": "\"59af8b",
-      "date": "2024-07-08T08:08:11+00:00\""
+      "commitId": "\"68a2c711a7b9524049f33286a6021ae24ef34bbb",
+      "shortCommitId": "\"68a2c7",
+      "date": "2024-07-23T08:32:48+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -29,7 +29,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-07-09",
+      "dateOfLastChange": "2024-07-25",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -89,7 +89,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-07-09",
+      "dateOfLastChange": "2024-07-25",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -146,7 +146,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-07-09",
+      "dateOfLastChange": "2024-07-25",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -201,7 +201,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-07-09",
+      "dateOfLastChange": "2024-07-25",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -211,9 +211,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.feature",
         "ogc.bbr.examples.feature.propertySet",
-        "ogc.bbr.examples.propertySet"
+        "ogc.bbr.examples.propertySet",
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -251,6 +251,57 @@
       }
     },
     {
+      "itemIdentifier": "ogc.bbr.examples.feature.geojsonFeatureFGLenient",
+      "name": "Custom JSON-FG (lenient) Feature",
+      "abstract": "This example shows a simple customisation method for a JSON-FG (lenient) feature",
+      "status": "under-development",
+      "dateTimeAddition": "2024-07-25T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2024-07-25",
+      "maturity": "development",
+      "scope": "unstable",
+      "tags": [
+        "feature",
+        "examples"
+      ],
+      "group": "Examples",
+      "highlighted": true,
+      "shaclRules": {
+        "ogc.sosa.properties.observation": [
+          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
+        ]
+      },
+      "dependsOn": [
+        "ogc.geo.json-fg.feature-lenient",
+        "ogc.bbr.examples.feature.propertySet"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeatureFGLenient/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeatureFGLenient/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeatureFGLenient"
+        }
+      }
+    },
+    {
       "itemIdentifier": "ogc.bbr.examples.observation.vectorObservationFeature",
       "name": "Custom Result for Observation Feature",
       "abstract": "This building block defines an example specialisation of an existing Feature specialisation (SOSA Observation), using another schema to define a result set - in this case the GeoPose model",
@@ -259,7 +310,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-07-09",
+      "dateOfLastChange": "2024-07-25",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -269,10 +320,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.sosa.features.observation",
+        "ogc.sosa.properties.observation",
         "ogc.bbr.examples.observation.vectorObservation",
         "ogc.sosa.features.observationCollection",
-        "ogc.sosa.properties.observation"
+        "ogc.sosa.features.observation"
       ],
       "tags": [
         "sosa",
