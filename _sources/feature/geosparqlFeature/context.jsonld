@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "geojson": "https://purl.org/geojson/vocab#",
+    "geometry": {
+      "@id": "geojson:geometry",
+      "@type": "@json"
+    }
+  }
+}

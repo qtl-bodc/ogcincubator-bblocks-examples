@@ -1,0 +1,5 @@
+- title: Sample feature
+  base-uri: http://example.com/features/
+  snippets:
+    - language: json
+      ref: examples/feature.json
