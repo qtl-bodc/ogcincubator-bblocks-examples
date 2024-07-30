@@ -1,0 +1,17 @@
+Validation report for ogc.bbr.examples.feature.geosparqlFeature - Feature with GeoSPARQL geometry
+Generated 2024-07-30T11:04:30.220957+00:00
+=== Files ===
+Using example_1_1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+
+=== Semantic Uplift ===
+Running post-uplift shacl transform step from uplift/geometry.shacl
+=== End Semantic Uplift ===
+

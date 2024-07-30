@@ -1,16 +1,16 @@
 {
-  "title": "Validation report for ogc.bbr.examples.feature.externalSchema - External Schema (Smart Data Models)",
-  "bblockName": "External Schema (Smart Data Models)",
-  "bblockId": "ogc.bbr.examples.feature.externalSchema",
-  "generated": "2024-07-30T11:04:29.990761+00:00",
+  "title": "Validation report for ogc.bbr.examples.feature.geosparqlFeature - Feature with GeoSPARQL geometry",
+  "bblockName": "Feature with GeoSPARQL geometry",
+  "bblockId": "ogc.bbr.examples.feature.geosparqlFeature",
+  "generated": "2024-07-30T11:04:30.221053+00:00",
   "result": true,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/bbr/examples/feature/externalSchema/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/externalSchema/example_1_1.json",
+        "filename": "build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"
@@ -40,7 +40,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 12,
+              "size": 4,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }
@@ -55,6 +55,16 @@
               "result": true,
               "isError": false,
               "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "SEMANTIC_UPLIFT",
+          "title": "Semantic Uplift",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Running post-uplift shacl transform step from uplift/geometry.shacl"
             }
           ]
         }

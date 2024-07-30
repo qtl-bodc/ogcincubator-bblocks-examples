@@ -338,10 +338,7 @@ Links to the schema:
     "type": "@type",
     "id": "@id",
     "properties": "@nest",
-    "geometry": {
-      "@context": {},
-      "@id": "geojson:geometry"
-    },
+    "geometry": "geojson:geometry",
     "bbox": {
       "@container": "@list",
       "@id": "geojson:bbox"
@@ -358,12 +355,6 @@ Links to the schema:
     "features": {
       "@container": "@set",
       "@id": "sosa:hasMember",
-      "@context": {
-        "features": {
-          "@container": "@set",
-          "@id": "geojson:features"
-        }
-      },
       "@type": "@id"
     },
     "links": {
@@ -561,8 +552,7 @@ Links to the schema:
     },
     "hasMember": {
       "@id": "sosa:hasMember",
-      "@type": "@id",
-      "@context": {}
+      "@type": "@id"
     },
     "hasOriginalSample": {
       "@id": "sosa:hasOriginalSample",
