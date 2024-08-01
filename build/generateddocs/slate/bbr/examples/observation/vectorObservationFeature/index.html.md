@@ -415,10 +415,7 @@ Links to the schema:
     "type": "@type",
     "id": "@id",
     "properties": "@nest",
-    "geometry": {
-      "@context": {},
-      "@id": "geojson:geometry"
-    },
+    "geometry": "geojson:geometry",
     "bbox": {
       "@container": "@list",
       "@id": "geojson:bbox"
@@ -435,12 +432,6 @@ Links to the schema:
     "features": {
       "@container": "@set",
       "@id": "sosa:hasMember",
-      "@context": {
-        "features": {
-          "@container": "@set",
-          "@id": "geojson:features"
-        }
-      },
       "@type": "@id"
     },
     "links": {
@@ -638,8 +629,7 @@ Links to the schema:
     },
     "hasMember": {
       "@id": "sosa:hasMember",
-      "@type": "@id",
-      "@context": {}
+      "@type": "@id"
     },
     "hasOriginalSample": {
       "@id": "sosa:hasOriginalSample",
@@ -888,19 +878,21 @@ Links to the schema:
       "@type": "@id"
     },
     "position": {
-      "@context": {},
+      "@context": {
+        "lat": "geo:lat",
+        "lon": "geo:long",
+        "h": "geopose:h"
+      },
       "@id": "geopose:position"
     },
     "angles": {
-      "@context": {},
+      "@context": {
+        "yaw": "geopose:yaw",
+        "pitch": "geopose:pitch",
+        "roll": "geopose:roll"
+      },
       "@id": "geopose:angles"
     },
-    "yaw": "geopose:yaw",
-    "pitch": "geopose:pitch",
-    "roll": "geopose:roll",
-    "lat": "geo:lat",
-    "lon": "geo:long",
-    "h": "geopose:h",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",

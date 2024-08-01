@@ -1,0 +1,25 @@
+{
+  "name": "Feature with GeoSPARQL geometry",
+  "abstract": "This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON object",
+  "status": "under-development",
+  "dateTimeAddition": "2024-07-30T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2023-05-19",
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "feature",
+    "examples"
+  ],
+  "group": "Examples",
+  "semanticUplift": {
+    "additionalSteps": [
+      {
+        "type": "shacl",
+        "ref": "uplift/geometry.shacl"
+      }
+    ]
+  }
+}

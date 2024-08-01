@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.feature.externalSchema - External Schema (Smart Data Models)",
   "bblockName": "External Schema (Smart Data Models)",
   "bblockId": "ogc.bbr.examples.feature.externalSchema",
-  "generated": "2024-06-21T13:04:14.700092+00:00",
+  "generated": "2024-07-30T11:04:29.990761+00:00",
   "result": true,
   "items": [
     {
@@ -17,11 +17,6 @@
       },
       "result": true,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": []
-        },
         {
           "name": "FILES",
           "title": "Files",
@@ -62,26 +57,6 @@
               "message": "Validation passed"
             }
           ]
-        },
-        {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
-        },
-        {
-          "name": "TURTLE",
-          "title": "Turtle",
-          "entries": []
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": []
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
         }
       ]
     }

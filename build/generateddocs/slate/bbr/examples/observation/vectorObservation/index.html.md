@@ -567,19 +567,21 @@ Links to the schema:
       "@type": "@id"
     },
     "position": {
-      "@context": {},
+      "@context": {
+        "lat": "geo:lat",
+        "lon": "geo:long",
+        "h": "geopose:h"
+      },
       "@id": "geopose:position"
     },
     "angles": {
-      "@context": {},
+      "@context": {
+        "yaw": "geopose:yaw",
+        "pitch": "geopose:pitch",
+        "roll": "geopose:roll"
+      },
       "@id": "geopose:angles"
     },
-    "yaw": "geopose:yaw",
-    "pitch": "geopose:pitch",
-    "roll": "geopose:roll",
-    "lat": "geo:lat",
-    "lon": "geo:long",
-    "h": "geopose:h",
     "sosa": "http://www.w3.org/ns/sosa/",
     "ssn-system": "ssn:systems/",
     "ssn": "http://www.w3.org/ns/ssn/",

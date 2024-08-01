@@ -1,0 +1,9 @@
+allOf:
+- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
+- properties:
+    geometry:
+      type: object
+      x-jsonld-id: https://purl.org/geojson/vocab#geometry
+      x-jsonld-type: '@json'
+x-jsonld-prefixes:
+  geojson: https://purl.org/geojson/vocab#
