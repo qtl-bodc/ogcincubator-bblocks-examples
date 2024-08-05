@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-07-30",
+  "dateOfLastChange": "2024-08-01",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
