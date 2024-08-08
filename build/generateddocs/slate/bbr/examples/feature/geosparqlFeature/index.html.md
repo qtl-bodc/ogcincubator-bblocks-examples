@@ -108,9 +108,11 @@ This building block is <strong><a href="https://github.com/ogcincubator/bblocks-
 ```turtle
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix ns1: <http://example.org/myModel/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 <http://example.com/features/f1> a geojson:Feature ;
+    ns1:myProp "Mandatory property example" ;
     geo:hasGeometry [ geo:asGeoJson "{\"coordinates\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\"type\":\"LineString\"}"^^geo:geoJSONLiteral ] ;
     geojson:geometry "{\"coordinates\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\"type\":\"LineString\"}"^^rdf:JSON .
 
@@ -134,6 +136,8 @@ allOf:
       type: object
       x-jsonld-id: https://purl.org/geojson/vocab#geometry
       x-jsonld-type: '@json'
+    properties:
+      $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml
 x-jsonld-prefixes:
   geojson: https://purl.org/geojson/vocab#
 
@@ -202,6 +206,7 @@ Links to the schema:
       },
       "@id": "rdfs:seeAlso"
     },
+    "myProp": "http://example.org/myModel/myProp",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
@@ -215,6 +220,15 @@ Links to the schema:
 
 You can find the full JSON-LD context here:
 <a href="https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld" target="_blank">https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld</a>
+
+# Validation
+
+## SHACL Shapes
+
+The following sets of SHACL shapes are used for validating this building block:
+
+* Observation Properties <small><code>ogc.sosa.properties.observation</code></small>
+  * [https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl](https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl)
 
 # For developers
 

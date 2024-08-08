@@ -9,6 +9,9 @@
           "type": "object",
           "x-jsonld-id": "https://purl.org/geojson/vocab#geometry",
           "x-jsonld-type": "@json"
+        },
+        "properties": {
+          "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json"
         }
       }
     }
