@@ -3,3 +3,5 @@ allOf:
   - properties:
       geometry:
         type: object
+      properties:
+        $ref: ../propertySet/schema.yaml
