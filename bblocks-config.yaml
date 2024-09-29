@@ -7,7 +7,7 @@ imports:
   - https://opengeospatial.github.io/ogcapi-sosa/build/register.json
 
 abstract: |
-  This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for Building Blocks. 
+  This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). 
   
   *These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*
 
