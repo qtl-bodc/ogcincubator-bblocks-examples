@@ -1,5 +1,5 @@
 
-# Feature with GeoSPARQL geometry (Schema)
+# GeoJSON transformed to GeoSPARQL geometry (Schema)
 
 `ogc.bbr.examples.feature.geosparqlFeature` *v1.0*
 

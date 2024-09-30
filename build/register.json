@@ -1,13 +1,13 @@
 {
   "name": "Building Blocks Examples",
-  "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for Building Blocks. \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
-  "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.",
-  "modified": "2024-08-08T06:16:36.021631",
+  "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
+  "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
+  "modified": "2024-09-30T02:41:18.817314",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"3e8700f308cde8c3c84ff49fe2c0167688146ad4",
-      "shortCommitId": "\"3e8700",
-      "date": "2024-08-01T10:59:23+00:00\""
+      "commitId": "\"f1a8c865a6f74d7aab5b490dcb38aac62ea5a5d7",
+      "shortCommitId": "\"f1a8c8",
+      "date": "2024-09-16T11:40:42+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -29,7 +29,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-08-08",
+      "dateOfLastChange": "2024-09-30",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -89,7 +89,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-08-08",
+      "dateOfLastChange": "2024-09-30",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -146,13 +146,13 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-08-08",
+      "dateOfLastChange": "2024-09-30",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.sosa.properties.observation",
-        "ogc.geo.geopose.basic.ypr"
+        "ogc.geo.geopose.basic.ypr",
+        "ogc.sosa.properties.observation"
       ],
       "tags": [
         "examples",
@@ -201,7 +201,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-08-08",
+      "dateOfLastChange": "2024-09-30",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -211,9 +211,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
         "ogc.geo.features.feature",
-        "ogc.bbr.examples.propertySet"
+        "ogc.bbr.examples.propertySet",
+        "ogc.bbr.examples.feature.propertySet"
       ],
       "tags": [
         "feature",
@@ -259,7 +259,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-08-08",
+      "dateOfLastChange": "2024-09-30",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -273,8 +273,8 @@
         ]
       },
       "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.json-fg.feature-lenient"
+        "ogc.geo.json-fg.feature-lenient",
+        "ogc.bbr.examples.feature.propertySet"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
@@ -302,14 +302,15 @@
     },
     {
       "itemIdentifier": "ogc.bbr.examples.feature.geosparqlFeature",
-      "name": "Feature with GeoSPARQL geometry",
+      "name": "GeoJSON transformed to GeoSPARQL geometry",
+      "highlighted": true,
       "abstract": "This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON object",
       "status": "under-development",
       "dateTimeAddition": "2024-07-30T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-08-08",
+      "dateOfLastChange": "2024-09-30",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -317,23 +318,14 @@
         "examples"
       ],
       "group": "Examples",
-      "semanticUplift": {
-        "additionalSteps": [
-          {
-            "type": "shacl",
-            "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/uplift/geometry.shacl",
-            "stage": "post"
-          }
-        ]
-      },
       "shaclRules": {
         "ogc.sosa.properties.observation": [
           "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
         ]
       },
       "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.features.feature"
+        "ogc.geo.features.feature",
+        "ogc.bbr.examples.feature.propertySet"
       ],
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
       "schema": {
@@ -369,7 +361,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-08-08",
+      "dateOfLastChange": "2024-09-30",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -379,10 +371,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.sosa.properties.observation",
-        "ogc.bbr.examples.observation.vectorObservation",
+        "ogc.sosa.features.observationCollection",
         "ogc.sosa.features.observation",
-        "ogc.sosa.features.observationCollection"
+        "ogc.bbr.examples.observation.vectorObservation",
+        "ogc.sosa.properties.observation"
       ],
       "tags": [
         "sosa",
