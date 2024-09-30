@@ -1,0 +1,5 @@
+additionalSteps:
+  - type: shacl
+    ref: uplift/geometry.shacl
+
+

@@ -1,5 +1,6 @@
 {
-  "name": "Feature with GeoSPARQL geometry",
+  "name": "GeoJSON transformed to GeoSPARQL geometry",
+  "highlighted": "true",
   "abstract": "This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON object",
   "status": "under-development",
   "dateTimeAddition": "2024-07-30T00:00:00Z",
@@ -13,13 +14,5 @@
     "feature",
     "examples"
   ],
-  "group": "Examples",
-  "semanticUplift": {
-    "additionalSteps": [
-      {
-        "type": "shacl",
-        "ref": "uplift/geometry.shacl"
-      }
-    ]
-  }
+  "group": "Examples"
 }
