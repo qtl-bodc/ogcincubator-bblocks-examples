@@ -1,0 +1,7 @@
+@prefix ns1: <urn:example:ex#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] ns1:hasOne 1 ;
+    ns1:hasString "value" ;
+    ns1:hasTwo 2 .
+

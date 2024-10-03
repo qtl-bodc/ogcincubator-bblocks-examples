@@ -106,12 +106,12 @@
   "name": "Building Blocks - Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
-  "modified": "2024-10-03T10:26:36.220026",
+  "modified": "2024-10-03T12:39:18.797746",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"378933f155dfc4ed2cda77d7bb9d0f5c6082b10f",
-      "shortCommitId": "\"378933",
-      "date": "2024-10-01T09:29:27+00:00\""
+      "commitId": "\"5d47077eb2f3255708fae570e734806772b94223",
+      "shortCommitId": "\"5d4707",
+      "date": "2024-10-03T10:26:09+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -187,6 +187,106 @@
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/",
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-example/",
+      "transforms": [
+        {
+          "id": "prefix-keys",
+          "description": "Adds a \"PREF\" prefix to all object keys.",
+          "type": "jq",
+          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/prefix-keys.jq",
+          "code": "walk(if type == \"object\" then with_entries( .key |= \"PREF\\(.)\" ) else . end)",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "id": "json",
+                "defaultExtension": "json",
+                "label": "JSON",
+                "mimeType": "application/json",
+                "extensions": [
+                  "json"
+                ]
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "id": "json",
+                "defaultExtension": "json",
+                "label": "JSON",
+                "mimeType": "application/json",
+                "extensions": [
+                  "json"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "prefix-predicates",
+          "description": "Changes the \"http://example.com/\" prefix of every predicate to a URN",
+          "type": "sparql-update",
+          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/prefix-predicates.sparql",
+          "code": "DELETE {\n  ?s ?p ?o\n}\nINSERT {\n  ?s ?p2 ?o\n}\nWHERE {\n  ?s ?p ?o\n  FILTER(STRSTARTS(STR(?p), \"http://example.com/\"))\n  BIND(URI(REPLACE(STR(?p), \"^http://example.com/\", \"urn:example:ex#\")) as ?p2)\n}",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "id": "ttl",
+                "defaultExtension": "ttl",
+                "label": "RDF/Turtle",
+                "mimeType": "text/turtle",
+                "aliases": [
+                  "turtle",
+                  "rdf/turtle"
+                ],
+                "extensions": [
+                  "ttl"
+                ]
+              },
+              {
+                "id": "rdf",
+                "defaultExtension": "rdf",
+                "label": "RDF/XML",
+                "mimeType": "application/rdf+xml",
+                "aliases": [
+                  "rdf/xml"
+                ],
+                "extensions": [
+                  "rdf"
+                ]
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "id": "ttl",
+                "defaultExtension": "ttl",
+                "label": "RDF/Turtle",
+                "mimeType": "text/turtle",
+                "aliases": [
+                  "turtle",
+                  "rdf/turtle"
+                ],
+                "extensions": [
+                  "ttl"
+                ]
+              },
+              {
+                "id": "rdf",
+                "defaultExtension": "rdf",
+                "label": "RDF/XML",
+                "mimeType": "application/rdf+xml",
+                "aliases": [
+                  "rdf/xml"
+                ],
+                "extensions": [
+                  "rdf"
+                ]
+              }
+            ]
+          }
+        }
+      ],
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
@@ -216,7 +316,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-10-03",
+      "dateOfLastChange": "2023-05-19",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -281,7 +381,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-10-03",
+      "dateOfLastChange": "2023-05-19",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -343,7 +443,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-10-03",
+      "dateOfLastChange": "2023-05-19",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -403,7 +503,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-10-03",
+      "dateOfLastChange": "2023-05-19",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -413,9 +513,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "ogc.geo.features.feature",
         "ogc.bbr.examples.feature.propertySet",
-        "ogc.bbr.examples.propertySet",
-        "ogc.geo.features.feature"
+        "ogc.bbr.examples.propertySet"
       ],
       "tags": [
         "feature",
@@ -466,7 +566,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-10-03",
+      "dateOfLastChange": "2023-05-19",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -522,7 +622,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-10-03",
+      "dateOfLastChange": "2023-05-19",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -536,8 +636,8 @@
         ]
       },
       "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.features.feature"
+        "ogc.geo.features.feature",
+        "ogc.bbr.examples.feature.propertySet"
       ],
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
       "schema": {
@@ -578,7 +678,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-10-03",
+      "dateOfLastChange": "2023-05-19",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -588,10 +688,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.observation.vectorObservation",
-        "ogc.sosa.features.observationCollection",
         "ogc.sosa.properties.observation",
-        "ogc.sosa.features.observation"
+        "ogc.bbr.examples.observation.vectorObservation",
+        "ogc.sosa.features.observation",
+        "ogc.sosa.features.observationCollection"
       ],
       "tags": [
         "sosa",

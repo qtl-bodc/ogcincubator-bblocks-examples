@@ -19,6 +19,106 @@
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-example/",
+  "transforms": [
+    {
+      "id": "prefix-keys",
+      "description": "Adds a \"PREF\" prefix to all object keys.",
+      "type": "jq",
+      "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/prefix-keys.jq",
+      "code": "walk(if type == \"object\" then with_entries( .key |= \"PREF\\(.)\" ) else . end)",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "id": "json",
+            "defaultExtension": "json",
+            "label": "JSON",
+            "mimeType": "application/json",
+            "extensions": [
+              "json"
+            ]
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "id": "json",
+            "defaultExtension": "json",
+            "label": "JSON",
+            "mimeType": "application/json",
+            "extensions": [
+              "json"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "prefix-predicates",
+      "description": "Changes the \"http://example.com/\" prefix of every predicate to a URN",
+      "type": "sparql-update",
+      "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/prefix-predicates.sparql",
+      "code": "DELETE {\n  ?s ?p ?o\n}\nINSERT {\n  ?s ?p2 ?o\n}\nWHERE {\n  ?s ?p ?o\n  FILTER(STRSTARTS(STR(?p), \"http://example.com/\"))\n  BIND(URI(REPLACE(STR(?p), \"^http://example.com/\", \"urn:example:ex#\")) as ?p2)\n}",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "id": "ttl",
+            "defaultExtension": "ttl",
+            "label": "RDF/Turtle",
+            "mimeType": "text/turtle",
+            "aliases": [
+              "turtle",
+              "rdf/turtle"
+            ],
+            "extensions": [
+              "ttl"
+            ]
+          },
+          {
+            "id": "rdf",
+            "defaultExtension": "rdf",
+            "label": "RDF/XML",
+            "mimeType": "application/rdf+xml",
+            "aliases": [
+              "rdf/xml"
+            ],
+            "extensions": [
+              "rdf"
+            ]
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "id": "ttl",
+            "defaultExtension": "ttl",
+            "label": "RDF/Turtle",
+            "mimeType": "text/turtle",
+            "aliases": [
+              "turtle",
+              "rdf/turtle"
+            ],
+            "extensions": [
+              "ttl"
+            ]
+          },
+          {
+            "id": "rdf",
+            "defaultExtension": "rdf",
+            "label": "RDF/XML",
+            "mimeType": "application/rdf+xml",
+            "aliases": [
+              "rdf/xml"
+            ],
+            "extensions": [
+              "rdf"
+            ]
+          }
+        ]
+      }
+    }
+  ],
   "examples": [
     {
       "title": "Example for transforms",
@@ -26,6 +126,9 @@
         {
           "language": "json",
           "code": "{\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}",
+          "transformResults": {
+            "prefix-keys": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json"
+          },
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json"
         },
         {
@@ -36,6 +139,9 @@
         {
           "language": "ttl",
           "code": "@prefix ex: <http://example.com/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] ex:hasOne 1 ;\n    ex:hasString \"value\" ;\n    ex:hasTwo 2 .\n\n",
+          "transformResults": {
+            "prefix-predicates": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_3.prefix-predicates.ttl"
+          },
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.ttl"
         }
       ]
