@@ -1,0 +1,10 @@
+transforms:
+  - id: prefix-keys
+    description: Adds a "PREF" prefix to all object keys.
+    type: jq
+    ref: transforms/prefix-keys.jq
+
+  - id: prefix-predicates
+    description: Changes the "http://example.com/" prefix of every predicate to a URN
+    type: sparql-update
+    ref: transforms/prefix-predicates.sparql

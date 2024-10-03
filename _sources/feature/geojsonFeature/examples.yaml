@@ -6,14 +6,3 @@
   snippets:
     - language: json
       ref: examples/feature.json
-
-  transforms:
-    - input-language: application/json
-      output-language: application/json
-      type: jq
-      code: '.properties.myPropUpper = (.properties.myProp | ascii_upcase)'
-
-    - input-language: text/turtle
-      output-language: text/turtle
-      type: shacl
-      ref: transforms/sample.shacl
