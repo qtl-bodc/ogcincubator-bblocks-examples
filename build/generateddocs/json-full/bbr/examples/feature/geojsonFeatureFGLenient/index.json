@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-09-30",
+  "dateOfLastChange": "2024-10-03",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -23,8 +23,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.geo.json-fg.feature-lenient",
-    "ogc.bbr.examples.feature.propertySet"
+    "ogc.bbr.examples.feature.propertySet",
+    "ogc.geo.json-fg.feature-lenient"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
@@ -50,7 +50,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"featureType\": \"app:building\",\n  \"coordRefSys\": \"http://www.opengis.net/def/crs/EPSG/0/5555\",\n  \"time\": {\n    \"interval\": [\n      \"2014-04-24T10:50:18Z\",\n      \"..\"\n    ]\n  },\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  },\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"featureType\": \"app:building\",\n  \"coordRefSys\": \"http://www.opengis.net/def/crs/EPSG/0/5555\",\n  \"time\": {\n    \"interval\": [\n      \"2014-04-24T10:50:18Z\",\n      \"..\"\n    ]\n  },\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  }\n}",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/example_1_1.jsonld"
         },
         {

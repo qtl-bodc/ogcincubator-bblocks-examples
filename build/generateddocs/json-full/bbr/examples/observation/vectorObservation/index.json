@@ -9,13 +9,13 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-09-30",
+  "dateOfLastChange": "2024-10-03",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.geopose.basic.ypr",
-    "ogc.sosa.properties.observation"
+    "ogc.sosa.properties.observation",
+    "ogc.geo.geopose.basic.ypr"
   ],
   "tags": [
     "examples",
@@ -50,7 +50,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"hasFeatureOfInterest\": \"https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem\",\n  \"resultTime\": \"2023-05-22T16:41:00+2\",\n  \"observedProperty\": \"p1\",\n  \"hasResult\": {\n    \"@context\": {\n      \"resultschema\": \"http://example.org/resultschema/\",\n      \"pose\": \"resultschema:pose\",\n      \"distance\": {\n        \"@id\": \"resultschema:distance\"\n      }\n    },\n    \"pose\": {\n      \"position\": {\n        \"lat\": 43.46498208387333,\n        \"lon\": -3.803638278687769,\n        \"h\": 0.5\n      },\n      \"angles\": {\n        \"yaw\": 5.553,\n        \"pitch\": -0.92,\n        \"roll\": 0.33\n      }\n    }\n  },\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld\",\n  \"hasFeatureOfInterest\": \"https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem\",\n  \"resultTime\": \"2023-05-22T16:41:00+2\",\n  \"observedProperty\": \"p1\",\n  \"hasResult\": {\n    \"@context\": {\n      \"resultschema\": \"http://example.org/resultschema/\",\n      \"pose\": \"resultschema:pose\",\n      \"distance\": {\n        \"@id\": \"resultschema:distance\"\n      }\n    },\n    \"pose\": {\n      \"position\": {\n        \"lat\": 43.46498208387333,\n        \"lon\": -3.803638278687769,\n        \"h\": 0.5\n      },\n      \"angles\": {\n        \"yaw\": 5.553,\n        \"pitch\": -0.92,\n        \"roll\": 0.33\n      }\n    }\n  }\n}",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservation/example_1_1.jsonld"
         },
         {

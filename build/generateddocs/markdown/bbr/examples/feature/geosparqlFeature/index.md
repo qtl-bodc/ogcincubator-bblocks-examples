@@ -38,6 +38,7 @@ This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON ob
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
   "id": "f1",
   "type": "Feature",
   "geometry": {
@@ -55,8 +56,7 @@ This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON ob
   },
   "properties": {
     "myProp": "Mandatory property example"
-  },
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld"
+  }
 }
 ```
 

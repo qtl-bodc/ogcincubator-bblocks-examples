@@ -1,4 +1,5 @@
 {
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld",
   "id": "f1",
   "type": "Feature",
   "featureType": "app:building",
@@ -24,6 +25,5 @@
   },
   "properties": {
     "myProp": "Mandatory property example"
-  },
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld"
+  }
 }

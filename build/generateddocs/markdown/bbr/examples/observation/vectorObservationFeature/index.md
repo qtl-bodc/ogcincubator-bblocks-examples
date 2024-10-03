@@ -64,6 +64,7 @@ This building block defines an example specialisation of an existing Feature spe
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
   "@id": "vector-obs-1",
   "type": "Feature",
   "geometry": {
@@ -107,8 +108,7 @@ This building block defines an example specialisation of an existing Feature spe
       },
       "distance": 6889234.2
     }
-  },
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
+  }
 }
 ```
 

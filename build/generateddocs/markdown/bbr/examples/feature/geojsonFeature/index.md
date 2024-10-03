@@ -55,6 +55,7 @@ This building block **inherits** reusable semantic annotations for the Feature s
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld",
   "id": "f1",
   "type": "Feature",
   "geometry": {
@@ -72,8 +73,7 @@ This building block **inherits** reusable semantic annotations for the Feature s
   },
   "properties": {
     "myProp": "Mandatory property example"
-  },
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld"
+  }
 }
 ```
 

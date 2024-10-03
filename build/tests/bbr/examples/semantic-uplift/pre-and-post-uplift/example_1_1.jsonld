@@ -1,0 +1,8 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld",
+  "one": 1,
+  "two": 2,
+  "string": "value",
+  "three": 3,
+  "doubleString": "valuevalue"
+}

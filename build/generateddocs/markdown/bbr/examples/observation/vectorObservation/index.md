@@ -44,6 +44,7 @@ This building block defines the *property set* for an example specialisation of 
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
   "hasFeatureOfInterest": "https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem",
   "resultTime": "2023-05-22T16:41:00+2",
   "observedProperty": "p1",
@@ -67,8 +68,7 @@ This building block defines the *property set* for an example specialisation of 
         "roll": 0.33
       }
     }
-  },
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld"
+  }
 }
 ```
 

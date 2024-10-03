@@ -1,4 +1,5 @@
 {
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld",
   "id": "f1",
   "type": "Feature",
   "geometry": {
@@ -14,6 +15,5 @@
     "IataCode": "BMA",
     "IcaoCode": "ESSB",
     "Name": "control"
-  },
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld"
+  }
 }

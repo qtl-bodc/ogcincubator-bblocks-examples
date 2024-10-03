@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "one": {
+      "type": "number",
+      "x-jsonld-id": "http://example.com/hasOne"
+    },
+    "two": {
+      "type": "number",
+      "x-jsonld-id": "http://example.com/hasTwo"
+    },
+    "string": {
+      "type": "string",
+      "x-jsonld-id": "http://example.com/hasString"
+    }
+  },
+  "x-jsonld-extra-terms": {
+    "three": "http://example.com/exHasGenThree",
+    "doubleString": "http://example.com/hasGenDoubleString"
+  },
+  "x-jsonld-prefixes": {
+    "ex": "http://example.com/"
+  }
+}

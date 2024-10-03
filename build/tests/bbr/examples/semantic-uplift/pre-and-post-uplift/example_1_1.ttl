@@ -1,0 +1,12 @@
+@prefix ex: <http://example.com/> .
+@prefix ns1: <https://example.net/2/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] ex:exHasGenThree 3 ;
+    ex:hasGenDoubleString "valuevalue" ;
+    ex:hasOne 1 ;
+    ex:hasString "value" ;
+    ex:hasTwo 2 ;
+    ns1:hasFour 4 ;
+    ns1:nineBound false .
+

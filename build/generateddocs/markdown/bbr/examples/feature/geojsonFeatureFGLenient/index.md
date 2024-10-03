@@ -61,6 +61,7 @@ simplifying implementation.
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld",
   "id": "f1",
   "type": "Feature",
   "featureType": "app:building",
@@ -86,8 +87,7 @@ simplifying implementation.
   },
   "properties": {
     "myProp": "Mandatory property example"
-  },
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld"
+  }
 }
 ```
 

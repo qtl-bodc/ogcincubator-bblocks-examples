@@ -1,4 +1,4 @@
 {
-  "myProp": "Very smooth",
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld"
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld",
+  "myProp": "Very smooth"
 }

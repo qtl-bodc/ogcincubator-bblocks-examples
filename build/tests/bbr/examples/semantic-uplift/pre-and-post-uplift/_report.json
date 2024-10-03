@@ -1,16 +1,16 @@
 {
-  "title": "Validation report for ogc.bbr.examples.feature.externalSchema - External Schema (Smart Data Models)",
-  "bblockName": "External Schema (Smart Data Models)",
-  "bblockId": "ogc.bbr.examples.feature.externalSchema",
-  "generated": "2024-10-03T09:54:29.976777+00:00",
+  "title": "Validation report for ogc.bbr.examples.semantic-uplift.pre-and-post-uplift - Pre and Post Semantic Uplift example",
+  "bblockName": "Pre and Post Semantic Uplift example",
+  "bblockId": "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift",
+  "generated": "2024-10-03T09:54:29.764327+00:00",
   "result": true,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/bbr/examples/feature/externalSchema/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/externalSchema/example_1_1.json",
+        "filename": "build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"
@@ -40,7 +40,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 12,
+              "size": 7,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }
@@ -55,6 +55,20 @@
               "result": true,
               "isError": false,
               "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "SEMANTIC_UPLIFT",
+          "title": "Semantic Uplift",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-update transform step from semantic-uplift/update.sparql"
             }
           ]
         }

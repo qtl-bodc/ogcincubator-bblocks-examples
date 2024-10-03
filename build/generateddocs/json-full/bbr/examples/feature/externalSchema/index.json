@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-09-30",
+  "dateOfLastChange": "2024-10-03",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -60,7 +60,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      59.354444,\n      17.939722\n    ]\n  },\n  \"properties\": {\n    \"id\": \"urn:ngsi-ld:AirportFacility:id:IUXP:30337114\",\n    \"type\": \"AirportFacility\",\n    \"IataCode\": \"BMA\",\n    \"IcaoCode\": \"ESSB\",\n    \"Name\": \"control\"\n  },\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      59.354444,\n      17.939722\n    ]\n  },\n  \"properties\": {\n    \"id\": \"urn:ngsi-ld:AirportFacility:id:IUXP:30337114\",\n    \"type\": \"AirportFacility\",\n    \"IataCode\": \"BMA\",\n    \"IcaoCode\": \"ESSB\",\n    \"Name\": \"control\"\n  }\n}",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/externalSchema/example_1_1.jsonld"
         },
         {

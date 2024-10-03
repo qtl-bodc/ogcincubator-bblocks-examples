@@ -48,6 +48,7 @@ The OGC Building Blocks uses the same approach, with the added capabilities arou
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld",
   "id": "f1",
   "type": "Feature",
   "geometry": {
@@ -63,8 +64,7 @@ The OGC Building Blocks uses the same approach, with the added capabilities arou
     "IataCode": "BMA",
     "IcaoCode": "ESSB",
     "Name": "control"
-  },
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld"
+  }
 }
 ```
 

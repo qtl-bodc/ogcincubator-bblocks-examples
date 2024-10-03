@@ -21,8 +21,8 @@ This shows how to define a propertyset for a feature - which can be re-used in d
 #### jsonld
 ```jsonld
 {
-  "myProp": "Very smooth",
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld"
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld",
+  "myProp": "Very smooth"
 }
 ```
 
