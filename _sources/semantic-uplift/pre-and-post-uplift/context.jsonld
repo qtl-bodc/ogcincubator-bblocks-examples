@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "ex": "http://example.com/",
+    "one": "ex:hasOne",
+    "two": "ex:hasTwo",
+    "string": "ex:hasString",
+    "three": "ex:exHasGenThree",
+    "doubleString": "ex:hasGenDoubleString"
+  }
+}

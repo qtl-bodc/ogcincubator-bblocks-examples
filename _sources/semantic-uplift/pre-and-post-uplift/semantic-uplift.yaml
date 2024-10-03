@@ -1,0 +1,5 @@
+additionalSteps:
+  - type: jq
+    code: '.three = 3 | .doubleString = "\(.string)\(.string)"'
+  - type: sparql-update
+    ref: semantic-uplift/update.sparql
