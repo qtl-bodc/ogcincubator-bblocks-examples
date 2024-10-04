@@ -8,3 +8,9 @@ transforms:
     description: Changes the "http://example.com/" prefix of every predicate to a URN
     type: sparql-update
     ref: transforms/prefix-predicates.sparql
+
+  - id: inline-transform
+    description: A transform's code can also be defined inside the transform's object
+    type: jq
+    code: |
+      .test = "test"
