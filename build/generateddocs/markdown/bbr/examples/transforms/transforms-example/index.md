@@ -3,7 +3,7 @@
 
 `ogc.bbr.examples.transforms.transforms-example` *v0.1*
 
-None
+A sample building block to showcase transforms
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
