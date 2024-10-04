@@ -1,5 +1,6 @@
 {
   "name": "Pre and Post Semantic Uplift example",
+  "abstract": "A sample building block to show how semantic uplift can be customized",
   "status": "under-development",
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
