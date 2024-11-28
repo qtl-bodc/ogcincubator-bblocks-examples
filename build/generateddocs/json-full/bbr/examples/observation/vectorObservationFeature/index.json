@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-10-04",
+  "dateOfLastChange": "2024-11-28",
   "sources": [
     {
       "title": "Semantic Sensor Network Ontology",
@@ -20,9 +20,9 @@
   "scope": "unstable",
   "dependsOn": [
     "ogc.sosa.features.observationCollection",
+    "ogc.sosa.features.observation",
     "ogc.bbr.examples.observation.vectorObservation",
-    "ogc.sosa.properties.observation",
-    "ogc.sosa.features.observation"
+    "ogc.sosa.properties.observation"
   ],
   "tags": [
     "sosa",
@@ -48,6 +48,9 @@
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/schema.yaml",
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/",
+  "rdfData": [
+    "https://ogcincubator.github.io/bblocks-examples/data.ttl"
+  ],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
   "examples": [

@@ -17,6 +17,7 @@ A sample building block to showcase transforms
   "two": 2,
   "string": "value"
 }
+
 ```
 
 #### jsonld
@@ -39,6 +40,21 @@ A sample building block to showcase transforms
     ex:hasTwo 2 .
 
 
+```
+
+
+### Example for XSLT transform
+#### xml
+```xml
+<?xml version="1.0"?>
+<Article>
+  <Title>My Article</Title>
+  <Authors>
+    <Author>Mr. Foo</Author>
+    <Author>Mr. Bar</Author>
+  </Authors>
+  <Body>This is my article text.</Body>
+</Article>
 ```
 
 ## Schema

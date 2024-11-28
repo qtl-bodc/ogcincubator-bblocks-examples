@@ -8,7 +8,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2024-10-04",
+  "dateOfLastChange": "2024-11-28",
   "shaclRules": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
@@ -18,6 +18,9 @@
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/",
+  "rdfData": [
+    "https://ogcincubator.github.io/bblocks-examples/data.ttl"
+  ],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-example/",
   "transforms": [
@@ -150,6 +153,47 @@
           }
         ]
       }
+    },
+    {
+      "id": "sample-xslt",
+      "description": "This transform applies some changes to input XML to demonstrate XSLT transforms",
+      "type": "xslt",
+      "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/sample.xslt",
+      "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"1.0\">\n    <xsl:output method=\"xml\" indent=\"yes\" encoding=\"UTF-8\"/>\n\n    <!-- Match the root node -->\n    <xsl:template match=\"/\">\n        <xsl:apply-templates select=\"Article\"/>\n    </xsl:template>\n\n    <!-- Transform <Article> -->\n    <xsl:template match=\"Article\">\n        <Document type=\"article\">\n            <xsl:apply-templates select=\"*\"/>\n        </Document>\n    </xsl:template>\n\n    <!-- Transform <Title> to <Heading> -->\n    <xsl:template match=\"Title\">\n        <Heading>\n            <xsl:apply-templates/>\n        </Heading>\n    </xsl:template>\n\n    <!-- Wrap <Authors> content in <Contributors> -->\n    <xsl:template match=\"Authors\">\n        <Contributors>\n            <xsl:apply-templates select=\"Author\"/>\n        </Contributors>\n    </xsl:template>\n\n    <!-- Leave <Author> as is -->\n    <xsl:template match=\"Author\">\n        <xsl:copy>\n            <xsl:apply-templates/>\n        </xsl:copy>\n    </xsl:template>\n\n    <!-- Append \" [Modified]\" to the <Body> -->\n    <xsl:template match=\"Body\">\n        <xsl:copy>\n            <xsl:value-of select=\"concat(., ' [Modified]')\"/>\n        </xsl:copy>\n    </xsl:template>\n\n</xsl:stylesheet>\n",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "id": "xml",
+            "defaultExtension": "xml",
+            "label": "XML",
+            "mimeType": "application/xml",
+            "aliases": [
+              "application/xml",
+              "text/xml"
+            ],
+            "extensions": [
+              "xml"
+            ]
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "id": "xml",
+            "defaultExtension": "xml",
+            "label": "XML",
+            "mimeType": "application/xml",
+            "aliases": [
+              "application/xml",
+              "text/xml"
+            ],
+            "extensions": [
+              "xml"
+            ]
+          }
+        ]
+      }
     }
   ],
   "examples": [
@@ -158,7 +202,7 @@
       "snippets": [
         {
           "language": "json",
-          "code": "{\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}",
+          "code": "{\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}\n",
           "transformResults": {
             "prefix-keys": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json",
             "inline-transform": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.inline-transform.json"
@@ -177,6 +221,19 @@
             "prefix-predicates": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_3.prefix-predicates.ttl"
           },
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Example for XSLT transform",
+      "snippets": [
+        {
+          "language": "xml",
+          "code": "<?xml version=\"1.0\"?>\n<Article>\n  <Title>My Article</Title>\n  <Authors>\n    <Author>Mr. Foo</Author>\n    <Author>Mr. Bar</Author>\n  </Authors>\n  <Body>This is my article text.</Body>\n</Article>",
+          "transformResults": {
+            "sample-xslt": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_2_1.sample-xslt.xml"
+          },
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_2_1.xml"
         }
       ]
     }

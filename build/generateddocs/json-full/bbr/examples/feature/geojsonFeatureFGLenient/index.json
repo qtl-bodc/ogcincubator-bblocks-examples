@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-10-04",
+  "dateOfLastChange": "2024-11-28",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -33,6 +33,9 @@
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/schema.yaml",
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/",
+  "rdfData": [
+    "https://ogcincubator.github.io/bblocks-examples/data.ttl"
+  ],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
   "description": "## Custom Feature Type\n\nThis building block illustrates a typical \"Feature Type\" - where an object is modelled as a \"Feature with geometry\",\nbut has its own \"native schema\" - or \"domain model\". It uses JSON-FG (lenient) as its base.\n\nThis is an **interoperable** approach to defining a Feature, allowing re-use of a well-defined domain model.\n\ni.e. the attributes (properties) are managed independently of the packaging container (Feature)\n\nthe **propertySet** building block referenced by this container may be used independently of the FeatureModel structure,\nand is where semantic annotations are provided.\n\nThis building block **inherits** reusable semantic annotations for the Feature structure from a common library,\nsimplifying implementation. \n\n\n\n",
@@ -55,7 +58,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.opengis.net/def/glossary/term/> .\n@prefix ns2: <http://example.org/myModel/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/f1> a <app:building>,\n        geojson:Feature ;\n    ns2:myProp \"Mandatory property example\" ;\n    dcterms:time [ time:hasTime ( \"2014-04-24T10:50:18Z\" \"..\" ) ] ;\n    ns1:CoordinateReferenceSystemCRS \"http://www.opengis.net/def/crs/EPSG/0/5555\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n",
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://example.org/myModel/> .\n@prefix ns2: <http://www.opengis.net/def/glossary/term/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/f1> a <app:building>,\n        geojson:Feature ;\n    ns1:myProp \"Mandatory property example\" ;\n    dcterms:time [ time:hasTime ( \"2014-04-24T10:50:18Z\" \"..\" ) ] ;\n    ns2:CoordinateReferenceSystemCRS \"http://www.opengis.net/def/crs/EPSG/0/5555\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/example_1_1.ttl"
         }
       ]
