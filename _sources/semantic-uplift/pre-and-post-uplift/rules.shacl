@@ -1,0 +1,17 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix ex: <http://example.com/> .
+@base <http://example.com/rules> .
+
+<#testHasOneIs1>
+  a sh:NodeShape ;
+  sh:targetSubjectsOf ex:hasOne ;
+  sh:property [
+    sh:path ex:hasOne ;
+    sh:name "hasOne is 1" ;
+    sh:hasValue 1 ;
+  ]
+.
