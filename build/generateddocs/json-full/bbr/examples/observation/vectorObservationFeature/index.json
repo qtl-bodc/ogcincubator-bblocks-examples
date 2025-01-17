@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-11-28",
+  "dateOfLastChange": "2025-01-17",
   "sources": [
     {
       "title": "Semantic Sensor Network Ontology",
@@ -20,9 +20,9 @@
   "scope": "unstable",
   "dependsOn": [
     "ogc.sosa.features.observationCollection",
+    "ogc.sosa.properties.observation",
     "ogc.sosa.features.observation",
-    "ogc.bbr.examples.observation.vectorObservation",
-    "ogc.sosa.properties.observation"
+    "ogc.bbr.examples.observation.vectorObservation"
   ],
   "tags": [
     "sosa",

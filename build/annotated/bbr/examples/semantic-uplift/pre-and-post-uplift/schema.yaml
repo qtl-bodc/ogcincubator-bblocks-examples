@@ -9,6 +9,8 @@ properties:
   string:
     type: string
     x-jsonld-id: http://example.com/hasString
+required:
+- one
 x-jsonld-extra-terms:
   three: http://example.com/exHasGenThree
   doubleString: http://example.com/hasGenDoubleString
