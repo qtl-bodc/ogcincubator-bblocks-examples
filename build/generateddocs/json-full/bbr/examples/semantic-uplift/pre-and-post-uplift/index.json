@@ -9,7 +9,11 @@
   "itemClass": "schema",
   "version": "0.1",
   "dateOfLastChange": "2025-01-17",
-  "shaclRules": {},
+  "shaclRules": {
+    "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
+      "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
+    ]
+  },
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld",
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.yaml",

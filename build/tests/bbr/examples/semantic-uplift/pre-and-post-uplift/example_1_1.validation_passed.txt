@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.semantic-uplift.pre-and-post-uplift - Pre and Post Semantic Uplift example
-Generated 2025-01-17T11:31:14.388547+00:00
+Generated 2025-01-17T11:52:59.159159+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -10,6 +10,16 @@ Output Turtle example_1_1.ttl created
 === JSON Schema ===
 Validation passed
 === End JSON Schema ===
+
+=== SHACL ===
+Validation result for _sources/semantic-uplift/pre-and-post-uplift/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/semantic-uplift/pre-and-post-uplift/rules.shacl:
+ - Shape <http://example.com/rules#testHasOneIs1>: _:Nd75d92cf20c44ccaabe28f31a1adbbf3
+
+=== End SHACL ===
 
 === Semantic Uplift ===
 Running pre-uplift jq transform step from inline code
