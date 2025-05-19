@@ -8,7 +8,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2025-01-25",
+  "dateOfLastChange": "2025-01-26",
   "shaclRules": {
     "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
       "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
@@ -22,9 +22,7 @@
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/",
-  "rdfData": [
-    "https://ogcincubator.github.io/bblocks-examples/data.ttl"
-  ],
+  "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/",
   "description": "This building block defines two custom semantic uplift steps:\n\n* A pre-processing (i.e, on the JSON documents, before applying the JSON-LD context) JQ step to create two\n  properties (`three` with the value `3`, and `doubleString` with the value of the `string` property twice).\n* A post-processing (i.e., on the RDF graph, after the JSON-LD context has been applied) SPARQL Update\n  query where two new predicates (`ex2:hasFour` and `ex2:nineBound`) are added to all subjects of `ex:hasTwo`.\n",

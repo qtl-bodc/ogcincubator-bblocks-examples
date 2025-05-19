@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2025-01-25",
+  "dateOfLastChange": "2025-01-26",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -43,9 +43,7 @@
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/externalSchema/schema.yaml",
   "sourceLdContext": "https://raw.githubusercontent.com/smart-data-models/dataModel.ACRIS/master/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/externalSchema/",
-  "rdfData": [
-    "https://ogcincubator.github.io/bblocks-examples/data.ttl"
-  ],
+  "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/externalSchema/",
   "description": "## Feature Type based on a published schema\n\nThis example shows how an existing schema can be used to define a payload for a container model such as the OGC API Features feature schema.\n\nThis particular example uses a schema defined in another message-oriented environment, and **highlights an existing practice of using JSON-LD contexts defined for components.**\n\nThe OGC Building Blocks uses the same approach, with the added capabilities around example validation and mechanisms composition into other structures with transparent dependencies.\n\n\n",

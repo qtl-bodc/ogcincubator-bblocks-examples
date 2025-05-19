@@ -15,8 +15,14 @@
       "itemIdentifier": "@id",
       "baseURL": "@id",
       "name": "rdfs:label",
-      "abstract": "dct:abstract",
-      "description": "dct:description",
+      "abstract": {
+        "@id": "dct:abstract",
+        "@type": "https://www.w3.org/ns/iana/media-types/text/markdown"
+      },
+      "description": {
+        "@id": "dct:description",
+        "@type": "https://www.w3.org/ns/iana/media-types/text/markdown"
+      },
       "status": {
         "@id": "bblocks:status",
         "@type": "@id",
@@ -106,12 +112,12 @@
   "name": "Building Blocks - Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
-  "modified": "2025-01-26T00:01:19.286148",
+  "modified": "2025-05-19T10:36:56.042967",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"4f836104f60184d3a6e2f2272208584d6cae081d",
-      "shortCommitId": "\"4f8361",
-      "date": "2024-11-28T20:01:31+00:00\""
+      "commitId": "\"d54737439f35f87501c8deabf419a6a892b42929",
+      "shortCommitId": "\"d54737",
+      "date": "2025-04-28T10:28:17+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -137,7 +143,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2025-01-25",
+      "dateOfLastChange": "2025-01-26",
       "shaclRules": {
         "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
           "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
@@ -151,9 +157,7 @@
       "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/schema.yaml",
       "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/",
-      "rdfData": [
-        "https://ogcincubator.github.io/bblocks-examples/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/",
       "documentation": {
@@ -184,7 +188,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2025-01-25",
+      "dateOfLastChange": "2025-01-26",
       "shaclRules": {},
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
       "schema": {
@@ -194,9 +198,7 @@
       "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/schema.yaml",
       "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/",
-      "rdfData": [
-        "https://ogcincubator.github.io/bblocks-examples/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-example/",
       "transforms": [
@@ -401,7 +403,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-25",
+      "dateOfLastChange": "2025-01-26",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -435,9 +437,7 @@
       "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/externalSchema/schema.yaml",
       "sourceLdContext": "https://raw.githubusercontent.com/smart-data-models/dataModel.ACRIS/master/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/externalSchema/",
-      "rdfData": [
-        "https://ogcincubator.github.io/bblocks-examples/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/externalSchema/",
       "documentation": {
@@ -469,7 +469,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-25",
+      "dateOfLastChange": "2025-01-26",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -500,9 +500,7 @@
       "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/schema.yaml",
       "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/",
-      "rdfData": [
-        "https://ogcincubator.github.io/bblocks-examples/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
       "documentation": {
@@ -534,13 +532,13 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-25",
+      "dateOfLastChange": "2025-01-26",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.sosa.properties.observation",
-        "ogc.geo.geopose.basic.ypr"
+        "ogc.geo.geopose.basic.ypr",
+        "ogc.sosa.properties.observation"
       ],
       "tags": [
         "examples",
@@ -563,9 +561,7 @@
       "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/schema.yaml",
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/",
-      "rdfData": [
-        "https://ogcincubator.github.io/bblocks-examples/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservation/",
       "documentation": {
@@ -597,7 +593,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-25",
+      "dateOfLastChange": "2025-01-26",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -607,9 +603,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "ogc.bbr.examples.feature.propertySet",
         "ogc.geo.features.feature",
-        "ogc.bbr.examples.propertySet",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.propertySet"
       ],
       "tags": [
         "feature",
@@ -629,9 +625,7 @@
       "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/schema.yaml",
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/",
-      "rdfData": [
-        "https://ogcincubator.github.io/bblocks-examples/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/",
       "documentation": {
@@ -663,7 +657,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-25",
+      "dateOfLastChange": "2025-01-26",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -677,8 +671,8 @@
         ]
       },
       "dependsOn": [
-        "ogc.geo.json-fg.feature-lenient",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.json-fg.feature-lenient"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
@@ -687,9 +681,7 @@
       "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/schema.yaml",
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/",
-      "rdfData": [
-        "https://ogcincubator.github.io/bblocks-examples/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
       "documentation": {
@@ -722,7 +714,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-25",
+      "dateOfLastChange": "2025-01-26",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -736,8 +728,8 @@
         ]
       },
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.features.feature"
       ],
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
       "schema": {
@@ -747,9 +739,7 @@
       "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/schema.yaml",
       "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/",
-      "rdfData": [
-        "https://ogcincubator.github.io/bblocks-examples/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
       "documentation": {
@@ -781,7 +771,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-25",
+      "dateOfLastChange": "2025-01-26",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -791,10 +781,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.observation.vectorObservation",
+        "ogc.sosa.features.observationCollection",
         "ogc.sosa.properties.observation",
         "ogc.sosa.features.observation",
-        "ogc.sosa.features.observationCollection"
+        "ogc.bbr.examples.observation.vectorObservation"
       ],
       "tags": [
         "sosa",
@@ -820,9 +810,7 @@
       "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/schema.yaml",
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/",
-      "rdfData": [
-        "https://ogcincubator.github.io/bblocks-examples/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
       "documentation": {

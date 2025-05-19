@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2025-01-25",
+  "dateOfLastChange": "2025-01-26",
   "sources": [
     {
       "title": "Semantic Sensor Network Ontology",
@@ -40,9 +40,7 @@
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/",
-  "rdfData": [
-    "https://ogcincubator.github.io/bblocks-examples/data.ttl"
-  ],
+  "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
   "examples": [
