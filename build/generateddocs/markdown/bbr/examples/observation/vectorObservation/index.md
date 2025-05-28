@@ -44,7 +44,7 @@ This building block defines the *property set* for an example specialisation of 
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
+  "@context": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
   "hasFeatureOfInterest": "https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem",
   "resultTime": "2023-05-22T16:41:00+2",
   "observedProperty": "p1",
@@ -118,8 +118,8 @@ allOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml)
+* YAML version: [schema.yaml](https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json)
+* JSON version: [schema.json](https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml)
 
 
 # JSON-LD Context
@@ -540,13 +540,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld)
+[context.jsonld](https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* URL: [https://github.com/qtl-bodc/ogcincubator-bblocks-examples](https://github.com/qtl-bodc/ogcincubator-bblocks-examples)
 * Path: `_sources/observation/vectorObservation`
 

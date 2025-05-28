@@ -48,7 +48,7 @@ The OGC Building Blocks uses the same approach, with the added capabilities arou
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld",
+  "@context": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld",
   "id": "f1",
   "type": "Feature",
   "geometry": {
@@ -150,8 +150,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml)
+* YAML version: [schema.yaml](https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.json)
+* JSON version: [schema.json](https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml)
 
 
 # JSON-LD Context
@@ -259,7 +259,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld)
+[context.jsonld](https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld)
 
 ## Sources
 
@@ -271,6 +271,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* URL: [https://github.com/qtl-bodc/ogcincubator-bblocks-examples](https://github.com/qtl-bodc/ogcincubator-bblocks-examples)
 * Path: `_sources/feature/externalSchema`
 

@@ -64,7 +64,7 @@ This building block defines an example specialisation of an existing Feature spe
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
+  "@context": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
   "@id": "vector-obs-1",
   "type": "Feature",
   "geometry": {
@@ -205,7 +205,7 @@ This building block defines an example specialisation of an existing Feature spe
 ```jsonld
 {
   "@context": [
-    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
+    "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
     {
       "resultschema": "http://example.org/resultschema/",
       "pose": "resultschema:pose",
@@ -308,7 +308,7 @@ $defs:
     - type: object
       properties:
         properties:
-          $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
+          $ref: https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
   VectorObservationCollection:
     allOf:
     - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml
@@ -326,8 +326,8 @@ anyOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.yaml)
+* YAML version: [schema.yaml](https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json)
+* JSON version: [schema.json](https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.yaml)
 
 
 # JSON-LD Context
@@ -833,7 +833,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld)
+[context.jsonld](https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld)
 
 ## Sources
 
@@ -843,6 +843,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* URL: [https://github.com/qtl-bodc/ogcincubator-bblocks-examples](https://github.com/qtl-bodc/ogcincubator-bblocks-examples)
 * Path: `_sources/observation/vectorObservationFeature`
 

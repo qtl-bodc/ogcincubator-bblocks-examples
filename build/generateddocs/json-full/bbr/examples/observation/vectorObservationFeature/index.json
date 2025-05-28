@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2025-01-26",
+  "dateOfLastChange": "2025-05-19",
   "sources": [
     {
       "title": "Semantic Sensor Network Ontology",
@@ -20,9 +20,9 @@
   "scope": "unstable",
   "dependsOn": [
     "ogc.sosa.features.observationCollection",
-    "ogc.sosa.properties.observation",
+    "ogc.bbr.examples.observation.vectorObservation",
     "ogc.sosa.features.observation",
-    "ogc.bbr.examples.observation.vectorObservation"
+    "ogc.sosa.properties.observation"
   ],
   "tags": [
     "sosa",
@@ -35,22 +35,22 @@
   "highlighted": true,
   "shaclRules": {
     "ogc.bbr.examples.observation.vectorObservationFeature": [
-      "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl"
+      "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl"
     ],
     "ogc.sosa.properties.observation": [
       "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
     ]
   },
   "schema": {
-    "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.yaml",
-    "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json"
+    "application/yaml": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.yaml",
+    "application/json": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json"
   },
-  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/schema.yaml",
-  "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
-  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/",
+  "sourceSchema": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/observation/vectorObservationFeature/schema.yaml",
+  "ldContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
+  "sourceFiles": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/observation/vectorObservationFeature/",
   "rdfData": [],
   "validationPassed": true,
-  "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
+  "testOutputs": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
   "examples": [
     {
       "title": "VectorObservation - specialisation example.",
@@ -61,17 +61,17 @@
           "language": "json",
           "ref": "examples/observation.json",
           "code": "{\n  \"@id\": \"vector-obs-1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862874\n      ]\n    ]\n  },\n  \"time\": null,\n  \"place\": null,\n  \"properties\": {\n    \"hasFeatureOfInterest\": \"eg:Traverse-P1-P2\",\n    \"observedProperty\": \"Geopose (or a URI for this concept)\",\n    \"resultTime\": \"2023-05-22T16:41:00+2\",\n    \"hasResult\": {\n      \"@context\": {\n        \"resultschema\": \"http://example.org/resultschema/\",\n        \"pose\": \"resultschema:pose\",\n        \"distance\": {\n          \"@id\": \"resultschema:distance\"\n        }\n      },\n      \"pose\": {\n        \"position\": {\n          \"lat\": -111.67183507997295,\n          \"lon\": 40.056709946862874,\n          \"h\": 0.5\n        },\n        \"angles\": {\n          \"yaw\": 15.35,\n          \"pitch\": -0.01,\n          \"roll\": 0\n        }\n      },\n      \"distance\": 6889234.2\n    }\n  }\n}\n",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_1_1.json"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld\",\n  \"@id\": \"vector-obs-1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"time\": null,\n  \"place\": null,\n  \"properties\": {\n    \"hasFeatureOfInterest\": \"eg:Traverse-P1-P2\",\n    \"observedProperty\": \"Geopose (or a URI for this concept)\",\n    \"resultTime\": \"2023-05-22T16:41:00+2\",\n    \"hasResult\": {\n      \"@context\": {\n        \"resultschema\": \"http://example.org/resultschema/\",\n        \"pose\": \"resultschema:pose\",\n        \"distance\": {\n          \"@id\": \"resultschema:distance\"\n        }\n      },\n      \"pose\": {\n        \"position\": {\n          \"lat\": -111.67183507997295,\n          \"lon\": 40.056709946862874,\n          \"h\": 0.5\n        },\n        \"angles\": {\n          \"yaw\": 15.35,\n          \"pitch\": -0.01,\n          \"roll\": 0\n        }\n      },\n      \"distance\": 6889234.2\n    }\n  }\n}",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld\",\n  \"@id\": \"vector-obs-1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"time\": null,\n  \"place\": null,\n  \"properties\": {\n    \"hasFeatureOfInterest\": \"eg:Traverse-P1-P2\",\n    \"observedProperty\": \"Geopose (or a URI for this concept)\",\n    \"resultTime\": \"2023-05-22T16:41:00+2\",\n    \"hasResult\": {\n      \"@context\": {\n        \"resultschema\": \"http://example.org/resultschema/\",\n        \"pose\": \"resultschema:pose\",\n        \"distance\": {\n          \"@id\": \"resultschema:distance\"\n        }\n      },\n      \"pose\": {\n        \"position\": {\n          \"lat\": -111.67183507997295,\n          \"lon\": 40.056709946862874,\n          \"h\": 0.5\n        },\n        \"angles\": {\n          \"yaw\": 15.35,\n          \"pitch\": -0.01,\n          \"roll\": 0\n        }\n      },\n      \"distance\": 6889234.2\n    }\n  }\n}",
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix geopose: <http://example.com/geopose/> .\n@prefix ns1: <http://example.org/resultschema/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/vector-obs-1> a geojson:Feature ;\n    sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;\n    sosa:hasResult [ ns1:distance 6.889234e+06 ;\n            ns1:pose [ geopose:angles [ geopose:pitch -1e-02 ;\n                            geopose:roll 0 ;\n                            geopose:yaw 1.535e+01 ] ;\n                    geopose:position [ geopose:h 5e-01 ;\n                            geo1:lat -1.116718e+02 ;\n                            geo1:long 4.005671e+01 ] ] ] ;\n    sosa:observedProperty <http://example.com/features/> ;\n    sosa:resultTime \"2023-05-22T16:41:00+2\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_1_1.ttl"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_1_1.ttl"
         }
       ]
     },
@@ -84,22 +84,22 @@
           "language": "json",
           "ref": "examples/observationCollection.json",
           "code": "{\n  \"@context\": {\n    \"resultschema\": \"http://example.org/resultschema/\",\n    \"pose\": \"resultschema:pose\",\n    \"distance\": {\n      \"@id\": \"resultschema:distance\"\n    }\n  },\n  \"@id\": \"c1\",\n  \"type\": \"FeatureCollection\",\n  \"featureType\": \"sosa:ObservationCollection\",\n  \"observedProperty\": \"Geopose (or a URI for this concept)\",\n  \"properties\": {\n    \"resultTime\": \"1999\"\n  },\n  \"features\": [\n    {\n      \"@id\": \"vector-obs-1\",\n      \"type\": \"Feature\",\n      \"geometry\": {\n        \"type\": \"LineString\",\n        \"coordinates\": [\n          [\n            -111.67183507997295,\n            40.056709946862874\n          ],\n          [\n            -111.67183507997295,\n            40.056709946862874\n          ]\n        ]\n      },\n      \"time\": null,\n      \"place\": null,\n      \"properties\": {\n        \"hasFeatureOfInterest\": \"eg:Traverse-P1-P2\",\n        \"resultTime\": \"2023-05-22T16:41:00+2\",\n        \"hasResult\": {\n          \"pose\": {\n            \"position\": {\n              \"lat\": -111.67183507997295,\n              \"lon\": 40.056709946862874,\n              \"h\": 0.5\n            },\n            \"angles\": {\n              \"yaw\": 15.35,\n              \"pitch\": -0.01,\n              \"roll\": 0\n            }\n          },\n          \"distance\": 6889234.2\n        }\n      }\n    }\n  ]\n}",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_2_1.json"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_2_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": [\n    \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld\",\n    {\n      \"resultschema\": \"http://example.org/resultschema/\",\n      \"pose\": \"resultschema:pose\",\n      \"distance\": {\n        \"@id\": \"resultschema:distance\"\n      }\n    }\n  ],\n  \"@id\": \"c1\",\n  \"type\": \"FeatureCollection\",\n  \"featureType\": \"sosa:ObservationCollection\",\n  \"observedProperty\": \"Geopose (or a URI for this concept)\",\n  \"properties\": {\n    \"resultTime\": \"1999\"\n  },\n  \"features\": [\n    {\n      \"@id\": \"vector-obs-1\",\n      \"type\": \"Feature\",\n      \"geometry\": {\n        \"type\": \"LineString\",\n        \"coordinates\": [\n          [\n            -111.67183507997295,\n            40.056709946862874\n          ],\n          [\n            -111.67183507997295,\n            40.056709946862874\n          ]\n        ]\n      },\n      \"time\": null,\n      \"place\": null,\n      \"properties\": {\n        \"hasFeatureOfInterest\": \"eg:Traverse-P1-P2\",\n        \"resultTime\": \"2023-05-22T16:41:00+2\",\n        \"hasResult\": {\n          \"pose\": {\n            \"position\": {\n              \"lat\": -111.67183507997295,\n              \"lon\": 40.056709946862874,\n              \"h\": 0.5\n            },\n            \"angles\": {\n              \"yaw\": 15.35,\n              \"pitch\": -0.01,\n              \"roll\": 0\n            }\n          },\n          \"distance\": 6889234.2\n        }\n      }\n    }\n  ]\n}",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_2_1.jsonld"
+          "code": "{\n  \"@context\": [\n    \"https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld\",\n    {\n      \"resultschema\": \"http://example.org/resultschema/\",\n      \"pose\": \"resultschema:pose\",\n      \"distance\": {\n        \"@id\": \"resultschema:distance\"\n      }\n    }\n  ],\n  \"@id\": \"c1\",\n  \"type\": \"FeatureCollection\",\n  \"featureType\": \"sosa:ObservationCollection\",\n  \"observedProperty\": \"Geopose (or a URI for this concept)\",\n  \"properties\": {\n    \"resultTime\": \"1999\"\n  },\n  \"features\": [\n    {\n      \"@id\": \"vector-obs-1\",\n      \"type\": \"Feature\",\n      \"geometry\": {\n        \"type\": \"LineString\",\n        \"coordinates\": [\n          [\n            -111.67183507997295,\n            40.056709946862874\n          ],\n          [\n            -111.67183507997295,\n            40.056709946862874\n          ]\n        ]\n      },\n      \"time\": null,\n      \"place\": null,\n      \"properties\": {\n        \"hasFeatureOfInterest\": \"eg:Traverse-P1-P2\",\n        \"resultTime\": \"2023-05-22T16:41:00+2\",\n        \"hasResult\": {\n          \"pose\": {\n            \"position\": {\n              \"lat\": -111.67183507997295,\n              \"lon\": 40.056709946862874,\n              \"h\": 0.5\n            },\n            \"angles\": {\n              \"yaw\": 15.35,\n              \"pitch\": -0.01,\n              \"roll\": 0\n            }\n          },\n          \"distance\": 6889234.2\n        }\n      }\n    }\n  ]\n}",
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_2_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix geopose: <http://example.com/geopose/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix resultschema: <http://example.org/resultschema/> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/c1> a sosa:ObservationCollection,\n        geojson:FeatureCollection ;\n    sosa:hasMember <http://example.com/features/vector-obs-1> ;\n    sosa:observedProperty <http://example.com/features/> ;\n    sosa:resultTime \"1999\" .\n\n<http://example.com/features/vector-obs-1> a geojson:Feature ;\n    sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;\n    sosa:hasResult [ resultschema:distance 6.889234e+06 ;\n            resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;\n                            geopose:roll 0 ;\n                            geopose:yaw 1.535e+01 ] ;\n                    geopose:position [ geopose:h 5e-01 ;\n                            geo1:lat -1.116718e+02 ;\n                            geo1:long 4.005671e+01 ] ] ] ;\n    sosa:resultTime \"2023-05-22T16:41:00+2\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.116718e+02 4.005671e+01 ) ) ] .\n\n",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_2_1.ttl"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_2_1.ttl"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Example SOSA Observation Specialisation - a vector bearing and distance\n$defs:\n  VectorObservation:\n    allOf:\n    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml\n    - type: object\n      properties:\n        properties:\n          $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml\n  VectorObservationCollection:\n    allOf:\n    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml\n    - type: object\n      properties:\n        features:\n          type: array\n          items:\n            $ref: '#/$defs/VectorObservation'\nanyOf:\n- $ref: '#/$defs/VectorObservation'\n- $ref: '#/$defs/VectorObservationCollection'\n",
-  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Example SOSA Observation Specialisation - a vector bearing and distance\n$defs:\n  VectorObservation:\n    allOf:\n    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml\n    - type: object\n      properties:\n        properties:\n          $ref: https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml\n  VectorObservationCollection:\n    allOf:\n    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml\n    - type: object\n      properties:\n        features:\n          type: array\n          items:\n            $ref: '#/$defs/VectorObservation'\nanyOf:\n- $ref: '#/$defs/VectorObservation'\n- $ref: '#/$defs/VectorObservationCollection'\n",
+  "gitRepository": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples",
   "gitPath": "_sources/observation/vectorObservationFeature"
 }

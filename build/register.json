@@ -2,19 +2,19 @@
   "name": "Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
-  "modified": "2025-05-19T10:36:56.042967",
+  "modified": "2025-05-28T12:41:26.231421",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"d54737439f35f87501c8deabf419a6a892b42929",
-      "shortCommitId": "\"d54737",
-      "date": "2025-04-28T10:28:17+00:00\""
+      "commitId": "\"68270eb1826f3347fc9e19ae5448183bf75cb9d4",
+      "shortCommitId": "\"68270e",
+      "date": "2025-05-27T07:46:02+00:00\""
     }
   },
-  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
-  "gitHubRepository": "https://github.com/ogcincubator/bblocks-examples/blob/master/",
-  "baseURL": "https://ogcincubator.github.io/bblocks-examples/",
-  "viewerURL": "https://ogcincubator.github.io/bblocks-examples/",
-  "validationReport": "https://ogcincubator.github.io/bblocks-examples/build/tests/report.html",
+  "gitRepository": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples",
+  "gitHubRepository": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples/blob/master/",
+  "baseURL": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/",
+  "viewerURL": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/",
+  "validationReport": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/tests/report.html",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json",
     "https://opengeospatial.github.io/ogcapi-sosa/build/register.json"
@@ -28,35 +28,35 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2025-01-26",
+      "dateOfLastChange": "2025-05-19",
       "shaclRules": {
         "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
-          "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
+          "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
         ]
       },
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld",
+      "ldContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.json"
+        "application/yaml": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.yaml",
+        "application/json": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/",
+      "sourceSchema": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/schema.yaml",
+      "sourceLdContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/context.jsonld",
+      "sourceFiles": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/",
+      "testOutputs": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/pre-and-post-uplift/index.md"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/pre-and-post-uplift/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/pre-and-post-uplift/index.json"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/pre-and-post-uplift/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.semantic-uplift.pre-and-post-uplift"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/bblock/ogc.bbr.examples.semantic-uplift.pre-and-post-uplift"
         }
       }
     },
@@ -68,25 +68,25 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2025-01-26",
+      "dateOfLastChange": "2025-05-19",
       "shaclRules": {},
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
+      "ldContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.json"
+        "application/yaml": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.yaml",
+        "application/json": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/",
+      "sourceSchema": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/transforms/transforms-example/schema.yaml",
+      "sourceLdContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/transforms/transforms-example/context.jsonld",
+      "sourceFiles": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/transforms/transforms-example/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-example/",
+      "testOutputs": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-example/",
       "transforms": [
         {
           "id": "prefix-keys",
           "description": "Adds a \"PREF\" prefix to all object keys.",
           "type": "jq",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/prefix-keys.jq",
+          "ref": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/transforms/transforms-example/transforms/prefix-keys.jq",
           "code": "walk(if type == \"object\" then with_entries( .key |= \"PREF\\(.)\" ) else . end)",
           "inputs": {
             "mediaTypes": [
@@ -119,7 +119,7 @@
           "id": "prefix-predicates",
           "description": "Changes the \"http://example.com/\" prefix of every predicate to a URN",
           "type": "sparql-update",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/prefix-predicates.sparql",
+          "ref": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/transforms/transforms-example/transforms/prefix-predicates.sparql",
           "code": "DELETE {\n  ?s ?p ?o\n}\nINSERT {\n  ?s ?p2 ?o\n}\nWHERE {\n  ?s ?p ?o\n  FILTER(STRSTARTS(STR(?p), \"http://example.com/\"))\n  BIND(URI(REPLACE(STR(?p), \"^http://example.com/\", \"urn:example:ex#\")) as ?p2)\n}",
           "inputs": {
             "mediaTypes": [
@@ -216,7 +216,7 @@
           "id": "sample-xslt",
           "description": "This transform applies some changes to input XML to demonstrate XSLT transforms",
           "type": "xslt",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/sample.xslt",
+          "ref": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/transforms/transforms-example/transforms/sample.xslt",
           "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"1.0\">\n    <xsl:output method=\"xml\" indent=\"yes\" encoding=\"UTF-8\"/>\n\n    <!-- Match the root node -->\n    <xsl:template match=\"/\">\n        <xsl:apply-templates select=\"Article\"/>\n    </xsl:template>\n\n    <!-- Transform <Article> -->\n    <xsl:template match=\"Article\">\n        <Document type=\"article\">\n            <xsl:apply-templates select=\"*\"/>\n        </Document>\n    </xsl:template>\n\n    <!-- Transform <Title> to <Heading> -->\n    <xsl:template match=\"Title\">\n        <Heading>\n            <xsl:apply-templates/>\n        </Heading>\n    </xsl:template>\n\n    <!-- Wrap <Authors> content in <Contributors> -->\n    <xsl:template match=\"Authors\">\n        <Contributors>\n            <xsl:apply-templates select=\"Author\"/>\n        </Contributors>\n    </xsl:template>\n\n    <!-- Leave <Author> as is -->\n    <xsl:template match=\"Author\">\n        <xsl:copy>\n            <xsl:apply-templates/>\n        </xsl:copy>\n    </xsl:template>\n\n    <!-- Append \" [Modified]\" to the <Body> -->\n    <xsl:template match=\"Body\">\n        <xsl:copy>\n            <xsl:value-of select=\"concat(., ' [Modified]')\"/>\n        </xsl:copy>\n    </xsl:template>\n\n</xsl:stylesheet>\n",
           "inputs": {
             "mediaTypes": [
@@ -257,15 +257,15 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/transforms/transforms-example/index.md"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/markdown/bbr/examples/transforms/transforms-example/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/transforms/transforms-example/index.json"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/json-full/bbr/examples/transforms/transforms-example/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.transforms.transforms-example"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/bblock/ogc.bbr.examples.transforms.transforms-example"
         }
       }
     },
@@ -278,7 +278,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-26",
+      "dateOfLastChange": "2025-05-19",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -295,7 +295,7 @@
       ],
       "maturity": "development",
       "scope": "unstable",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld",
+      "ldContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld",
       "dependsOn": [
         "ogc.geo.features.feature"
       ],
@@ -306,27 +306,27 @@
       "group": "Examples",
       "shaclRules": {},
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.json"
+        "application/yaml": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml",
+        "application/json": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/externalSchema/schema.yaml",
+      "sourceSchema": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/externalSchema/schema.yaml",
       "sourceLdContext": "https://raw.githubusercontent.com/smart-data-models/dataModel.ACRIS/master/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/externalSchema/",
+      "sourceFiles": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/externalSchema/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/externalSchema/",
+      "testOutputs": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples/blob/master/build/tests/bbr/examples/feature/externalSchema/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/externalSchema/index.md"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/externalSchema/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/externalSchema/index.json"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/externalSchema/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.externalSchema"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/bblock/ogc.bbr.examples.feature.externalSchema"
         }
       }
     },
@@ -339,7 +339,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-26",
+      "dateOfLastChange": "2025-05-19",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -362,29 +362,29 @@
           "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
         ]
       },
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld",
+      "ldContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json"
+        "application/yaml": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml",
+        "application/json": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/",
+      "sourceSchema": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/propertySet/schema.yaml",
+      "sourceLdContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/propertySet/context.jsonld",
+      "sourceFiles": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/propertySet/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
+      "testOutputs": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet"
         }
       }
     },
@@ -397,7 +397,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-26",
+      "dateOfLastChange": "2025-05-19",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -420,27 +420,27 @@
         ]
       },
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json"
+        "application/yaml": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml",
+        "application/json": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/",
+      "sourceSchema": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/observation/vectorObservation/schema.yaml",
+      "ldContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
+      "sourceFiles": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/observation/vectorObservation/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservation/",
+      "testOutputs": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservation/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation"
         }
       }
     },
@@ -453,7 +453,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-26",
+      "dateOfLastChange": "2025-05-19",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -463,9 +463,9 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
+        "ogc.bbr.examples.propertySet",
         "ogc.geo.features.feature",
-        "ogc.bbr.examples.propertySet"
+        "ogc.bbr.examples.feature.propertySet"
       ],
       "tags": [
         "feature",
@@ -479,27 +479,27 @@
         ]
       },
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.json"
+        "application/yaml": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.yaml",
+        "application/json": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/",
+      "sourceSchema": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/geojsonFeature/schema.yaml",
+      "ldContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld",
+      "sourceFiles": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/geojsonFeature/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/",
+      "testOutputs": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature"
         }
       }
     },
@@ -512,7 +512,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-26",
+      "dateOfLastChange": "2025-05-19",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -526,31 +526,31 @@
         ]
       },
       "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.json-fg.feature-lenient"
+        "ogc.geo.json-fg.feature-lenient",
+        "ogc.bbr.examples.feature.propertySet"
       ],
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.json"
+        "application/yaml": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
+        "application/json": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/",
+      "sourceSchema": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/geojsonFeatureFGLenient/schema.yaml",
+      "ldContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld",
+      "sourceFiles": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/geojsonFeatureFGLenient/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
+      "testOutputs": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeatureFGLenient/index.md"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeatureFGLenient/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeatureFGLenient/index.json"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeatureFGLenient/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeatureFGLenient"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeatureFGLenient"
         }
       }
     },
@@ -564,7 +564,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-26",
+      "dateOfLastChange": "2025-05-19",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -578,32 +578,32 @@
         ]
       },
       "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.features.feature"
+        "ogc.geo.features.feature",
+        "ogc.bbr.examples.feature.propertySet"
       ],
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
+      "ldContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.json"
+        "application/yaml": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.yaml",
+        "application/json": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/",
+      "sourceSchema": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/geosparqlFeature/schema.yaml",
+      "sourceLdContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/geosparqlFeature/context.jsonld",
+      "sourceFiles": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/geosparqlFeature/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
+      "testOutputs": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geosparqlFeature"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/bblock/ogc.bbr.examples.feature.geosparqlFeature"
         }
       }
     },
@@ -616,7 +616,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-01-26",
+      "dateOfLastChange": "2025-05-19",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -627,9 +627,9 @@
       "scope": "unstable",
       "dependsOn": [
         "ogc.sosa.features.observationCollection",
-        "ogc.sosa.properties.observation",
+        "ogc.bbr.examples.observation.vectorObservation",
         "ogc.sosa.features.observation",
-        "ogc.bbr.examples.observation.vectorObservation"
+        "ogc.sosa.properties.observation"
       ],
       "tags": [
         "sosa",
@@ -642,34 +642,34 @@
       "highlighted": true,
       "shaclRules": {
         "ogc.bbr.examples.observation.vectorObservationFeature": [
-          "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl"
+          "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl"
         ],
         "ogc.sosa.properties.observation": [
           "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
         ]
       },
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json"
+        "application/yaml": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.yaml",
+        "application/json": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/",
+      "sourceSchema": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/observation/vectorObservationFeature/schema.yaml",
+      "ldContext": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
+      "sourceFiles": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/observation/vectorObservationFeature/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
+      "testOutputs": "https://github.com/qtl-bodc/ogcincubator-bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservationFeature"
+          "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservationFeature"
         }
       }
     }

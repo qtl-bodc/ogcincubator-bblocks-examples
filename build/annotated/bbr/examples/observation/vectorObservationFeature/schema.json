@@ -11,7 +11,7 @@
           "type": "object",
           "properties": {
             "properties": {
-              "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json"
+              "$ref": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json"
             }
           }
         }

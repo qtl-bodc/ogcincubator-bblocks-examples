@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.feature.geojsonFeature - Custom Feature",
   "bblockName": "Custom Feature",
   "bblockId": "ogc.bbr.examples.feature.geojsonFeature",
-  "generated": "2025-05-19T10:37:01.691778+00:00",
+  "generated": "2025-05-28T12:41:32.002443+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "TEST_RESOURCE",
         "requireFail": true,
         "filename": "_sources/feature/geojsonFeature/tests/feature-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/tests/feature-fail.json",
+        "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/_sources/feature/geojsonFeature/tests/feature-fail.json",
         "language": "json"
       },
       "result": true,
@@ -83,7 +83,13 @@
             {
               "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl",
               "focusNodes": {
+                "<https://www.ogc.org/rules/sosa/#testObservedProperty>": {
+                  "nodes": []
+                },
                 "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": []
                 },
                 "<https://www.ogc.org/rules/sosa/#testResult>": {
@@ -94,16 +100,10 @@
                 },
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testObservedProperty>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
-                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n"
             }
           ]
         }
@@ -114,7 +114,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/bbr/examples/feature/geojsonFeature/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geojsonFeature/example_1_1.json",
+        "url": "https://qtl-bodc.github.io/ogcincubator-bblocks-examples/build/tests/bbr/examples/feature/geojsonFeature/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"
@@ -176,7 +176,13 @@
             {
               "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl",
               "focusNodes": {
+                "<https://www.ogc.org/rules/sosa/#testObservedProperty>": {
+                  "nodes": []
+                },
                 "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": []
                 },
                 "<https://www.ogc.org/rules/sosa/#testResult>": {
@@ -187,16 +193,10 @@
                 },
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testObservedProperty>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
-                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n"
             }
           ]
         }
